@@ -7,10 +7,11 @@ export default defineConfig(({ mode }) => {
   // Base path for GitHub Pages deployment
   // For GitHub Pages: repository name is part of the URL
   // Example: if your repo is 'my-app', the URL will be https://username.github.io/my-app/
-  // Set BASE_PATH environment variable when building for GitHub Pages
-  // Default to '/' for local development and root domain deployments
-  // For production builds, default to GitHub Pages base path
-  const basePath = process.env.BASE_PATH || (mode === 'production' ? '/SDPromptGenerator3.2/' : '/')
+  // Prefer BASE_PATH if set; otherwise use GITHUB_REPOSITORY when building in CI.
+  const repoName = process.env.GITHUB_REPOSITORY?.split('/')[1]
+  const basePath =
+    process.env.BASE_PATH ||
+    (mode === 'production' && repoName ? `/${repoName}/` : '/')
   
   return {
     plugins: [react()],
@@ -28,4 +29,3 @@ export default defineConfig(({ mode }) => {
     },
   }
 })
-

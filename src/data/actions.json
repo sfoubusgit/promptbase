@@ -1,0 +1,285 @@
+{
+  "category": "actions",
+  "attributes": [
+    {
+      "id": "actions:body-standing",
+      "baseText": "standing",
+      "semanticPriority": 150,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "actions:body-sitting",
+      "baseText": "sitting",
+      "semanticPriority": 150,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "actions:body-running",
+      "baseText": "running",
+      "semanticPriority": 150,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "actions:body-jumping",
+      "baseText": "jumping",
+      "semanticPriority": 150,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "actions:body-walking",
+      "baseText": "walking",
+      "semanticPriority": 150,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "actions:body-lying",
+      "baseText": "lying",
+      "semanticPriority": 150,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "actions:body-kneeling",
+      "baseText": "kneeling",
+      "semanticPriority": 150,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "actions:gesture-waving",
+      "baseText": "waving",
+      "semanticPriority": 150,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "actions:gesture-pointing",
+      "baseText": "pointing",
+      "semanticPriority": 150,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "actions:gesture-holding",
+      "baseText": "holding",
+      "semanticPriority": 150,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "actions:gesture-reaching",
+      "baseText": "reaching",
+      "semanticPriority": 150,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "actions:gesture-hands-on-hips",
+      "baseText": "hands on hips",
+      "semanticPriority": 150,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "actions:facial-looking-at-viewer",
+      "baseText": "looking at viewer",
+      "semanticPriority": 150,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "actions:facial-looking-away",
+      "baseText": "looking away",
+      "semanticPriority": 150,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "actions:complex-fighting",
+      "baseText": "fighting",
+      "semanticPriority": 150,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "actions:complex-dancing",
+      "baseText": "dancing",
+      "semanticPriority": 150,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "actions:complex-reading",
+      "baseText": "reading",
+      "semanticPriority": 150,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "actions:complex-writing",
+      "baseText": "writing",
+      "semanticPriority": 150,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "actions:interaction-touching",
+      "baseText": "touching",
+      "semanticPriority": 150,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "actions:interaction-hugging",
+      "baseText": "hugging",
+      "semanticPriority": 150,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "actions:walking",
+      "baseText": "walking",
+      "semanticPriority": 150,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "actions:running",
+      "baseText": "running",
+      "semanticPriority": 150,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "actions:jumping",
+      "baseText": "jumping",
+      "semanticPriority": 150,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "actions:sitting",
+      "baseText": "sitting",
+      "semanticPriority": 150,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "actions:standing",
+      "baseText": "standing",
+      "semanticPriority": 150,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "actions:looking-back",
+      "baseText": "looking back",
+      "semanticPriority": 150,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "actions:reaching",
+      "baseText": "reaching",
+      "semanticPriority": 150,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "actions:pointing",
+      "baseText": "pointing",
+      "semanticPriority": 150,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "actions:holding",
+      "baseText": "holding",
+      "semanticPriority": 150,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "actions:embracing",
+      "baseText": "embracing",
+      "semanticPriority": 150,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "actions:body-crouching",
+      "baseText": "body crouching",
+      "semanticPriority": 150,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "actions:body-leaping",
+      "baseText": "body leaping",
+      "semanticPriority": 150,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "actions:body-sprinting",
+      "baseText": "body sprinting",
+      "semanticPriority": 150,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "actions:body-stretching",
+      "baseText": "body stretching",
+      "semanticPriority": 150,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "actions:body-climbing",
+      "baseText": "body climbing",
+      "semanticPriority": 150,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "actions:gesture-saluting",
+      "baseText": "gesture saluting",
+      "semanticPriority": 150,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "actions:gesture-shrugging",
+      "baseText": "gesture shrugging",
+      "semanticPriority": 150,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "actions:gesture-clapping",
+      "baseText": "gesture clapping",
+      "semanticPriority": 150,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "actions:interaction-high-five",
+      "baseText": "interaction high five",
+      "semanticPriority": 150,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "actions:interaction-carrying",
+      "baseText": "interaction carrying",
+      "semanticPriority": 150,
+      "isNegative": false,
+      "conflictsWith": []
+    }
+  ]
+}

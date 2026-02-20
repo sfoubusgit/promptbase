@@ -1,0 +1,2508 @@
+{
+  "category": "subject",
+  "attributes": [
+    {
+      "id": "subject:person-man",
+      "baseText": "man",
+      "semanticPriority": 100,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:person-woman",
+      "baseText": "woman",
+      "semanticPriority": 100,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:person-child",
+      "baseText": "child",
+      "semanticPriority": 100,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:person-teenager",
+      "baseText": "teenager",
+      "semanticPriority": 100,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:person-adult",
+      "baseText": "adult",
+      "semanticPriority": 100,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:person-elderly",
+      "baseText": "elderly person",
+      "semanticPriority": 100,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:person-athlete",
+      "baseText": "athlete",
+      "semanticPriority": 100,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:person-soldier",
+      "baseText": "soldier",
+      "semanticPriority": 100,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:person-knight",
+      "baseText": "knight",
+      "semanticPriority": 100,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:person-farmer",
+      "baseText": "farmer",
+      "semanticPriority": 100,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:person-worker",
+      "baseText": "worker",
+      "semanticPriority": 100,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:person-artist",
+      "baseText": "artist",
+      "semanticPriority": 100,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:person-musician",
+      "baseText": "musician",
+      "semanticPriority": 100,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:person-dancer",
+      "baseText": "dancer",
+      "semanticPriority": 100,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:person-scientist",
+      "baseText": "scientist",
+      "semanticPriority": 100,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:person-doctor",
+      "baseText": "doctor",
+      "semanticPriority": 100,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:person-engineer",
+      "baseText": "engineer",
+      "semanticPriority": 100,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:person-detective",
+      "baseText": "detective",
+      "semanticPriority": 100,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:person-explorer",
+      "baseText": "explorer",
+      "semanticPriority": 100,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:person-traveler",
+      "baseText": "traveler",
+      "semanticPriority": 100,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:person-leader",
+      "baseText": "leader",
+      "semanticPriority": 100,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:animal-dog",
+      "baseText": "dog",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:animal-cat",
+      "baseText": "cat",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:animal-wild-animal",
+      "baseText": "wild animal",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:animal-horse",
+      "baseText": "horse",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:animal-cow",
+      "baseText": "cow",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:animal-elephant",
+      "baseText": "elephant",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:animal-lion",
+      "baseText": "lion",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:animal-tiger",
+      "baseText": "tiger",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:animal-bear",
+      "baseText": "bear",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:animal-wolf",
+      "baseText": "wolf",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:animal-fox",
+      "baseText": "fox",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:animal-deer",
+      "baseText": "deer",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:animal-rabbit",
+      "baseText": "rabbit",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:animal-monkey",
+      "baseText": "monkey",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:animal-giraffe",
+      "baseText": "giraffe",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:animal-zebra",
+      "baseText": "zebra",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:animal-kangaroo",
+      "baseText": "kangaroo",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:animal-dolphin",
+      "baseText": "dolphin",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:animal-whale",
+      "baseText": "whale",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:animal-eagle",
+      "baseText": "eagle",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:animal-owl",
+      "baseText": "owl",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:character-fantasy",
+      "baseText": "fantasy character",
+      "semanticPriority": 100,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:character-sci-fi",
+      "baseText": "science fiction character",
+      "semanticPriority": 100,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:character-realistic",
+      "baseText": "realistic human character",
+      "semanticPriority": 100,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:character-warrior",
+      "baseText": "warrior",
+      "semanticPriority": 100,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:character-knight",
+      "baseText": "knight",
+      "semanticPriority": 100,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:character-mage",
+      "baseText": "mage",
+      "semanticPriority": 100,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:character-wizard",
+      "baseText": "wizard",
+      "semanticPriority": 100,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:character-sorceress",
+      "baseText": "sorceress",
+      "semanticPriority": 100,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:character-archer",
+      "baseText": "archer",
+      "semanticPriority": 100,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:character-assassin",
+      "baseText": "assassin",
+      "semanticPriority": 100,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:character-rogue",
+      "baseText": "rogue",
+      "semanticPriority": 100,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:character-paladin",
+      "baseText": "paladin",
+      "semanticPriority": 100,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:character-barbarian",
+      "baseText": "barbarian",
+      "semanticPriority": 100,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:character-samurai",
+      "baseText": "samurai",
+      "semanticPriority": 100,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:character-ninja",
+      "baseText": "ninja",
+      "semanticPriority": 100,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:character-viking",
+      "baseText": "viking",
+      "semanticPriority": 100,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:character-pirate",
+      "baseText": "pirate",
+      "semanticPriority": 100,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:character-explorer",
+      "baseText": "explorer",
+      "semanticPriority": 100,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:character-scientist",
+      "baseText": "scientist",
+      "semanticPriority": 100,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:character-cyborg",
+      "baseText": "cyborg",
+      "semanticPriority": 100,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:character-alien",
+      "baseText": "alien",
+      "semanticPriority": 100,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:character-robot",
+      "baseText": "robot",
+      "semanticPriority": 100,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:character-superhero",
+      "baseText": "superhero",
+      "semanticPriority": 100,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:creature-dragon",
+      "baseText": "dragon",
+      "semanticPriority": 98,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:creature-alien",
+      "baseText": "alien creature",
+      "semanticPriority": 98,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:creature-griffin",
+      "baseText": "griffin",
+      "semanticPriority": 98,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:creature-phoenix",
+      "baseText": "phoenix",
+      "semanticPriority": 98,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:creature-unicorn",
+      "baseText": "unicorn",
+      "semanticPriority": 98,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:creature-hydra",
+      "baseText": "hydra",
+      "semanticPriority": 98,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:creature-kraken",
+      "baseText": "kraken",
+      "semanticPriority": 98,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:creature-wyvern",
+      "baseText": "wyvern",
+      "semanticPriority": 98,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:creature-basilisk",
+      "baseText": "basilisk",
+      "semanticPriority": 98,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:creature-chimera",
+      "baseText": "chimera",
+      "semanticPriority": 98,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:creature-minotaur",
+      "baseText": "minotaur",
+      "semanticPriority": 98,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:creature-centaur",
+      "baseText": "centaur",
+      "semanticPriority": 98,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:creature-werewolf",
+      "baseText": "werewolf",
+      "semanticPriority": 98,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:creature-vampire",
+      "baseText": "vampire",
+      "semanticPriority": 98,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:creature-demon",
+      "baseText": "demon",
+      "semanticPriority": 98,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:creature-angel",
+      "baseText": "angel",
+      "semanticPriority": 98,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:creature-fairy",
+      "baseText": "fairy",
+      "semanticPriority": 98,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:creature-troll",
+      "baseText": "troll",
+      "semanticPriority": 98,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:creature-giant",
+      "baseText": "giant",
+      "semanticPriority": 98,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:creature-goblin",
+      "baseText": "goblin",
+      "semanticPriority": 98,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:creature-ogre",
+      "baseText": "ogre",
+      "semanticPriority": 98,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:object-vehicle",
+      "baseText": "vehicle",
+      "semanticPriority": 90,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:object-building",
+      "baseText": "building",
+      "semanticPriority": 90,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:object-sword",
+      "baseText": "sword",
+      "semanticPriority": 90,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:object-shield",
+      "baseText": "shield",
+      "semanticPriority": 90,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:object-bow",
+      "baseText": "bow",
+      "semanticPriority": 90,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:object-arrow",
+      "baseText": "arrow",
+      "semanticPriority": 90,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:object-helmet",
+      "baseText": "helmet",
+      "semanticPriority": 90,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:object-armor",
+      "baseText": "armor",
+      "semanticPriority": 90,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:object-crown",
+      "baseText": "crown",
+      "semanticPriority": 90,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:object-book",
+      "baseText": "book",
+      "semanticPriority": 90,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:object-scroll",
+      "baseText": "scroll",
+      "semanticPriority": 90,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:object-lantern",
+      "baseText": "lantern",
+      "semanticPriority": 90,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:object-key",
+      "baseText": "key",
+      "semanticPriority": 90,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:object-chest",
+      "baseText": "chest",
+      "semanticPriority": 90,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:object-mirror",
+      "baseText": "mirror",
+      "semanticPriority": 90,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:object-ring",
+      "baseText": "ring",
+      "semanticPriority": 90,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:object-necklace",
+      "baseText": "necklace",
+      "semanticPriority": 90,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:object-staff",
+      "baseText": "staff",
+      "semanticPriority": 90,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:object-wand",
+      "baseText": "wand",
+      "semanticPriority": 90,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:object-backpack",
+      "baseText": "backpack",
+      "semanticPriority": 90,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:object-chair",
+      "baseText": "chair",
+      "semanticPriority": 90,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:object-table",
+      "baseText": "table",
+      "semanticPriority": 90,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:count-single",
+      "baseText": "single subject",
+      "semanticPriority": 110,
+      "isNegative": false,
+      "conflictsWith": [
+        "subject:count-multiple"
+      ]
+    },
+    {
+      "id": "subject:count-multiple",
+      "baseText": "multiple subjects",
+      "semanticPriority": 110,
+      "isNegative": false,
+      "conflictsWith": [
+        "subject:count-single"
+      ]
+    },
+    {
+      "id": "subject:anatomy-deformed",
+      "baseText": "deformed anatomy",
+      "semanticPriority": 120,
+      "isNegative": true,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:extra-limbs",
+      "baseText": "extra limbs",
+      "semanticPriority": 120,
+      "isNegative": true,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:nsfw-big-breasts",
+      "baseText": "big breasts",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:nsfw-massive-breasts",
+      "baseText": "massive breasts",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:nsfw-huge-breasts",
+      "baseText": "huge breasts",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:nsfw-enormous-breasts",
+      "baseText": "enormous breasts",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:nsfw-gigantic-breasts",
+      "baseText": "gigantic breasts",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:nsfw-overflowing-breasts",
+      "baseText": "overflowing breasts",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:nsfw-perky-breasts",
+      "baseText": "perky breasts",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:nsfw-pendulous-breasts",
+      "baseText": "pendulous breasts",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:nsfw-lactating-breasts",
+      "baseText": "lactating breasts",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:nsfw-swollen-nipples",
+      "baseText": "swollen nipples",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:nsfw-puffy-nipples",
+      "baseText": "puffy nipples",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:nsfw-erect-nipples",
+      "baseText": "erect nipples",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:nsfw-wide-hips",
+      "baseText": "wide hips",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:nsfw-thick-thighs",
+      "baseText": "thick thighs",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:nsfw-plump-ass",
+      "baseText": "plump ass",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:nsfw-huge-ass",
+      "baseText": "huge ass",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:nsfw-bubble-butt",
+      "baseText": "bubble butt",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:nsfw-jiggly-buttocks",
+      "baseText": "jiggly buttocks",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:nsfw-toned-abs",
+      "baseText": "toned abs",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:nsfw-hourglass-figure",
+      "baseText": "hourglass figure",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:nsfw-slim-waist",
+      "baseText": "slim waist",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:nsfw-big-penis",
+      "baseText": "big penis",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:nsfw-huge-penis",
+      "baseText": "huge penis",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:nsfw-enormous-penis",
+      "baseText": "enormous penis",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:nsfw-veiny-cock",
+      "baseText": "veiny cock",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:nsfw-thick-shaft",
+      "baseText": "thick shaft",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:nsfw-uncut-foreskin",
+      "baseText": "uncut foreskin",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:nsfw-large-balls",
+      "baseText": "large balls",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:nsfw-heavy-balls",
+      "baseText": "heavy balls",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:nsfw-throbbing-erection",
+      "baseText": "throbbing erection",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:nsfw-precum-dripping",
+      "baseText": "precum dripping",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:nsfw-tight-pussy",
+      "baseText": "tight pussy",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:nsfw-wet-pussy",
+      "baseText": "wet pussy",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:nsfw-swollen-clit",
+      "baseText": "swollen clit",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:nsfw-puffy-labia",
+      "baseText": "puffy labia",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:nsfw-dripping-arousal",
+      "baseText": "dripping arousal",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:nsfw-gaping-hole",
+      "baseText": "gaping hole",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:nsfw-anal-gape",
+      "baseText": "anal gape",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:nsfw-tight-anus",
+      "baseText": "tight anus",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:nsfw-bushy-pubic-hair",
+      "baseText": "bushy pubic hair",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:nsfw-trimmed-pubic-hair",
+      "baseText": "trimmed pubic hair",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:nsfw-shaved-smooth",
+      "baseText": "shaved smooth",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:nsfw-visible-abs",
+      "baseText": "visible abs",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:nsfw-muscular-physique",
+      "baseText": "muscular physique",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:nsfw-oiled-skin",
+      "baseText": "oiled skin",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:nsfw-glistening-sweat",
+      "baseText": "glistening sweat",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:nsfw-cum-covered-body",
+      "baseText": "cum-covered body",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:nsfw-bukkake-face",
+      "baseText": "bukkake face",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:nsfw-creampie-overflow",
+      "baseText": "creampie overflow",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:nsfw-ahegao-expression",
+      "baseText": "ahegao expression",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:nsfw-tongue-out",
+      "baseText": "tongue out",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:nsfw-rolled-back-eyes",
+      "baseText": "rolled-back eyes",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:nsfw-blushing-cheeks",
+      "baseText": "blushing cheeks",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:nsfw-tears-of-pleasure",
+      "baseText": "tears of pleasure",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:nsfw-spread-legs",
+      "baseText": "spread legs",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:nsfw-arched-back",
+      "baseText": "arched back",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:nsfw-presenting-ass",
+      "baseText": "presenting ass",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:nsfw-on-all-fours",
+      "baseText": "on all fours",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:nsfw-bound-and-restrained",
+      "baseText": "bound and restrained",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:nsfw-collar-and-leash",
+      "baseText": "collar and leash",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:nsfw-nipple-clamps",
+      "baseText": "nipple clamps",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:nsfw-vaginal-juices-dripping",
+      "baseText": "vaginal juices dripping",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:nsfw-squirting-orgasm",
+      "baseText": "squirting orgasm",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:nsfw-tentacle-penetration",
+      "baseText": "tentacle penetration",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:nsfw-double-penetration",
+      "baseText": "double penetration",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:nsfw-anal-beads-inserted",
+      "baseText": "anal beads inserted",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:nsfw-vibrator-inside",
+      "baseText": "vibrator inside",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:nsfw-exposed-genitalia",
+      "baseText": "exposed genitalia",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:nsfw-spread-labia",
+      "baseText": "spread labia",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:nsfw-erect-clitoris",
+      "baseText": "erect clitoris",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:nsfw-bulging-belly-inflation",
+      "baseText": "bulging belly (inflation)",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:nsfw-living-latex-encasement",
+      "baseText": "living latex encasement",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:nsfw-shiny-latex-suit",
+      "baseText": "shiny latex suit",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:nsfw-fishnet-stockings",
+      "baseText": "fishnet stockings",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:nsfw-crotchless-panties",
+      "baseText": "crotchless panties",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:nsfw-torn-clothing",
+      "baseText": "torn clothing",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:nsfw-ripped-stockings",
+      "baseText": "ripped stockings",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:nsfw-visible-cameltoe",
+      "baseText": "visible cameltoe",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:nsfw-erect-futanari-penis",
+      "baseText": "erect futanari penis",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:nsfw-futanari-balls",
+      "baseText": "futanari balls",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:nsfw-hyper-proportions",
+      "baseText": "hyper proportions",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:nsfw-exaggerated-curves",
+      "baseText": "exaggerated curves",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:nsfw-monster-sized-genitals",
+      "baseText": "monster-sized genitals",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:nsfw-cum-inflation",
+      "baseText": "cum inflation",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:nsfw-pregnant-belly",
+      "baseText": "pregnant belly",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:nsfw-milky-breasts-leaking",
+      "baseText": "milky breasts leaking",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:person-teacher",
+      "baseText": "person teacher",
+      "semanticPriority": 100,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:person-chef",
+      "baseText": "person chef",
+      "semanticPriority": 100,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:person-pilot",
+      "baseText": "person pilot",
+      "semanticPriority": 100,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:person-merchant",
+      "baseText": "person merchant",
+      "semanticPriority": 100,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:person-librarian",
+      "baseText": "person librarian",
+      "semanticPriority": 100,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:person-priest",
+      "baseText": "person priest",
+      "semanticPriority": 100,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:person-mercenary",
+      "baseText": "person mercenary",
+      "semanticPriority": 100,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:person-noble",
+      "baseText": "person noble",
+      "semanticPriority": 100,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:person-archaeologist",
+      "baseText": "person archaeologist",
+      "semanticPriority": 100,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:animal-wolfhound",
+      "baseText": "animal wolfhound",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:animal-panther",
+      "baseText": "animal panther",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:animal-lynx",
+      "baseText": "animal lynx",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:animal-otter",
+      "baseText": "animal otter",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:animal-raccoon",
+      "baseText": "animal raccoon",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:animal-boar",
+      "baseText": "animal boar",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:animal-goat",
+      "baseText": "animal goat",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:animal-ram",
+      "baseText": "animal ram",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:animal-frog",
+      "baseText": "animal frog",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:animal-crow",
+      "baseText": "animal crow",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:character-bard",
+      "baseText": "character bard",
+      "semanticPriority": 100,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:character-monk",
+      "baseText": "character monk",
+      "semanticPriority": 100,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:character-guardian",
+      "baseText": "character guardian",
+      "semanticPriority": 100,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:character-commander",
+      "baseText": "character commander",
+      "semanticPriority": 100,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:character-alchemist",
+      "baseText": "character alchemist",
+      "semanticPriority": 100,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:character-hunter",
+      "baseText": "character hunter",
+      "semanticPriority": 100,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:character-scout",
+      "baseText": "character scout",
+      "semanticPriority": 100,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:character-android",
+      "baseText": "character android",
+      "semanticPriority": 100,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:character-time-traveler",
+      "baseText": "character time traveler",
+      "semanticPriority": 100,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:character-space-pilot",
+      "baseText": "character space pilot",
+      "semanticPriority": 100,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:creature-mermaid",
+      "baseText": "creature mermaid",
+      "semanticPriority": 98,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:creature-leviathan",
+      "baseText": "creature leviathan",
+      "semanticPriority": 98,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:creature-wraith",
+      "baseText": "creature wraith",
+      "semanticPriority": 98,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:creature-golem",
+      "baseText": "creature golem",
+      "semanticPriority": 98,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:creature-sphinx",
+      "baseText": "creature sphinx",
+      "semanticPriority": 98,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:creature-krampus",
+      "baseText": "creature krampus",
+      "semanticPriority": 98,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:creature-kitsune",
+      "baseText": "creature kitsune",
+      "semanticPriority": 98,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:creature-djinn",
+      "baseText": "creature djinn",
+      "semanticPriority": 98,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:creature-imp",
+      "baseText": "creature imp",
+      "semanticPriority": 98,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:creature-lich",
+      "baseText": "creature lich",
+      "semanticPriority": 98,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:object-ship",
+      "baseText": "object ship",
+      "semanticPriority": 90,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:object-airship",
+      "baseText": "object airship",
+      "semanticPriority": 90,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:object-carriage",
+      "baseText": "object carriage",
+      "semanticPriority": 90,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:object-telescope",
+      "baseText": "object telescope",
+      "semanticPriority": 90,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:object-map",
+      "baseText": "object map",
+      "semanticPriority": 90,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:object-compass",
+      "baseText": "object compass",
+      "semanticPriority": 90,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:object-dagger",
+      "baseText": "object dagger",
+      "semanticPriority": 90,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:object-guitar",
+      "baseText": "object guitar",
+      "semanticPriority": 90,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:object-camera",
+      "baseText": "object camera",
+      "semanticPriority": 90,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:object-clock",
+      "baseText": "object clock",
+      "semanticPriority": 90,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:count-pair",
+      "baseText": "count pair",
+      "semanticPriority": 110,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:count-duo",
+      "baseText": "count duo",
+      "semanticPriority": 110,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:count-trio",
+      "baseText": "count trio",
+      "semanticPriority": 110,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:count-crowd",
+      "baseText": "count crowd",
+      "semanticPriority": 110,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:count-group",
+      "baseText": "count group",
+      "semanticPriority": 110,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:count-solo",
+      "baseText": "count solo",
+      "semanticPriority": 110,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:count-ensemble",
+      "baseText": "count ensemble",
+      "semanticPriority": 110,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:count-family",
+      "baseText": "count family",
+      "semanticPriority": 110,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:count-squad",
+      "baseText": "count squad",
+      "semanticPriority": 110,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:count-army",
+      "baseText": "count army",
+      "semanticPriority": 110,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:anatomy-missing-limb",
+      "baseText": "anatomy missing limb",
+      "semanticPriority": 120,
+      "isNegative": true,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:anatomy-extra-fingers",
+      "baseText": "anatomy extra fingers",
+      "semanticPriority": 120,
+      "isNegative": true,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:anatomy-bad-hands",
+      "baseText": "anatomy bad hands",
+      "semanticPriority": 120,
+      "isNegative": true,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:anatomy-distorted-face",
+      "baseText": "anatomy distorted face",
+      "semanticPriority": 120,
+      "isNegative": true,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:anatomy-asymmetric-eyes",
+      "baseText": "anatomy asymmetric eyes",
+      "semanticPriority": 120,
+      "isNegative": true,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:anatomy-misaligned-jaw",
+      "baseText": "anatomy misaligned jaw",
+      "semanticPriority": 120,
+      "isNegative": true,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:anatomy-broken-legs",
+      "baseText": "anatomy broken legs",
+      "semanticPriority": 120,
+      "isNegative": true,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:anatomy-elongated-neck",
+      "baseText": "anatomy elongated neck",
+      "semanticPriority": 120,
+      "isNegative": true,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:anatomy-melted-features",
+      "baseText": "anatomy melted features",
+      "semanticPriority": 120,
+      "isNegative": true,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:anatomy-warped-proportions",
+      "baseText": "anatomy warped proportions",
+      "semanticPriority": 120,
+      "isNegative": true,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:nsfw-nude",
+      "baseText": "nsfw nude",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:nsfw-topless",
+      "baseText": "nsfw topless",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:nsfw-bottomless",
+      "baseText": "nsfw bottomless",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:nsfw-open-shirt",
+      "baseText": "nsfw open shirt",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:nsfw-open-jacket",
+      "baseText": "nsfw open jacket",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:nsfw-lingerie",
+      "baseText": "nsfw lingerie",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:nsfw-sheer-fabric",
+      "baseText": "nsfw sheer fabric",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:nsfw-wet-clothes",
+      "baseText": "nsfw wet clothes",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:nsfw-bondage-rope",
+      "baseText": "nsfw bondage rope",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:nsfw-sensual-pose",
+      "baseText": "nsfw sensual pose",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:anatomy-twisted-wrists",
+      "baseText": "anatomy twisted wrists",
+      "semanticPriority": 120,
+      "isNegative": true,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:anatomy-collapsed-nose",
+      "baseText": "anatomy collapsed nose",
+      "semanticPriority": 120,
+      "isNegative": true,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:anatomy-misplaced-eyes",
+      "baseText": "anatomy misplaced eyes",
+      "semanticPriority": 120,
+      "isNegative": true,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:anatomy-uneven-shoulders",
+      "baseText": "anatomy uneven shoulders",
+      "semanticPriority": 120,
+      "isNegative": true,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:anatomy-dislocated-hips",
+      "baseText": "anatomy dislocated hips",
+      "semanticPriority": 120,
+      "isNegative": true,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:anatomy-floating-limbs",
+      "baseText": "anatomy floating limbs",
+      "semanticPriority": 120,
+      "isNegative": true,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:anatomy-fused-fingers",
+      "baseText": "anatomy fused fingers",
+      "semanticPriority": 120,
+      "isNegative": true,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:anatomy-skewed-spine",
+      "baseText": "anatomy skewed spine",
+      "semanticPriority": 120,
+      "isNegative": true,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:anatomy-warped-torso",
+      "baseText": "anatomy warped torso",
+      "semanticPriority": 120,
+      "isNegative": true,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:anatomy-incorrect-perspective",
+      "baseText": "anatomy incorrect perspective",
+      "semanticPriority": 120,
+      "isNegative": true,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:animal-alpaca",
+      "baseText": "animal alpaca",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:animal-llama",
+      "baseText": "animal llama",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:animal-penguin",
+      "baseText": "animal penguin",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:animal-octopus",
+      "baseText": "animal octopus",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:animal-seal",
+      "baseText": "animal seal",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:animal-walrus",
+      "baseText": "animal walrus",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:animal-rhinoceros",
+      "baseText": "animal rhinoceros",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:animal-hippo",
+      "baseText": "animal hippo",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:animal-camel",
+      "baseText": "animal camel",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:animal-peacock",
+      "baseText": "animal peacock",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:character-druid",
+      "baseText": "character druid",
+      "semanticPriority": 100,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:character-cleric",
+      "baseText": "character cleric",
+      "semanticPriority": 100,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:character-ranger",
+      "baseText": "character ranger",
+      "semanticPriority": 100,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:character-gunslinger",
+      "baseText": "character gunslinger",
+      "semanticPriority": 100,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:character-rebel",
+      "baseText": "character rebel",
+      "semanticPriority": 100,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:character-nomad",
+      "baseText": "character nomad",
+      "semanticPriority": 100,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:character-oracle",
+      "baseText": "character oracle",
+      "semanticPriority": 100,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:character-summoner",
+      "baseText": "character summoner",
+      "semanticPriority": 100,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:character-necromancer",
+      "baseText": "character necromancer",
+      "semanticPriority": 100,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:character-artificer",
+      "baseText": "character artificer",
+      "semanticPriority": 100,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:count-quartet",
+      "baseText": "count quartet",
+      "semanticPriority": 110,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:count-quintet",
+      "baseText": "count quintet",
+      "semanticPriority": 110,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:count-horde",
+      "baseText": "count horde",
+      "semanticPriority": 110,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:count-pack",
+      "baseText": "count pack",
+      "semanticPriority": 110,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:count-cluster",
+      "baseText": "count cluster",
+      "semanticPriority": 110,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:count-throng",
+      "baseText": "count throng",
+      "semanticPriority": 110,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:count-mob",
+      "baseText": "count mob",
+      "semanticPriority": 110,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:count-caravan",
+      "baseText": "count caravan",
+      "semanticPriority": 110,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:count-fleet",
+      "baseText": "count fleet",
+      "semanticPriority": 110,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:count-party",
+      "baseText": "count party",
+      "semanticPriority": 110,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:creature-banshee",
+      "baseText": "creature banshee",
+      "semanticPriority": 98,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:creature-kelpie",
+      "baseText": "creature kelpie",
+      "semanticPriority": 98,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:creature-manticore",
+      "baseText": "creature manticore",
+      "semanticPriority": 98,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:creature-roc",
+      "baseText": "creature roc",
+      "semanticPriority": 98,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:creature-naga",
+      "baseText": "creature naga",
+      "semanticPriority": 98,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:creature-siren",
+      "baseText": "creature siren",
+      "semanticPriority": 98,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:creature-cyclops",
+      "baseText": "creature cyclops",
+      "semanticPriority": 98,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:creature-dryad",
+      "baseText": "creature dryad",
+      "semanticPriority": 98,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:creature-satyr",
+      "baseText": "creature satyr",
+      "semanticPriority": 98,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:creature-harpy",
+      "baseText": "creature harpy",
+      "semanticPriority": 98,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:nsfw-choker",
+      "baseText": "nsfw choker",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:nsfw-bare-shoulders",
+      "baseText": "nsfw bare shoulders",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:nsfw-sideboob",
+      "baseText": "nsfw sideboob",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:nsfw-underboob",
+      "baseText": "nsfw underboob",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:nsfw-see-through",
+      "baseText": "nsfw see through",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:nsfw-seductive-gaze",
+      "baseText": "nsfw seductive gaze",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:nsfw-provocative-pose",
+      "baseText": "nsfw provocative pose",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:nsfw-lace-underwear",
+      "baseText": "nsfw lace underwear",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:nsfw-body-chain",
+      "baseText": "nsfw body chain",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:nsfw-stockings",
+      "baseText": "nsfw stockings",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:object-potion",
+      "baseText": "object potion",
+      "semanticPriority": 90,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:object-chalice",
+      "baseText": "object chalice",
+      "semanticPriority": 90,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:object-banner",
+      "baseText": "object banner",
+      "semanticPriority": 90,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:object-drum",
+      "baseText": "object drum",
+      "semanticPriority": 90,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:object-quill",
+      "baseText": "object quill",
+      "semanticPriority": 90,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:object-flask",
+      "baseText": "object flask",
+      "semanticPriority": 90,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:object-mask",
+      "baseText": "object mask",
+      "semanticPriority": 90,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:object-orb",
+      "baseText": "object orb",
+      "semanticPriority": 90,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:object-statue",
+      "baseText": "object statue",
+      "semanticPriority": 90,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:object-goblet",
+      "baseText": "object goblet",
+      "semanticPriority": 90,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:person-diplomat",
+      "baseText": "person diplomat",
+      "semanticPriority": 100,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:person-astronaut",
+      "baseText": "person astronaut",
+      "semanticPriority": 100,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:person-botanist",
+      "baseText": "person botanist",
+      "semanticPriority": 100,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:person-paramedic",
+      "baseText": "person paramedic",
+      "semanticPriority": 100,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:person-judge",
+      "baseText": "person judge",
+      "semanticPriority": 100,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:person-sailor",
+      "baseText": "person sailor",
+      "semanticPriority": 100,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:person-blacksmith",
+      "baseText": "person blacksmith",
+      "semanticPriority": 100,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:person-tailor",
+      "baseText": "person tailor",
+      "semanticPriority": 100,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:person-carpenter",
+      "baseText": "person carpenter",
+      "semanticPriority": 100,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "subject:person-beekeeper",
+      "baseText": "person beekeeper",
+      "semanticPriority": 100,
+      "isNegative": false,
+      "conflictsWith": []
+    }
+  ]
+}

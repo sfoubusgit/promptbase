@@ -1,0 +1,1860 @@
+{
+  "category": "effects",
+  "attributes": [
+    {
+      "id": "effects:atmospheric-fog",
+      "baseText": "fog",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:atmospheric-mist",
+      "baseText": "mist",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:atmospheric-haze",
+      "baseText": "haze",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:atmospheric-smoke",
+      "baseText": "smoke",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:atmospheric-smog",
+      "baseText": "smog",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:atmospheric-steam",
+      "baseText": "steam",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:atmospheric-dust",
+      "baseText": "dust",
+      "semanticPriority": 60,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:atmospheric-sandstorm",
+      "baseText": "sandstorm",
+      "semanticPriority": 70,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:atmospheric-snowfall",
+      "baseText": "snowfall",
+      "semanticPriority": 70,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:atmospheric-rain",
+      "baseText": "rain",
+      "semanticPriority": 70,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:atmospheric-drizzle",
+      "baseText": "drizzle",
+      "semanticPriority": 68,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:atmospheric-heavy-rain",
+      "baseText": "heavy rain",
+      "semanticPriority": 72,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:atmospheric-thunderstorm",
+      "baseText": "thunderstorm atmosphere",
+      "semanticPriority": 75,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:atmospheric-volumetric-light-rays",
+      "baseText": "volumetric light rays",
+      "semanticPriority": 75,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:atmospheric-god-rays",
+      "baseText": "god rays",
+      "semanticPriority": 75,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:atmospheric-light-shafts",
+      "baseText": "light shafts",
+      "semanticPriority": 75,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:atmospheric-glow",
+      "baseText": "atmospheric glow",
+      "semanticPriority": 70,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:atmospheric-floating-particles",
+      "baseText": "floating particles",
+      "semanticPriority": 60,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:atmospheric-airborne-embers",
+      "baseText": "airborne embers",
+      "semanticPriority": 60,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:atmospheric-pollen",
+      "baseText": "pollen or spores in air",
+      "semanticPriority": 60,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:weather-sunny",
+      "baseText": "sunny weather",
+      "semanticPriority": 60,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:weather-clear-skies",
+      "baseText": "clear skies",
+      "semanticPriority": 60,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:weather-partly-cloudy",
+      "baseText": "partly cloudy",
+      "semanticPriority": 62,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:weather-overcast",
+      "baseText": "overcast skies",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:weather-cloudy",
+      "baseText": "cloudy weather",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:weather-light-rain",
+      "baseText": "light rain",
+      "semanticPriority": 68,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:weather-heavy-rain",
+      "baseText": "heavy rain",
+      "semanticPriority": 72,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:weather-thunderstorm",
+      "baseText": "thunderstorm",
+      "semanticPriority": 75,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:weather-lightning",
+      "baseText": "lightning",
+      "semanticPriority": 76,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:weather-snow",
+      "baseText": "snow",
+      "semanticPriority": 70,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:weather-snowstorm",
+      "baseText": "snowstorm",
+      "semanticPriority": 73,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:weather-hail",
+      "baseText": "hail",
+      "semanticPriority": 74,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:weather-foggy",
+      "baseText": "foggy weather",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:weather-misty",
+      "baseText": "misty weather",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:weather-windy",
+      "baseText": "windy conditions",
+      "semanticPriority": 67,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:weather-strong-winds",
+      "baseText": "strong winds",
+      "semanticPriority": 70,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:weather-sandstorm",
+      "baseText": "sandstorm",
+      "semanticPriority": 72,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:weather-blizzard",
+      "baseText": "blizzard",
+      "semanticPriority": 75,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:weather-humid",
+      "baseText": "humid weather",
+      "semanticPriority": 63,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:weather-cold",
+      "baseText": "cold weather",
+      "semanticPriority": 64,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:particle-dust",
+      "baseText": "dust particles",
+      "semanticPriority": 60,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:particle-floating-dust",
+      "baseText": "floating dust",
+      "semanticPriority": 60,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:particle-sand",
+      "baseText": "sand particles",
+      "semanticPriority": 60,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:particle-ash",
+      "baseText": "ash particles",
+      "semanticPriority": 60,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:particle-snow",
+      "baseText": "snow particles",
+      "semanticPriority": 60,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:particle-rain-droplets",
+      "baseText": "rain droplets",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:particle-water-spray",
+      "baseText": "water spray",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:particle-splashing-water",
+      "baseText": "splashing water",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:particle-mud-splatter",
+      "baseText": "mud splatter",
+      "semanticPriority": 62,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:particle-sparks",
+      "baseText": "sparks",
+      "semanticPriority": 60,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:particle-embers",
+      "baseText": "glowing embers",
+      "semanticPriority": 60,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:particle-smoke",
+      "baseText": "smoke particles",
+      "semanticPriority": 60,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:particle-steam",
+      "baseText": "steam particles",
+      "semanticPriority": 60,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:particle-fire-sparks",
+      "baseText": "fire sparks",
+      "semanticPriority": 62,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:particle-light",
+      "baseText": "light particles",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:particle-floating-debris",
+      "baseText": "floating debris",
+      "semanticPriority": 60,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:particle-shattered-fragments",
+      "baseText": "shattered fragments",
+      "semanticPriority": 63,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:particle-flying-leaves",
+      "baseText": "flying leaves",
+      "semanticPriority": 60,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:particle-pollen",
+      "baseText": "pollen particles",
+      "semanticPriority": 60,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:particle-energy",
+      "baseText": "energy particles",
+      "semanticPriority": 70,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:fire-fire",
+      "baseText": "fire",
+      "semanticPriority": 75,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:fire-flames",
+      "baseText": "flames",
+      "semanticPriority": 75,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:fire-open-blaze",
+      "baseText": "open blaze",
+      "semanticPriority": 76,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:fire-torch",
+      "baseText": "torch fire",
+      "semanticPriority": 74,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:fire-bonfire",
+      "baseText": "bonfire",
+      "semanticPriority": 75,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:fire-explosion",
+      "baseText": "explosion",
+      "semanticPriority": 80,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:fire-fireball",
+      "baseText": "fireball",
+      "semanticPriority": 78,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:fire-sparks",
+      "baseText": "fire sparks",
+      "semanticPriority": 72,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:fire-embers",
+      "baseText": "glowing embers",
+      "semanticPriority": 70,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:fire-smoke",
+      "baseText": "smoke from fire",
+      "semanticPriority": 68,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:fire-plasma",
+      "baseText": "plasma energy",
+      "semanticPriority": 82,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:fire-electric-arcs",
+      "baseText": "electric arcs",
+      "semanticPriority": 80,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:fire-lightning-energy",
+      "baseText": "lightning energy",
+      "semanticPriority": 81,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:fire-energy-beams",
+      "baseText": "energy beams",
+      "semanticPriority": 83,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:fire-energy-blasts",
+      "baseText": "energy blasts",
+      "semanticPriority": 84,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:fire-magical-energy",
+      "baseText": "magical energy glow",
+      "semanticPriority": 85,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:fire-fiery-aura",
+      "baseText": "fiery aura",
+      "semanticPriority": 77,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:fire-heat-distortion",
+      "baseText": "heat distortion",
+      "semanticPriority": 73,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:fire-molten-lava",
+      "baseText": "molten lava glow",
+      "semanticPriority": 79,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:fire-burning-ruins",
+      "baseText": "burning ruins",
+      "semanticPriority": 76,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:water-calm",
+      "baseText": "calm water",
+      "semanticPriority": 60,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:water-rippling",
+      "baseText": "rippling water",
+      "semanticPriority": 62,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:water-waves",
+      "baseText": "waves",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:water-ocean-waves",
+      "baseText": "ocean waves",
+      "semanticPriority": 67,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:water-splashing",
+      "baseText": "splashing water",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:water-spray",
+      "baseText": "water spray",
+      "semanticPriority": 64,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:water-rain-hitting",
+      "baseText": "rain hitting water",
+      "semanticPriority": 66,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:water-droplets-surface",
+      "baseText": "droplets on surface",
+      "semanticPriority": 63,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:water-flowing-river",
+      "baseText": "flowing river water",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:water-waterfall",
+      "baseText": "waterfall",
+      "semanticPriority": 70,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:water-whitewater-rapids",
+      "baseText": "whitewater rapids",
+      "semanticPriority": 72,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:water-foam-bubbles",
+      "baseText": "foam and bubbles",
+      "semanticPriority": 64,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:water-underwater-distortion",
+      "baseText": "underwater distortion",
+      "semanticPriority": 68,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:water-reflections",
+      "baseText": "water reflections",
+      "semanticPriority": 70,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:water-caustic-light",
+      "baseText": "caustic light patterns",
+      "semanticPriority": 72,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:water-mist",
+      "baseText": "water mist",
+      "semanticPriority": 63,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:water-sea-spray",
+      "baseText": "sea spray",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:water-flooded",
+      "baseText": "flooded area",
+      "semanticPriority": 68,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:water-dripping",
+      "baseText": "dripping water",
+      "semanticPriority": 62,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:water-submerged",
+      "baseText": "submerged effects",
+      "semanticPriority": 70,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:light-lens-flare",
+      "baseText": "lens flare",
+      "semanticPriority": 70,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:light-bloom",
+      "baseText": "light bloom",
+      "semanticPriority": 72,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:light-volumetric",
+      "baseText": "volumetric lighting",
+      "semanticPriority": 75,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:light-god-rays",
+      "baseText": "god rays",
+      "semanticPriority": 75,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:light-shafts",
+      "baseText": "light shafts",
+      "semanticPriority": 75,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:light-soft-glow",
+      "baseText": "soft glow",
+      "semanticPriority": 70,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:light-halo-glow",
+      "baseText": "halo glow",
+      "semanticPriority": 72,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:light-sun-glare",
+      "baseText": "sun glare",
+      "semanticPriority": 73,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:light-backlit-glow",
+      "baseText": "backlit glow",
+      "semanticPriority": 74,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:light-rim-light",
+      "baseText": "rim light effect",
+      "semanticPriority": 73,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:light-scattering",
+      "baseText": "light scattering",
+      "semanticPriority": 72,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:light-atmospheric-glow",
+      "baseText": "atmospheric glow",
+      "semanticPriority": 70,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:light-chromatic-aberration",
+      "baseText": "chromatic aberration",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:light-diffraction",
+      "baseText": "light diffraction",
+      "semanticPriority": 68,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:light-bokeh-highlights",
+      "baseText": "bokeh highlights",
+      "semanticPriority": 71,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:light-caustic-patterns",
+      "baseText": "caustic light patterns",
+      "semanticPriority": 72,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:light-refraction",
+      "baseText": "refraction effects",
+      "semanticPriority": 70,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:light-reflection-glare",
+      "baseText": "reflection glare",
+      "semanticPriority": 71,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:light-prismatic",
+      "baseText": "prismatic light",
+      "semanticPriority": 73,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:light-optical-distortion",
+      "baseText": "optical distortion",
+      "semanticPriority": 68,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:visual-artifacts",
+      "baseText": "visual artifacts",
+      "semanticPriority": 120,
+      "isNegative": true,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:optical-chromatic-aberration",
+      "baseText": "chromatic aberration",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:optical-lens-distortion",
+      "baseText": "lens distortion",
+      "semanticPriority": 63,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:optical-vignette",
+      "baseText": "vignette",
+      "semanticPriority": 60,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:optical-barrel-distortion",
+      "baseText": "barrel distortion",
+      "semanticPriority": 62,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:optical-pincushion-distortion",
+      "baseText": "pincushion distortion",
+      "semanticPriority": 62,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:optical-fisheye-distortion",
+      "baseText": "fish-eye distortion",
+      "semanticPriority": 64,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:optical-bloom",
+      "baseText": "bloom",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:optical-glare",
+      "baseText": "glare",
+      "semanticPriority": 66,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:optical-light-streaks",
+      "baseText": "light streaks",
+      "semanticPriority": 67,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:optical-lens-flare-overlay",
+      "baseText": "lens flare overlay",
+      "semanticPriority": 68,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:optical-soft-focus",
+      "baseText": "soft focus",
+      "semanticPriority": 60,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:optical-diffusion",
+      "baseText": "diffusion effect",
+      "semanticPriority": 64,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:optical-prismatic-color",
+      "baseText": "prismatic color shift",
+      "semanticPriority": 69,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:optical-glow-highlights",
+      "baseText": "glow highlights",
+      "semanticPriority": 70,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:optical-halo",
+      "baseText": "halo effect",
+      "semanticPriority": 71,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:optical-bokeh-overlay",
+      "baseText": "bokeh overlay",
+      "semanticPriority": 72,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:optical-double-vision",
+      "baseText": "double vision effect",
+      "semanticPriority": 61,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:optical-motion-blur-overlay",
+      "baseText": "motion blur overlay",
+      "semanticPriority": 63,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:optical-radial-blur",
+      "baseText": "radial blur",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:optical-zoom-blur",
+      "baseText": "zoom blur",
+      "semanticPriority": 64,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:atmospheric-foggy",
+      "baseText": "atmospheric foggy",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:atmospheric-misty",
+      "baseText": "atmospheric misty",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:atmospheric-hazy",
+      "baseText": "atmospheric hazy",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:atmospheric-smoky",
+      "baseText": "atmospheric smoky",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:atmospheric-dusty",
+      "baseText": "atmospheric dusty",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:atmospheric-pollution",
+      "baseText": "atmospheric pollution",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:atmospheric-humidity",
+      "baseText": "atmospheric humidity",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:atmospheric-aurora",
+      "baseText": "atmospheric aurora",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:atmospheric-heat-haze",
+      "baseText": "atmospheric heat haze",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:weather-rain",
+      "baseText": "weather rain",
+      "semanticPriority": 60,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:weather-storm",
+      "baseText": "weather storm",
+      "semanticPriority": 60,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:weather-wind",
+      "baseText": "weather wind",
+      "semanticPriority": 60,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:weather-fog",
+      "baseText": "weather fog",
+      "semanticPriority": 60,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:weather-drizzle",
+      "baseText": "weather drizzle",
+      "semanticPriority": 60,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:weather-thunder",
+      "baseText": "weather thunder",
+      "semanticPriority": 60,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:particles-sparks",
+      "baseText": "particles sparks",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:particles-dust",
+      "baseText": "particles dust",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:particles-pollen",
+      "baseText": "particles pollen",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:particles-embers",
+      "baseText": "particles embers",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:particles-ash",
+      "baseText": "particles ash",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:particles-glitter",
+      "baseText": "particles glitter",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:particles-confetti",
+      "baseText": "particles confetti",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:particles-bubbles",
+      "baseText": "particles bubbles",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:particles-leaves",
+      "baseText": "particles leaves",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:particles-snowflakes",
+      "baseText": "particles snowflakes",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:fire-glow",
+      "baseText": "fire glow",
+      "semanticPriority": 75,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:energy-lightning",
+      "baseText": "energy lightning",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:energy-plasma",
+      "baseText": "energy plasma",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:energy-aura",
+      "baseText": "energy aura",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:energy-neon",
+      "baseText": "energy neon",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:water-splash",
+      "baseText": "water splash",
+      "semanticPriority": 60,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:water-ripple",
+      "baseText": "water ripple",
+      "semanticPriority": 60,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:water-droplets",
+      "baseText": "water droplets",
+      "semanticPriority": 60,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:water-underwater",
+      "baseText": "water underwater",
+      "semanticPriority": 60,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:water-foam",
+      "baseText": "water foam",
+      "semanticPriority": 60,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:water-reflection",
+      "baseText": "water reflection",
+      "semanticPriority": 60,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:water-rain",
+      "baseText": "water rain",
+      "semanticPriority": 60,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:water-puddle",
+      "baseText": "water puddle",
+      "semanticPriority": 60,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:light-glow",
+      "baseText": "light glow",
+      "semanticPriority": 70,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:light-ray",
+      "baseText": "light ray",
+      "semanticPriority": 70,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:light-prism",
+      "baseText": "light prism",
+      "semanticPriority": 70,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:light-halo",
+      "baseText": "light halo",
+      "semanticPriority": 70,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:light-reflection",
+      "baseText": "light reflection",
+      "semanticPriority": 70,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:light-streaks",
+      "baseText": "light streaks",
+      "semanticPriority": 70,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:artifact-chromatic",
+      "baseText": "artifact chromatic",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:artifact-glitch",
+      "baseText": "artifact glitch",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:artifact-aberration",
+      "baseText": "artifact aberration",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:artifact-film-damage",
+      "baseText": "artifact film damage",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:artifact-noise",
+      "baseText": "artifact noise",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:artifact-ghosting",
+      "baseText": "artifact ghosting",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:artifact-banding",
+      "baseText": "artifact banding",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:artifact-posterization",
+      "baseText": "artifact posterization",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:artifact-pixelation",
+      "baseText": "artifact pixelation",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:artifact-vhs",
+      "baseText": "artifact vhs",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:artifact-scanlines",
+      "baseText": "artifact scanlines",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:artifact-interlacing",
+      "baseText": "artifact interlacing",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:artifact-color-fringe",
+      "baseText": "artifact color fringe",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:artifact-jitter",
+      "baseText": "artifact jitter",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:artifact-dropouts",
+      "baseText": "artifact dropouts",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:artifact-tracking-errors",
+      "baseText": "artifact tracking errors",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:artifact-blockiness",
+      "baseText": "artifact blockiness",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:artifact-tearing",
+      "baseText": "artifact tearing",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:artifact-frame-skip",
+      "baseText": "artifact frame skip",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:artifact-static",
+      "baseText": "artifact static",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:atmospheric-aurora-ribbons",
+      "baseText": "atmospheric aurora ribbons",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:atmospheric-dust-motes",
+      "baseText": "atmospheric dust motes",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:atmospheric-steam-clouds",
+      "baseText": "atmospheric steam clouds",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:atmospheric-pollen-drift",
+      "baseText": "atmospheric pollen drift",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:atmospheric-floating-embers",
+      "baseText": "atmospheric floating embers",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:atmospheric-rain-curtain",
+      "baseText": "atmospheric rain curtain",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:atmospheric-fog-banks",
+      "baseText": "atmospheric fog banks",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:atmospheric-smoke-wisps",
+      "baseText": "atmospheric smoke wisps",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:atmospheric-glow-haze",
+      "baseText": "atmospheric glow haze",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:atmospheric-storm-clouds",
+      "baseText": "atmospheric storm clouds",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:fire-blue-flame",
+      "baseText": "fire blue flame",
+      "semanticPriority": 75,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:fire-torchlight",
+      "baseText": "fire torchlight",
+      "semanticPriority": 75,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:fire-magical-flare",
+      "baseText": "fire magical flare",
+      "semanticPriority": 75,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:fire-plasma-burst",
+      "baseText": "fire plasma burst",
+      "semanticPriority": 75,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:fire-energy-beam",
+      "baseText": "fire energy beam",
+      "semanticPriority": 75,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:fire-lava-glow",
+      "baseText": "fire lava glow",
+      "semanticPriority": 75,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:fire-ember-shower",
+      "baseText": "fire ember shower",
+      "semanticPriority": 75,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:fire-smoke-plume",
+      "baseText": "fire smoke plume",
+      "semanticPriority": 75,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:fire-flare-ring",
+      "baseText": "fire flare ring",
+      "semanticPriority": 75,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:fire-phoenix-flare",
+      "baseText": "fire phoenix flare",
+      "semanticPriority": 75,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:light-spill",
+      "baseText": "light spill",
+      "semanticPriority": 70,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:light-bleed",
+      "baseText": "light bleed",
+      "semanticPriority": 70,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:light-ghosting",
+      "baseText": "light ghosting",
+      "semanticPriority": 70,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:light-sparkle",
+      "baseText": "light sparkle",
+      "semanticPriority": 70,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:light-flare-streaks",
+      "baseText": "light flare streaks",
+      "semanticPriority": 70,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:light-iris-glare",
+      "baseText": "light iris glare",
+      "semanticPriority": 70,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:light-lens-ghost",
+      "baseText": "light lens ghost",
+      "semanticPriority": 70,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:light-hotspot",
+      "baseText": "light hotspot",
+      "semanticPriority": 70,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:light-glint",
+      "baseText": "light glint",
+      "semanticPriority": 70,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:light-starburst",
+      "baseText": "light starburst",
+      "semanticPriority": 70,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:particle-glitter",
+      "baseText": "particle glitter",
+      "semanticPriority": 60,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:particle-confetti",
+      "baseText": "particle confetti",
+      "semanticPriority": 60,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:particle-bubbles",
+      "baseText": "particle bubbles",
+      "semanticPriority": 60,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:particle-snowflakes",
+      "baseText": "particle snowflakes",
+      "semanticPriority": 60,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:particle-leaf-fall",
+      "baseText": "particle leaf fall",
+      "semanticPriority": 60,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:particle-ember-sparks",
+      "baseText": "particle ember sparks",
+      "semanticPriority": 60,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:particle-ash-fall",
+      "baseText": "particle ash fall",
+      "semanticPriority": 60,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:particle-rain-mist",
+      "baseText": "particle rain mist",
+      "semanticPriority": 60,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:particle-spray",
+      "baseText": "particle spray",
+      "semanticPriority": 60,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:particle-dust-swirl",
+      "baseText": "particle dust swirl",
+      "semanticPriority": 60,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:water-tidal-pool",
+      "baseText": "water tidal pool",
+      "semanticPriority": 60,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:water-micro-splashes",
+      "baseText": "water micro splashes",
+      "semanticPriority": 60,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:water-glass-surface",
+      "baseText": "water glass surface",
+      "semanticPriority": 60,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:water-oil-slick",
+      "baseText": "water oil slick",
+      "semanticPriority": 60,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:water-ice-crystals",
+      "baseText": "water ice crystals",
+      "semanticPriority": 60,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:water-condensation",
+      "baseText": "water condensation",
+      "semanticPriority": 60,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:water-droplet-trails",
+      "baseText": "water droplet trails",
+      "semanticPriority": 60,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:water-splash-crown",
+      "baseText": "water splash crown",
+      "semanticPriority": 60,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:water-steam",
+      "baseText": "water steam",
+      "semanticPriority": 60,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:water-geyser",
+      "baseText": "water geyser",
+      "semanticPriority": 60,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:weather-sunshowers",
+      "baseText": "weather sunshowers",
+      "semanticPriority": 60,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:weather-ice-rain",
+      "baseText": "weather ice rain",
+      "semanticPriority": 60,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:weather-freezing-fog",
+      "baseText": "weather freezing fog",
+      "semanticPriority": 60,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:weather-dust-storm",
+      "baseText": "weather dust storm",
+      "semanticPriority": 60,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:weather-microburst",
+      "baseText": "weather microburst",
+      "semanticPriority": 60,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:weather-heatwave",
+      "baseText": "weather heatwave",
+      "semanticPriority": 60,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:weather-gale",
+      "baseText": "weather gale",
+      "semanticPriority": 60,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:weather-gust-front",
+      "baseText": "weather gust front",
+      "semanticPriority": 60,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:weather-hailburst",
+      "baseText": "weather hailburst",
+      "semanticPriority": 60,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "effects:weather-snow-flurry",
+      "baseText": "weather snow flurry",
+      "semanticPriority": 60,
+      "isNegative": false,
+      "conflictsWith": []
+    }
+  ]
+}

@@ -1,0 +1,1601 @@
+{
+  "category": "environment",
+  "attributes": [
+    {
+      "id": "environment:location-studio",
+      "baseText": "studio environment",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:location-interior",
+      "baseText": "interior environment",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:location-outdoor",
+      "baseText": "outdoor environment",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:location-city-street",
+      "baseText": "city street",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:location-urban-alley",
+      "baseText": "urban alley",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:location-downtown-plaza",
+      "baseText": "downtown plaza",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:location-office-building",
+      "baseText": "office building",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:location-apartment-interior",
+      "baseText": "apartment interior",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:location-industrial-warehouse",
+      "baseText": "industrial warehouse",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:location-factory-floor",
+      "baseText": "factory floor",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:location-shopping-mall",
+      "baseText": "shopping mall",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:location-airport-terminal",
+      "baseText": "airport terminal",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:location-train-station",
+      "baseText": "train station",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:location-forest",
+      "baseText": "forest",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:location-mountain-range",
+      "baseText": "mountain range",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:location-desert",
+      "baseText": "desert",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:location-beach",
+      "baseText": "beach",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:location-ocean-shore",
+      "baseText": "ocean shore",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:location-lake",
+      "baseText": "lake",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:location-riverbank",
+      "baseText": "riverbank",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:location-cave",
+      "baseText": "cave",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:location-castle",
+      "baseText": "castle",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:location-village",
+      "baseText": "village",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:setting-urban",
+      "baseText": "urban setting",
+      "semanticPriority": 70,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:setting-rural",
+      "baseText": "rural setting",
+      "semanticPriority": 70,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:setting-suburban",
+      "baseText": "suburban setting",
+      "semanticPriority": 70,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:setting-industrial",
+      "baseText": "industrial setting",
+      "semanticPriority": 70,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:setting-natural-wilderness",
+      "baseText": "natural wilderness setting",
+      "semanticPriority": 70,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:setting-forest",
+      "baseText": "forest setting",
+      "semanticPriority": 70,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:setting-desert",
+      "baseText": "desert setting",
+      "semanticPriority": 70,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:setting-mountain",
+      "baseText": "mountain setting",
+      "semanticPriority": 70,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:setting-coastal",
+      "baseText": "coastal setting",
+      "semanticPriority": 70,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:setting-underwater",
+      "baseText": "underwater setting",
+      "semanticPriority": 70,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:setting-fantasy",
+      "baseText": "fantasy realm setting",
+      "semanticPriority": 75,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:setting-sci-fi",
+      "baseText": "science fiction setting",
+      "semanticPriority": 75,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:setting-post-apocalyptic",
+      "baseText": "post-apocalyptic setting",
+      "semanticPriority": 75,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:setting-dystopian",
+      "baseText": "dystopian setting",
+      "semanticPriority": 75,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:setting-historical",
+      "baseText": "historical setting",
+      "semanticPriority": 75,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:setting-medieval",
+      "baseText": "medieval setting",
+      "semanticPriority": 75,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:setting-modern-day",
+      "baseText": "modern-day setting",
+      "semanticPriority": 70,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:setting-futuristic",
+      "baseText": "futuristic setting",
+      "semanticPriority": 75,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:setting-mythological",
+      "baseText": "mythological setting",
+      "semanticPriority": 75,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:setting-supernatural",
+      "baseText": "supernatural setting",
+      "semanticPriority": 75,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:biome-tropical-rainforest",
+      "baseText": "tropical rainforest",
+      "semanticPriority": 68,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:biome-temperate-forest",
+      "baseText": "temperate forest",
+      "semanticPriority": 68,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:biome-boreal-forest",
+      "baseText": "boreal forest (taiga)",
+      "semanticPriority": 68,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:biome-savanna",
+      "baseText": "savanna",
+      "semanticPriority": 68,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:biome-grassland",
+      "baseText": "grassland",
+      "semanticPriority": 68,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:biome-desert",
+      "baseText": "desert",
+      "semanticPriority": 68,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:biome-tundra",
+      "baseText": "tundra",
+      "semanticPriority": 68,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:biome-arctic-ice",
+      "baseText": "arctic ice biome",
+      "semanticPriority": 68,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:biome-alpine",
+      "baseText": "alpine biome",
+      "semanticPriority": 68,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:biome-mangrove-swamp",
+      "baseText": "mangrove swamp",
+      "semanticPriority": 68,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:biome-freshwater-wetland",
+      "baseText": "freshwater wetland",
+      "semanticPriority": 68,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:biome-saltwater-marsh",
+      "baseText": "saltwater marsh",
+      "semanticPriority": 68,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:biome-coral-reef",
+      "baseText": "coral reef",
+      "semanticPriority": 68,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:biome-open-ocean",
+      "baseText": "open ocean",
+      "semanticPriority": 68,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:biome-coastal",
+      "baseText": "coastal biome",
+      "semanticPriority": 68,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:biome-river",
+      "baseText": "river biome",
+      "semanticPriority": 68,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:biome-lake",
+      "baseText": "lake biome",
+      "semanticPriority": 68,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:biome-cave",
+      "baseText": "cave biome",
+      "semanticPriority": 68,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:biome-volcanic",
+      "baseText": "volcanic biome",
+      "semanticPriority": 68,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:biome-fantasy",
+      "baseText": "fantasy biome",
+      "semanticPriority": 68,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:space-empty",
+      "baseText": "empty space",
+      "semanticPriority": 55,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:space-almost-empty",
+      "baseText": "almost empty space",
+      "semanticPriority": 55,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:space-sparse",
+      "baseText": "sparse space",
+      "semanticPriority": 55,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:space-minimal-occupancy",
+      "baseText": "minimal occupancy",
+      "semanticPriority": 55,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:space-lightly-populated",
+      "baseText": "lightly populated space",
+      "semanticPriority": 55,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:space-moderately-populated",
+      "baseText": "moderately populated space",
+      "semanticPriority": 55,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:space-balanced",
+      "baseText": "balanced space density",
+      "semanticPriority": 55,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:space-lived-in",
+      "baseText": "lived-in space",
+      "semanticPriority": 55,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:space-semi-crowded",
+      "baseText": "semi-crowded space",
+      "semanticPriority": 55,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:space-crowded",
+      "baseText": "crowded space",
+      "semanticPriority": 55,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:space-very-crowded",
+      "baseText": "very crowded space",
+      "semanticPriority": 55,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:space-packed",
+      "baseText": "packed space",
+      "semanticPriority": 55,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:space-dense",
+      "baseText": "dense space",
+      "semanticPriority": 55,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:space-highly-dense",
+      "baseText": "highly dense environment",
+      "semanticPriority": 55,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:space-claustrophobic",
+      "baseText": "claustrophobic space",
+      "semanticPriority": 55,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:space-overfilled",
+      "baseText": "overfilled space",
+      "semanticPriority": 55,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:space-open-spacious",
+      "baseText": "open spacious area",
+      "semanticPriority": 55,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:space-wide-open",
+      "baseText": "wide open space",
+      "semanticPriority": 55,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:space-tight-confined",
+      "baseText": "tight confined space",
+      "semanticPriority": 55,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:space-congested",
+      "baseText": "congested environment",
+      "semanticPriority": 55,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:background-none",
+      "baseText": "no background",
+      "semanticPriority": 80,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:background-plain",
+      "baseText": "plain background",
+      "semanticPriority": 55,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:background-clean",
+      "baseText": "clean background",
+      "semanticPriority": 55,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:background-minimal",
+      "baseText": "minimal background",
+      "semanticPriority": 55,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:background-simple",
+      "baseText": "simple background",
+      "semanticPriority": 55,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:background-neutral",
+      "baseText": "neutral background",
+      "semanticPriority": 55,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:background-solid-color",
+      "baseText": "solid color background",
+      "semanticPriority": 55,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:background-gradient",
+      "baseText": "gradient background",
+      "semanticPriority": 55,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:background-blurred",
+      "baseText": "blurred background",
+      "semanticPriority": 55,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:background-soft",
+      "baseText": "soft background",
+      "semanticPriority": 55,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:background-detailed",
+      "baseText": "detailed background",
+      "semanticPriority": 55,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:background-complex",
+      "baseText": "complex background",
+      "semanticPriority": 55,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:background-busy",
+      "baseText": "busy background",
+      "semanticPriority": 55,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:background-cluttered",
+      "baseText": "cluttered background",
+      "semanticPriority": 55,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:background-abstract",
+      "baseText": "abstract background",
+      "semanticPriority": 55,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:background-stylized",
+      "baseText": "stylized background",
+      "semanticPriority": 55,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:background-environmental",
+      "baseText": "environmental background",
+      "semanticPriority": 55,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:background-contextual",
+      "baseText": "contextual background",
+      "semanticPriority": 55,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:background-patterned",
+      "baseText": "patterned background",
+      "semanticPriority": 55,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:background-textured",
+      "baseText": "textured background",
+      "semanticPriority": 55,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:artifact-background",
+      "baseText": "background artifacts",
+      "semanticPriority": 120,
+      "isNegative": true,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:artifact-jpeg",
+      "baseText": "JPEG artifacts",
+      "semanticPriority": 120,
+      "isNegative": true,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:artifact-compression",
+      "baseText": "compression artifacts",
+      "semanticPriority": 120,
+      "isNegative": true,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:artifact-pixelation",
+      "baseText": "pixelation",
+      "semanticPriority": 120,
+      "isNegative": true,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:artifact-color-banding",
+      "baseText": "color banding",
+      "semanticPriority": 120,
+      "isNegative": true,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:artifact-blur",
+      "baseText": "blur artifacts",
+      "semanticPriority": 120,
+      "isNegative": true,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:artifact-motion-blur",
+      "baseText": "motion blur artifacts",
+      "semanticPriority": 120,
+      "isNegative": true,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:artifact-noise",
+      "baseText": "noise artifacts",
+      "semanticPriority": 120,
+      "isNegative": true,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:artifact-grain",
+      "baseText": "grain artifacts",
+      "semanticPriority": 120,
+      "isNegative": true,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:artifact-over-sharpening",
+      "baseText": "over-sharpening artifacts",
+      "semanticPriority": 120,
+      "isNegative": true,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:artifact-haloing",
+      "baseText": "haloing",
+      "semanticPriority": 120,
+      "isNegative": true,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:artifact-ringing",
+      "baseText": "ringing artifacts",
+      "semanticPriority": 120,
+      "isNegative": true,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:artifact-chromatic-aberration",
+      "baseText": "chromatic aberration",
+      "semanticPriority": 120,
+      "isNegative": true,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:artifact-moire",
+      "baseText": "moir\u00e9 patterns",
+      "semanticPriority": 120,
+      "isNegative": true,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:artifact-aliasing",
+      "baseText": "aliasing (jaggies)",
+      "semanticPriority": 120,
+      "isNegative": true,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:artifact-ghosting",
+      "baseText": "ghosting",
+      "semanticPriority": 120,
+      "isNegative": true,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:artifact-double-images",
+      "baseText": "double images",
+      "semanticPriority": 120,
+      "isNegative": true,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:artifact-warping",
+      "baseText": "warping artifacts",
+      "semanticPriority": 120,
+      "isNegative": true,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:artifact-texture-stretching",
+      "baseText": "texture stretching",
+      "semanticPriority": 120,
+      "isNegative": true,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:artifact-glitch",
+      "baseText": "glitch artifacts",
+      "semanticPriority": 120,
+      "isNegative": true,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:artifact-rendering",
+      "baseText": "rendering artifacts",
+      "semanticPriority": 120,
+      "isNegative": true,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:location-mountain",
+      "baseText": "location mountain",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:location-coast",
+      "baseText": "location coast",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:location-city",
+      "baseText": "location city",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:location-ruins",
+      "baseText": "location ruins",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:location-swamp",
+      "baseText": "location swamp",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:setting-market",
+      "baseText": "setting market",
+      "semanticPriority": 70,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:setting-temple",
+      "baseText": "setting temple",
+      "semanticPriority": 70,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:setting-library",
+      "baseText": "setting library",
+      "semanticPriority": 70,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:setting-workshop",
+      "baseText": "setting workshop",
+      "semanticPriority": 70,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:setting-laboratory",
+      "baseText": "setting laboratory",
+      "semanticPriority": 70,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:setting-tavern",
+      "baseText": "setting tavern",
+      "semanticPriority": 70,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:setting-palace",
+      "baseText": "setting palace",
+      "semanticPriority": 70,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:setting-prison",
+      "baseText": "setting prison",
+      "semanticPriority": 70,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:setting-harbor",
+      "baseText": "setting harbor",
+      "semanticPriority": 70,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:setting-bridge",
+      "baseText": "setting bridge",
+      "semanticPriority": 70,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:biome-rainforest",
+      "baseText": "biome rainforest",
+      "semanticPriority": 68,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:biome-jungle",
+      "baseText": "biome jungle",
+      "semanticPriority": 68,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:biome-wetlands",
+      "baseText": "biome wetlands",
+      "semanticPriority": 68,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:biome-arctic",
+      "baseText": "biome arctic",
+      "semanticPriority": 68,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:biome-canyon",
+      "baseText": "biome canyon",
+      "semanticPriority": 68,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:biome-steppe",
+      "baseText": "biome steppe",
+      "semanticPriority": 68,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:space-cramped",
+      "baseText": "space cramped",
+      "semanticPriority": 55,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:space-spacious",
+      "baseText": "space spacious",
+      "semanticPriority": 55,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:space-open",
+      "baseText": "space open",
+      "semanticPriority": 55,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:space-cluttered",
+      "baseText": "space cluttered",
+      "semanticPriority": 55,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:space-minimal",
+      "baseText": "space minimal",
+      "semanticPriority": 55,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:space-vast",
+      "baseText": "space vast",
+      "semanticPriority": 55,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:space-narrow",
+      "baseText": "space narrow",
+      "semanticPriority": 55,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:space-labyrinth",
+      "baseText": "space labyrinth",
+      "semanticPriority": 55,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:background-silhouette",
+      "baseText": "background silhouette",
+      "semanticPriority": 80,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:background-void",
+      "baseText": "background void",
+      "semanticPriority": 80,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:background-urban",
+      "baseText": "background urban",
+      "semanticPriority": 80,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:background-nature",
+      "baseText": "background nature",
+      "semanticPriority": 80,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:background-ruins",
+      "baseText": "background ruins",
+      "semanticPriority": 80,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:artifact-fog",
+      "baseText": "artifact fog",
+      "semanticPriority": 120,
+      "isNegative": true,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:artifact-dust",
+      "baseText": "artifact dust",
+      "semanticPriority": 120,
+      "isNegative": true,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:artifact-smoke",
+      "baseText": "artifact smoke",
+      "semanticPriority": 120,
+      "isNegative": true,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:artifact-mist",
+      "baseText": "artifact mist",
+      "semanticPriority": 120,
+      "isNegative": true,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:artifact-haze",
+      "baseText": "artifact haze",
+      "semanticPriority": 120,
+      "isNegative": true,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:artifact-pollen",
+      "baseText": "artifact pollen",
+      "semanticPriority": 120,
+      "isNegative": true,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:artifact-embers",
+      "baseText": "artifact embers",
+      "semanticPriority": 120,
+      "isNegative": true,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:artifact-sparkles",
+      "baseText": "artifact sparkles",
+      "semanticPriority": 120,
+      "isNegative": true,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:artifact-particles",
+      "baseText": "artifact particles",
+      "semanticPriority": 120,
+      "isNegative": true,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:artifact-snow",
+      "baseText": "artifact snow",
+      "semanticPriority": 120,
+      "isNegative": true,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:artifact-ash",
+      "baseText": "artifact ash",
+      "semanticPriority": 120,
+      "isNegative": true,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:artifact-rain-specks",
+      "baseText": "artifact rain specks",
+      "semanticPriority": 120,
+      "isNegative": true,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:artifact-wind-streaks",
+      "baseText": "artifact wind streaks",
+      "semanticPriority": 120,
+      "isNegative": true,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:artifact-heat-waves",
+      "baseText": "artifact heat waves",
+      "semanticPriority": 120,
+      "isNegative": true,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:artifact-floating-debris",
+      "baseText": "artifact floating debris",
+      "semanticPriority": 120,
+      "isNegative": true,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:artifact-ice-crystals",
+      "baseText": "artifact ice crystals",
+      "semanticPriority": 120,
+      "isNegative": true,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:artifact-spray",
+      "baseText": "artifact spray",
+      "semanticPriority": 120,
+      "isNegative": true,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:artifact-drizzle",
+      "baseText": "artifact drizzle",
+      "semanticPriority": 120,
+      "isNegative": true,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:artifact-splash-mist",
+      "baseText": "artifact splash mist",
+      "semanticPriority": 120,
+      "isNegative": true,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:artifact-sand-grit",
+      "baseText": "artifact sand grit",
+      "semanticPriority": 120,
+      "isNegative": true,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:background-skyline",
+      "baseText": "background skyline",
+      "semanticPriority": 80,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:background-mountain-range",
+      "baseText": "background mountain range",
+      "semanticPriority": 80,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:background-nebula",
+      "baseText": "background nebula",
+      "semanticPriority": 80,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:background-starfield",
+      "baseText": "background starfield",
+      "semanticPriority": 80,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:background-textured-wall",
+      "baseText": "background textured wall",
+      "semanticPriority": 80,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:background-fog-layer",
+      "baseText": "background fog layer",
+      "semanticPriority": 80,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:background-archway",
+      "baseText": "background archway",
+      "semanticPriority": 80,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:background-tapestry",
+      "baseText": "background tapestry",
+      "semanticPriority": 80,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:background-city-lights",
+      "baseText": "background city lights",
+      "semanticPriority": 80,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:background-forest-line",
+      "baseText": "background forest line",
+      "semanticPriority": 80,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:biome-mangrove",
+      "baseText": "biome mangrove",
+      "semanticPriority": 68,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:biome-chaparral",
+      "baseText": "biome chaparral",
+      "semanticPriority": 68,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:biome-taiga",
+      "baseText": "biome taiga",
+      "semanticPriority": 68,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:biome-karst",
+      "baseText": "biome karst",
+      "semanticPriority": 68,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:biome-badlands",
+      "baseText": "biome badlands",
+      "semanticPriority": 68,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:biome-salt-flats",
+      "baseText": "biome salt flats",
+      "semanticPriority": 68,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:biome-cloud-forest",
+      "baseText": "biome cloud forest",
+      "semanticPriority": 68,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:biome-oasis",
+      "baseText": "biome oasis",
+      "semanticPriority": 68,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:biome-fen",
+      "baseText": "biome fen",
+      "semanticPriority": 68,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:biome-delta",
+      "baseText": "biome delta",
+      "semanticPriority": 68,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:location-floating-islands",
+      "baseText": "location floating islands",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:location-crystal-canyon",
+      "baseText": "location crystal canyon",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:location-mushroom-forest",
+      "baseText": "location mushroom forest",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:location-ice-fjord",
+      "baseText": "location ice fjord",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:location-volcanic-ridge",
+      "baseText": "location volcanic ridge",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:location-sunken-ruins",
+      "baseText": "location sunken ruins",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:location-cloud-city",
+      "baseText": "location cloud city",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:location-underground-metro",
+      "baseText": "location underground metro",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:location-sky-bridge",
+      "baseText": "location sky bridge",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:location-ancient-temple",
+      "baseText": "location ancient temple",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:setting-observatory",
+      "baseText": "setting observatory",
+      "semanticPriority": 70,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:setting-apothecary",
+      "baseText": "setting apothecary",
+      "semanticPriority": 70,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:setting-bazaar",
+      "baseText": "setting bazaar",
+      "semanticPriority": 70,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:setting-war-room",
+      "baseText": "setting war room",
+      "semanticPriority": 70,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:setting-garden-courtyard",
+      "baseText": "setting garden courtyard",
+      "semanticPriority": 70,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:setting-train-station",
+      "baseText": "setting train station",
+      "semanticPriority": 70,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:setting-rooftop-garden",
+      "baseText": "setting rooftop garden",
+      "semanticPriority": 70,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:setting-abandoned-theater",
+      "baseText": "setting abandoned theater",
+      "semanticPriority": 70,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:setting-clocktower",
+      "baseText": "setting clocktower",
+      "semanticPriority": 70,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:setting-glasshouse",
+      "baseText": "setting glasshouse",
+      "semanticPriority": 70,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:space-meandering",
+      "baseText": "space meandering",
+      "semanticPriority": 55,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:space-compressed",
+      "baseText": "space compressed",
+      "semanticPriority": 55,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:space-airy",
+      "baseText": "space airy",
+      "semanticPriority": 55,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:space-cathedral-like",
+      "baseText": "space cathedral like",
+      "semanticPriority": 55,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:space-corridor",
+      "baseText": "space corridor",
+      "semanticPriority": 55,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:space-chambered",
+      "baseText": "space chambered",
+      "semanticPriority": 55,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:space-overgrown",
+      "baseText": "space overgrown",
+      "semanticPriority": 55,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:space-maze-like",
+      "baseText": "space maze like",
+      "semanticPriority": 55,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:space-vertical",
+      "baseText": "space vertical",
+      "semanticPriority": 55,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "environment:space-tiered",
+      "baseText": "space tiered",
+      "semanticPriority": 55,
+      "isNegative": false,
+      "conflictsWith": []
+    }
+  ]
+}

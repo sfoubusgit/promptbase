@@ -1,0 +1,34 @@
+/**
+ * ErrorDisplay Component Styles
+ * 
+ * Uses global design token CSS variables.
+ * Calm, professional error presentation that informs without alarming.
+ */
+
+.error-display {
+  background: var(--background-surface);
+  border: var(--border-width-hairline) solid var(--error-base);
+  border-radius: var(--radius-sm);
+  padding: var(--spacing-4);
+  color: var(--text-primary);
+}
+
+.error-title {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--error-base);
+  margin-bottom: var(--spacing-2);
+}
+
+.error-message {
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-normal);
+  color: var(--text-primary);
+}
+
+.error-details {
+  margin-top: var(--spacing-2);
+  font-size: var(--font-size-xs);
+  color: var(--text-secondary);
+}
+

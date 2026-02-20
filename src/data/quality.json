@@ -1,0 +1,1741 @@
+{
+  "category": "quality",
+  "attributes": [
+    {
+      "id": "quality:level-extremely-low",
+      "baseText": "extremely low quality",
+      "semanticPriority": 5,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:level-very-low",
+      "baseText": "very low quality",
+      "semanticPriority": 8,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:level-low",
+      "baseText": "low quality",
+      "semanticPriority": 10,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:level-below-average",
+      "baseText": "below average quality",
+      "semanticPriority": 15,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:level-poor",
+      "baseText": "poor quality",
+      "semanticPriority": 20,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:level-rough",
+      "baseText": "rough quality",
+      "semanticPriority": 25,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:level-average",
+      "baseText": "average quality",
+      "semanticPriority": 50,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:level-decent",
+      "baseText": "decent quality",
+      "semanticPriority": 60,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:level-standard",
+      "baseText": "standard quality",
+      "semanticPriority": 70,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:level-good",
+      "baseText": "good quality",
+      "semanticPriority": 80,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:level-high",
+      "baseText": "high quality",
+      "semanticPriority": 90,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:level-very-high",
+      "baseText": "very high quality",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:level-ultra",
+      "baseText": "ultra high quality",
+      "semanticPriority": 100,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:level-premium",
+      "baseText": "premium quality",
+      "semanticPriority": 105,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:level-professional",
+      "baseText": "professional quality",
+      "semanticPriority": 110,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:level-studio",
+      "baseText": "studio quality",
+      "semanticPriority": 115,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:level-high-end",
+      "baseText": "high-end quality",
+      "semanticPriority": 118,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:level-exceptional",
+      "baseText": "exceptional quality",
+      "semanticPriority": 120,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:level-masterpiece",
+      "baseText": "masterpiece quality",
+      "semanticPriority": 125,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:level-ultra-detailed-masterpiece",
+      "baseText": "ultra-detailed masterpiece quality",
+      "semanticPriority": 130,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:resolution-high",
+      "baseText": "high resolution",
+      "semanticPriority": 85,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:resolution-ultra-high",
+      "baseText": "ultra high resolution",
+      "semanticPriority": 90,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:resolution-low",
+      "baseText": "low resolution",
+      "semanticPriority": 15,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:resolution-native",
+      "baseText": "native resolution",
+      "semanticPriority": 80,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:resolution-crisp-details",
+      "baseText": "crisp details",
+      "semanticPriority": 85,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:resolution-fine-detail-fidelity",
+      "baseText": "fine detail fidelity",
+      "semanticPriority": 88,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:resolution-high-pixel-density",
+      "baseText": "high pixel density",
+      "semanticPriority": 87,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:resolution-low-pixel-density",
+      "baseText": "low pixel density",
+      "semanticPriority": 18,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:resolution-sharp-rendering",
+      "baseText": "sharp rendering",
+      "semanticPriority": 85,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:resolution-soft-rendering",
+      "baseText": "soft rendering",
+      "semanticPriority": 30,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:resolution-clean-edges",
+      "baseText": "clean edges",
+      "semanticPriority": 85,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:resolution-jagged-edges",
+      "baseText": "jagged edges",
+      "semanticPriority": 20,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:resolution-smooth-gradients",
+      "baseText": "smooth gradients",
+      "semanticPriority": 85,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:resolution-color-accurate",
+      "baseText": "color-accurate rendering",
+      "semanticPriority": 85,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:resolution-true-to-life-textures",
+      "baseText": "true-to-life textures",
+      "semanticPriority": 88,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:resolution-reduced-detail-fidelity",
+      "baseText": "reduced detail fidelity",
+      "semanticPriority": 20,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:resolution-pixel-perfect",
+      "baseText": "pixel-perfect rendering",
+      "semanticPriority": 90,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:resolution-lossless-detail",
+      "baseText": "lossless detail quality",
+      "semanticPriority": 92,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:resolution-downscaled",
+      "baseText": "downscaled resolution",
+      "semanticPriority": 25,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:resolution-upscaled-fidelity",
+      "baseText": "upscaled fidelity",
+      "semanticPriority": 88,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:detail-ultra",
+      "baseText": "ultra-detailed",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:detail-high",
+      "baseText": "highly detailed",
+      "semanticPriority": 80,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:detail-rich",
+      "baseText": "rich in detail",
+      "semanticPriority": 85,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:detail-dense",
+      "baseText": "dense detail",
+      "semanticPriority": 88,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:detail-complex",
+      "baseText": "complex detail",
+      "semanticPriority": 82,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:detail-intricate",
+      "baseText": "intricate detail",
+      "semanticPriority": 90,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:detail-fine",
+      "baseText": "fine detail",
+      "semanticPriority": 85,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:detail-moderate",
+      "baseText": "moderate detail",
+      "semanticPriority": 60,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:detail-balanced",
+      "baseText": "balanced detail",
+      "semanticPriority": 70,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:detail-selective",
+      "baseText": "selective detail",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:detail-simplified",
+      "baseText": "simplified detail",
+      "semanticPriority": 45,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:detail-minimal",
+      "baseText": "minimal detail",
+      "semanticPriority": 40,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:detail-sparse",
+      "baseText": "sparse detail",
+      "semanticPriority": 35,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:detail-low-density",
+      "baseText": "low detail density",
+      "semanticPriority": 30,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:detail-flat",
+      "baseText": "flat detail",
+      "semanticPriority": 25,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:detail-over-detailed",
+      "baseText": "over-detailed",
+      "semanticPriority": 15,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:detail-chaotic",
+      "baseText": "chaotic detail",
+      "semanticPriority": 20,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:detail-clean-focus",
+      "baseText": "clean detail focus",
+      "semanticPriority": 85,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:detail-layered",
+      "baseText": "layered detail",
+      "semanticPriority": 82,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:detail-texture-rich",
+      "baseText": "texture-rich detail",
+      "semanticPriority": 88,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:focus-sharp",
+      "baseText": "sharp focus",
+      "semanticPriority": 75,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:focus-ultra-sharp",
+      "baseText": "ultra sharp focus",
+      "semanticPriority": 80,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:focus-crisp",
+      "baseText": "crisp focus",
+      "semanticPriority": 78,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:focus-precise",
+      "baseText": "precise focus",
+      "semanticPriority": 77,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:focus-clean",
+      "baseText": "clean focus",
+      "semanticPriority": 76,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:focus-soft",
+      "baseText": "soft focus",
+      "semanticPriority": 40,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:focus-slightly-soft",
+      "baseText": "slightly soft focus",
+      "semanticPriority": 50,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:focus-blurry",
+      "baseText": "blurry",
+      "semanticPriority": 20,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:focus-out-of-focus",
+      "baseText": "out of focus",
+      "semanticPriority": 15,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:focus-selective",
+      "baseText": "selective focus",
+      "semanticPriority": 70,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:focus-smooth-falloff",
+      "baseText": "smooth focus falloff",
+      "semanticPriority": 72,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:focus-edge-sharpness",
+      "baseText": "edge sharpness",
+      "semanticPriority": 75,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:focus-soft-edges",
+      "baseText": "soft edges",
+      "semanticPriority": 45,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:focus-sharp-edges",
+      "baseText": "sharp edges",
+      "semanticPriority": 76,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:focus-pull-effect",
+      "baseText": "focus pull effect",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:focus-shallow",
+      "baseText": "shallow focus",
+      "semanticPriority": 60,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:focus-deep",
+      "baseText": "deep focus",
+      "semanticPriority": 70,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:focus-defocused-background",
+      "baseText": "defocused background",
+      "semanticPriority": 55,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:focus-front",
+      "baseText": "front focus",
+      "semanticPriority": 68,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:focus-back",
+      "baseText": "back focus",
+      "semanticPriority": 68,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:noise-free",
+      "baseText": "noise-free",
+      "semanticPriority": 85,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:noise-low",
+      "baseText": "low noise",
+      "semanticPriority": 75,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:noise-clean-signal",
+      "baseText": "clean signal",
+      "semanticPriority": 80,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:noise-smooth-tonal-gradients",
+      "baseText": "smooth tonal gradients",
+      "semanticPriority": 82,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:noise-minimal-grain",
+      "baseText": "minimal grain",
+      "semanticPriority": 70,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:noise-controlled-grain",
+      "baseText": "controlled grain",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:noise-fine-grain",
+      "baseText": "fine grain",
+      "semanticPriority": 60,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:noise-visible",
+      "baseText": "visible noise",
+      "semanticPriority": 30,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:noise-high",
+      "baseText": "high noise",
+      "semanticPriority": 20,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:noise-excessive",
+      "baseText": "excessive noise",
+      "semanticPriority": 15,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:noise-digital",
+      "baseText": "digital noise",
+      "semanticPriority": 25,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:noise-film-grain",
+      "baseText": "film grain noise",
+      "semanticPriority": 35,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:noise-luminance",
+      "baseText": "luminance noise",
+      "semanticPriority": 28,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:noise-chrominance",
+      "baseText": "chrominance noise",
+      "semanticPriority": 28,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:noise-reduction-applied",
+      "baseText": "noise reduction applied",
+      "semanticPriority": 75,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:noise-over-smoothed",
+      "baseText": "over-smoothed noise reduction",
+      "semanticPriority": 22,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:noise-artifact-free",
+      "baseText": "artifact-free noise control",
+      "semanticPriority": 83,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:noise-speckled",
+      "baseText": "speckled noise",
+      "semanticPriority": 23,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:noise-color",
+      "baseText": "color noise",
+      "semanticPriority": 26,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:noise-random-patterns",
+      "baseText": "random noise patterns",
+      "semanticPriority": 24,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:clean-image",
+      "baseText": "clean image",
+      "semanticPriority": 75,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:clean-polished",
+      "baseText": "polished image",
+      "semanticPriority": 80,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:clean-professional-finish",
+      "baseText": "professional finish",
+      "semanticPriority": 85,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:clean-studio-look",
+      "baseText": "studio-clean look",
+      "semanticPriority": 88,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:clean-refined-details",
+      "baseText": "refined details",
+      "semanticPriority": 82,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:clean-smooth-finish",
+      "baseText": "smooth finish",
+      "semanticPriority": 78,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:clean-crisp-presentation",
+      "baseText": "crisp presentation",
+      "semanticPriority": 83,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:clean-well-balanced",
+      "baseText": "well-balanced composition",
+      "semanticPriority": 80,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:clean-flawless",
+      "baseText": "flawless appearance",
+      "semanticPriority": 90,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:clean-pristine",
+      "baseText": "pristine condition",
+      "semanticPriority": 92,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:clean-high-end-polish",
+      "baseText": "high-end polish",
+      "semanticPriority": 87,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:clean-editorial-quality",
+      "baseText": "editorial-quality finish",
+      "semanticPriority": 89,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:clean-commercial-grade",
+      "baseText": "commercial-grade polish",
+      "semanticPriority": 88,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:clean-neat",
+      "baseText": "neat presentation",
+      "semanticPriority": 76,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:clean-orderly",
+      "baseText": "orderly appearance",
+      "semanticPriority": 77,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:clean-organized",
+      "baseText": "organized visual structure",
+      "semanticPriority": 79,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:clean-tidy-background",
+      "baseText": "tidy background",
+      "semanticPriority": 74,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:clean-minimal-imperfections",
+      "baseText": "minimal imperfections",
+      "semanticPriority": 84,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:clean-highly-refined",
+      "baseText": "highly refined output",
+      "semanticPriority": 91,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:clean-exhibition-ready",
+      "baseText": "exhibition-ready quality",
+      "semanticPriority": 93,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:artifact-jpeg",
+      "baseText": "jpeg artifacts",
+      "semanticPriority": 120,
+      "isNegative": true,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:artifact-compression",
+      "baseText": "compression artifacts",
+      "semanticPriority": 120,
+      "isNegative": true,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:artifact-pixelation",
+      "baseText": "pixelation",
+      "semanticPriority": 120,
+      "isNegative": true,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:artifact-banding",
+      "baseText": "color banding",
+      "semanticPriority": 120,
+      "isNegative": true,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:level-medium",
+      "baseText": "level medium",
+      "semanticPriority": 5,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:level-draft",
+      "baseText": "level draft",
+      "semanticPriority": 5,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:level-polished",
+      "baseText": "level polished",
+      "semanticPriority": 5,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:level-pristine",
+      "baseText": "level pristine",
+      "semanticPriority": 5,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:level-bootleg",
+      "baseText": "level bootleg",
+      "semanticPriority": 5,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:resolution-8k",
+      "baseText": "resolution 8k",
+      "semanticPriority": 85,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:resolution-6k",
+      "baseText": "resolution 6k",
+      "semanticPriority": 85,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:resolution-4k",
+      "baseText": "resolution 4k",
+      "semanticPriority": 85,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:resolution-2k",
+      "baseText": "resolution 2k",
+      "semanticPriority": 85,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:resolution-hd",
+      "baseText": "resolution HD",
+      "semanticPriority": 85,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:resolution-sd",
+      "baseText": "resolution SD",
+      "semanticPriority": 85,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:resolution-uhd",
+      "baseText": "resolution UHD",
+      "semanticPriority": 85,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:resolution-1080p",
+      "baseText": "resolution 1080p",
+      "semanticPriority": 85,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:resolution-720p",
+      "baseText": "resolution 720p",
+      "semanticPriority": 85,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:resolution-low-res",
+      "baseText": "resolution low res",
+      "semanticPriority": 85,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:detail-ultra-detailed",
+      "baseText": "detail ultra detailed",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:detail-high-detail",
+      "baseText": "detail high detail",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:detail-fine-detail",
+      "baseText": "detail fine detail",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:detail-crisp",
+      "baseText": "detail crisp",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:detail-soft",
+      "baseText": "detail soft",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:detail-textured",
+      "baseText": "detail textured",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:detail-smooth",
+      "baseText": "detail smooth",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:detail-cluttered",
+      "baseText": "detail cluttered",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:focus-hyper-sharp",
+      "baseText": "focus hyper sharp",
+      "semanticPriority": 75,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:focus-tack-sharp",
+      "baseText": "focus tack sharp",
+      "semanticPriority": 75,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:focus-micro-contrast",
+      "baseText": "focus micro contrast",
+      "semanticPriority": 75,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:focus-deep-focus",
+      "baseText": "focus deep focus",
+      "semanticPriority": 75,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:focus-hazy",
+      "baseText": "focus hazy",
+      "semanticPriority": 75,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:noise-grainy",
+      "baseText": "noise grainy",
+      "semanticPriority": 85,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:noise-clean",
+      "baseText": "noise clean",
+      "semanticPriority": 85,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:noise-smooth",
+      "baseText": "noise smooth",
+      "semanticPriority": 85,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:noise-analog",
+      "baseText": "noise analog",
+      "semanticPriority": 85,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:noise-film",
+      "baseText": "noise film",
+      "semanticPriority": 85,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:noise-compression",
+      "baseText": "noise compression",
+      "semanticPriority": 85,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:noise-artifacted",
+      "baseText": "noise artifacted",
+      "semanticPriority": 85,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:noise-banding",
+      "baseText": "noise banding",
+      "semanticPriority": 85,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:cleanliness-pristine",
+      "baseText": "cleanliness pristine",
+      "semanticPriority": 5,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:cleanliness-clean",
+      "baseText": "cleanliness clean",
+      "semanticPriority": 5,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:cleanliness-neat",
+      "baseText": "cleanliness neat",
+      "semanticPriority": 5,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:cleanliness-dusty",
+      "baseText": "cleanliness dusty",
+      "semanticPriority": 5,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:cleanliness-grimy",
+      "baseText": "cleanliness grimy",
+      "semanticPriority": 5,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:cleanliness-grungy",
+      "baseText": "cleanliness grungy",
+      "semanticPriority": 5,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:cleanliness-smudged",
+      "baseText": "cleanliness smudged",
+      "semanticPriority": 5,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:cleanliness-scratched",
+      "baseText": "cleanliness scratched",
+      "semanticPriority": 5,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:cleanliness-weathered",
+      "baseText": "cleanliness weathered",
+      "semanticPriority": 5,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:cleanliness-worn",
+      "baseText": "cleanliness worn",
+      "semanticPriority": 5,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:artifact-color-banding",
+      "baseText": "artifact color banding",
+      "semanticPriority": 120,
+      "isNegative": true,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:artifact-posterization",
+      "baseText": "artifact posterization",
+      "semanticPriority": 120,
+      "isNegative": true,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:artifact-aliasing",
+      "baseText": "artifact aliasing",
+      "semanticPriority": 120,
+      "isNegative": true,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:artifact-moire",
+      "baseText": "artifact moire",
+      "semanticPriority": 120,
+      "isNegative": true,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:artifact-noise",
+      "baseText": "artifact noise",
+      "semanticPriority": 120,
+      "isNegative": true,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:artifact-oversharpen",
+      "baseText": "artifact oversharpen",
+      "semanticPriority": 120,
+      "isNegative": true,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:artifact-ghosting",
+      "baseText": "artifact ghosting",
+      "semanticPriority": 120,
+      "isNegative": true,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:artifact-ringing",
+      "baseText": "artifact ringing",
+      "semanticPriority": 120,
+      "isNegative": true,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:artifact-chromatic-fringe",
+      "baseText": "artifact chromatic fringe",
+      "semanticPriority": 120,
+      "isNegative": true,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:artifact-stair-stepping",
+      "baseText": "artifact stair stepping",
+      "semanticPriority": 120,
+      "isNegative": true,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:artifact-blockiness",
+      "baseText": "artifact blockiness",
+      "semanticPriority": 120,
+      "isNegative": true,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:artifact-color-bleed",
+      "baseText": "artifact color bleed",
+      "semanticPriority": 120,
+      "isNegative": true,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:artifact-edge-halo",
+      "baseText": "artifact edge halo",
+      "semanticPriority": 120,
+      "isNegative": true,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:artifact-glitching",
+      "baseText": "artifact glitching",
+      "semanticPriority": 120,
+      "isNegative": true,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:artifact-dither",
+      "baseText": "artifact dither",
+      "semanticPriority": 120,
+      "isNegative": true,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:artifact-clipping",
+      "baseText": "artifact clipping",
+      "semanticPriority": 120,
+      "isNegative": true,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:artifact-palette-shift",
+      "baseText": "artifact palette shift",
+      "semanticPriority": 120,
+      "isNegative": true,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:artifact-haloing",
+      "baseText": "artifact haloing",
+      "semanticPriority": 120,
+      "isNegative": true,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:cleanliness-scuffed",
+      "baseText": "cleanliness scuffed",
+      "semanticPriority": 5,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:cleanliness-scored",
+      "baseText": "cleanliness scored",
+      "semanticPriority": 5,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:cleanliness-stained",
+      "baseText": "cleanliness stained",
+      "semanticPriority": 5,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:cleanliness-tarnished",
+      "baseText": "cleanliness tarnished",
+      "semanticPriority": 5,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:cleanliness-polished",
+      "baseText": "cleanliness polished",
+      "semanticPriority": 5,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:cleanliness-immaculate",
+      "baseText": "cleanliness immaculate",
+      "semanticPriority": 5,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:cleanliness-spotless",
+      "baseText": "cleanliness spotless",
+      "semanticPriority": 5,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:cleanliness-muddied",
+      "baseText": "cleanliness muddied",
+      "semanticPriority": 5,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:cleanliness-soiled",
+      "baseText": "cleanliness soiled",
+      "semanticPriority": 5,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:cleanliness-abrasive",
+      "baseText": "cleanliness abrasive",
+      "semanticPriority": 5,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:detail-micro-etched",
+      "baseText": "detail micro etched",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:detail-filigree",
+      "baseText": "detail filigree",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:detail-ornate",
+      "baseText": "detail ornate",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:detail-stippled",
+      "baseText": "detail stippled",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:detail-engraved",
+      "baseText": "detail engraved",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:detail-micro-pattern",
+      "baseText": "detail micro pattern",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:detail-micro-texture",
+      "baseText": "detail micro texture",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:detail-fine-linework",
+      "baseText": "detail fine linework",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:detail-delicate-detail",
+      "baseText": "detail delicate detail",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:detail-pinpoint-detail",
+      "baseText": "detail pinpoint detail",
+      "semanticPriority": 95,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:focus-razor-sharp",
+      "baseText": "focus razor sharp",
+      "semanticPriority": 75,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:focus-soft-focus",
+      "baseText": "focus soft focus",
+      "semanticPriority": 75,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:focus-pin-sharp",
+      "baseText": "focus pin sharp",
+      "semanticPriority": 75,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:focus-center-focus",
+      "baseText": "focus center focus",
+      "semanticPriority": 75,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:focus-edge-soft",
+      "baseText": "focus edge soft",
+      "semanticPriority": 75,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:focus-focus-dropoff",
+      "baseText": "focus focus dropoff",
+      "semanticPriority": 75,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:focus-crispy",
+      "baseText": "focus crispy",
+      "semanticPriority": 75,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:focus-fuzzy",
+      "baseText": "focus fuzzy",
+      "semanticPriority": 75,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:focus-clarity-boost",
+      "baseText": "focus clarity boost",
+      "semanticPriority": 75,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:focus-focus-stack",
+      "baseText": "focus focus stack",
+      "semanticPriority": 75,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:noise-mosquito-noise",
+      "baseText": "noise mosquito noise",
+      "semanticPriority": 85,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:noise-luma-noise",
+      "baseText": "noise luma noise",
+      "semanticPriority": 85,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:noise-chroma-noise",
+      "baseText": "noise chroma noise",
+      "semanticPriority": 85,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:noise-salt-pepper",
+      "baseText": "noise salt pepper",
+      "semanticPriority": 85,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:noise-blocky",
+      "baseText": "noise blocky",
+      "semanticPriority": 85,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:noise-macroblock",
+      "baseText": "noise macroblock",
+      "semanticPriority": 85,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:noise-ringing",
+      "baseText": "noise ringing",
+      "semanticPriority": 85,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:noise-smear",
+      "baseText": "noise smear",
+      "semanticPriority": 85,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:noise-splotchy",
+      "baseText": "noise splotchy",
+      "semanticPriority": 85,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:noise-noisy-shadows",
+      "baseText": "noise noisy shadows",
+      "semanticPriority": 85,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:level-museum-grade",
+      "baseText": "level museum grade",
+      "semanticPriority": 5,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:level-gallery-grade",
+      "baseText": "level gallery grade",
+      "semanticPriority": 5,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:level-reference-grade",
+      "baseText": "level reference grade",
+      "semanticPriority": 5,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:level-showroom",
+      "baseText": "level showroom",
+      "semanticPriority": 5,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:level-prototype",
+      "baseText": "level prototype",
+      "semanticPriority": 5,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:level-archival",
+      "baseText": "level archival",
+      "semanticPriority": 5,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:level-production-grade",
+      "baseText": "level production grade",
+      "semanticPriority": 5,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:level-concept-grade",
+      "baseText": "level concept grade",
+      "semanticPriority": 5,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:level-review-copy",
+      "baseText": "level review copy",
+      "semanticPriority": 5,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:level-collector-grade",
+      "baseText": "level collector grade",
+      "semanticPriority": 5,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:resolution-12k",
+      "baseText": "resolution 12k",
+      "semanticPriority": 85,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:resolution-10k",
+      "baseText": "resolution 10k",
+      "semanticPriority": 85,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:resolution-5k",
+      "baseText": "resolution 5k",
+      "semanticPriority": 85,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:resolution-3k",
+      "baseText": "resolution 3k",
+      "semanticPriority": 85,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:resolution-1k",
+      "baseText": "resolution 1k",
+      "semanticPriority": 85,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:resolution-768p",
+      "baseText": "resolution 768p",
+      "semanticPriority": 85,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:resolution-1440p",
+      "baseText": "resolution 1440p",
+      "semanticPriority": 85,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:resolution-2160p",
+      "baseText": "resolution 2160p",
+      "semanticPriority": 85,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:resolution-2880p",
+      "baseText": "resolution 2880p",
+      "semanticPriority": 85,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "quality:resolution-5k-ultra",
+      "baseText": "resolution 5k ultra",
+      "semanticPriority": 85,
+      "isNegative": false,
+      "conflictsWith": []
+    }
+  ]
+}

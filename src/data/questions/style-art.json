@@ -1,0 +1,85 @@
+[
+  {
+    "id": "style-artstyle-root",
+    "question": "What overall art style do you imagine?",
+    "description": "Choose the artistic style for your image",
+    "attributeIds": [
+      "style-anime",
+      "style-semi-realistic",
+      "style-realistic",
+      "style-painterly",
+      "style-3d-render",
+      "style-cartoon",
+      "style-comic",
+      "style-pixel"
+    ],
+    "nextNodeId": null,
+    "allowCustomExtension": [
+      "style-anime",
+      "style-semi-realistic",
+      "style-realistic",
+      "style-painterly",
+      "style-3d-render",
+      "style-cartoon",
+      "style-comic",
+      "style-pixel"
+    ]
+  },
+  {
+    "id": "style-anime-sub",
+    "question": "What type of anime style?",
+    "description": "Refine your anime style selection",
+    "attributeIds": [
+      "anime-soft-romantic",
+      "anime-shounen",
+      "anime-gothic",
+      "anime-cinematic",
+      "anime-cel-style",
+      "anime-chibi",
+      "anime-moe",
+      "anime-retro"
+    ],
+    "nextNodeId": null
+  },
+  {
+    "id": "style-realism-sub",
+    "question": "What type of realistic style?",
+    "description": "Refine your realistic style selection",
+    "attributeIds": [
+      "realism-cinematic",
+      "realism-portrait",
+      "realism-natural-light",
+      "realism-hyperrealistic",
+      "realism-documentary"
+    ],
+    "nextNodeId": null
+  },
+  {
+    "id": "style-painting-sub",
+    "question": "What type of painting style?",
+    "description": "Choose a specific painting technique",
+    "attributeIds": [
+      "painting-oil",
+      "painting-watercolor",
+      "painting-ink-wash",
+      "painting-gouache",
+      "painting-digital-painterly",
+      "painting-acrylic",
+      "painting-pastel"
+    ],
+    "nextNodeId": null
+  },
+  {
+    "id": "style-3d-sub",
+    "question": "What type of 3D style?",
+    "description": "Choose a specific 3D rendering style",
+    "attributeIds": [
+      "3d-cg-render",
+      "3d-stylized",
+      "3d-clay",
+      "3d-toy",
+      "3d-low-poly"
+    ],
+    "nextNodeId": null
+  }
+]

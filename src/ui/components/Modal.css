@@ -1,0 +1,259 @@
+/**
+ * Modal Component Styles
+ */
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 20px;
+  animation: fadeIn 0.2s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.modal-content {
+  background: var(--background-surface, #1A1A1F);
+  border: 1px solid var(--border-subtle, rgba(255, 255, 255, 0.04));
+  border-radius: var(--radius-lg, 16px);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  max-width: 90vw;
+  max-height: 90vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  animation: slideUp 0.3s ease-out;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.modal-header {
+  padding: 20px 24px;
+  border-bottom: 1px solid var(--border-subtle, rgba(255, 255, 255, 0.04));
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-shrink: 0;
+}
+
+.modal-title {
+  font-size: var(--font-size-lg, 18px);
+  font-weight: 600;
+  color: var(--text-primary, #FFFFFF);
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+.modal-close-button {
+  background: transparent;
+  border: none;
+  color: var(--text-secondary, #B0B0C3);
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-sm, 4px);
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+}
+
+.modal-close-button:hover {
+  background: var(--background-surface-2, #25252A);
+  color: var(--text-primary, #FFFFFF);
+}
+
+.modal-close-button:focus-visible {
+  outline: var(--border-width-thin) solid var(--accent-primary);
+  outline-offset: 2px;
+}
+
+.modal-body {
+  flex: 1;
+  overflow-y: auto;
+  padding: 24px;
+  min-height: 0;
+}
+
+/* App Tutorial Styles */
+.app-tutorial-body {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.app-tutorial-section {
+  margin-bottom: 32px;
+}
+
+.app-tutorial-section:last-child {
+  margin-bottom: 0;
+}
+
+.app-tutorial-heading {
+  font-size: var(--font-size-lg, 18px);
+  font-weight: 600;
+  color: var(--text-primary, #FFFFFF);
+  margin: 0 0 12px 0;
+  font-family: 'Inter', sans-serif;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--border-subtle, rgba(255, 255, 255, 0.08));
+}
+
+.app-tutorial-body p {
+  font-size: var(--font-size-sm, 14px);
+  line-height: 1.7;
+  color: var(--text-secondary, #B0B0C3);
+  margin: 0 0 16px 0;
+  font-family: 'Inter', sans-serif;
+}
+
+.app-tutorial-body p:last-child {
+  margin-bottom: 0;
+}
+
+.app-tutorial-body p strong {
+  color: var(--text-primary, #FFFFFF);
+  font-weight: 600;
+}
+
+.app-tutorial-list {
+  font-size: var(--font-size-sm, 14px);
+  line-height: 1.8;
+  color: var(--text-secondary, #B0B0C3);
+  margin: 0;
+  padding-left: 24px;
+  font-family: 'Inter', sans-serif;
+}
+
+.app-tutorial-list li {
+  margin-bottom: 8px;
+}
+
+.app-tutorial-list li:last-child {
+  margin-bottom: 0;
+}
+
+/* Scrollbar styling for modal body */
+.modal-body::-webkit-scrollbar {
+  width: 8px;
+}
+
+.modal-body::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.modal-body::-webkit-scrollbar-thumb {
+  background: rgba(110, 86, 249, 0.3);
+  border-radius: 4px;
+}
+
+.modal-body::-webkit-scrollbar-thumb:hover {
+  background: rgba(110, 86, 249, 0.5);
+}
+
+/* Large modal variant for Random Prompt Generator */
+.modal-content.random-prompt-modal {
+  max-width: 1200px;
+  max-height: 85vh;
+  width: 95vw;
+}
+
+.modal-body.random-prompt-modal-body {
+  padding: 0;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
+.random-prompt-generator-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 0;
+}
+
+.random-prompt-generator-wrapper .random-prompt-generator {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
+/* Random Prompt Generator Description */
+.random-prompt-description {
+  padding: 20px 24px;
+  border-bottom: 1px solid var(--border-subtle, rgba(255, 255, 255, 0.04));
+  background: var(--background-surface-2, #25252A);
+  flex-shrink: 0;
+}
+
+.random-prompt-description-content {
+  max-width: 100%;
+}
+
+.random-prompt-description-title {
+  font-size: var(--font-size-md, 16px);
+  font-weight: 600;
+  color: var(--text-primary, #FFFFFF);
+  margin: 0 0 12px 0;
+  font-family: 'Inter', sans-serif;
+}
+
+.random-prompt-description-text {
+  font-size: var(--font-size-sm, 14px);
+  line-height: 1.6;
+  color: var(--text-secondary, #B0B0C3);
+  margin: 0 0 12px 0;
+  font-family: 'Inter', sans-serif;
+}
+
+.random-prompt-description-text:last-child {
+  margin-bottom: 0;
+}
+
+.random-prompt-description-text strong {
+  color: var(--text-primary, #FFFFFF);
+  font-weight: 600;
+}
+
+/* Hide Random Prompt Generator header in modal since modal has its own header */
+.random-prompt-modal-body .random-prompt-generator-header {
+  display: none;
+}
+
+.random-prompt-modal-body .random-prompt-generator {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+

@@ -1,0 +1,1671 @@
+{
+  "category": "lighting",
+  "attributes": [
+    {
+      "id": "lighting:intensity-very-bright",
+      "baseText": "very bright lighting",
+      "semanticPriority": 70,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:intensity-bright",
+      "baseText": "bright lighting",
+      "semanticPriority": 70,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:intensity-strong",
+      "baseText": "strong lighting",
+      "semanticPriority": 70,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:intensity-intense",
+      "baseText": "intense lighting",
+      "semanticPriority": 70,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:intensity-high-intensity",
+      "baseText": "high-intensity lighting",
+      "semanticPriority": 70,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:intensity-moderate",
+      "baseText": "moderate lighting",
+      "semanticPriority": 70,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:intensity-balanced",
+      "baseText": "balanced lighting",
+      "semanticPriority": 70,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:intensity-neutral",
+      "baseText": "neutral lighting",
+      "semanticPriority": 70,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:intensity-soft",
+      "baseText": "soft lighting",
+      "semanticPriority": 70,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:intensity-gentle",
+      "baseText": "gentle lighting",
+      "semanticPriority": 70,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:intensity-low",
+      "baseText": "low lighting",
+      "semanticPriority": 70,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:intensity-dim",
+      "baseText": "dim lighting",
+      "semanticPriority": 70,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:intensity-very-dim",
+      "baseText": "very dim lighting",
+      "semanticPriority": 70,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:intensity-subtle",
+      "baseText": "subtle lighting",
+      "semanticPriority": 70,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:intensity-minimal",
+      "baseText": "minimal lighting",
+      "semanticPriority": 70,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:intensity-faint",
+      "baseText": "faint lighting",
+      "semanticPriority": 70,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:intensity-harsh",
+      "baseText": "harsh lighting",
+      "semanticPriority": 70,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:intensity-blinding",
+      "baseText": "blinding lighting",
+      "semanticPriority": 70,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:intensity-muted",
+      "baseText": "muted lighting",
+      "semanticPriority": 70,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:intensity-ambient",
+      "baseText": "ambient lighting",
+      "semanticPriority": 70,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:quality-soft",
+      "baseText": "soft light",
+      "semanticPriority": 75,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:quality-hard",
+      "baseText": "hard light",
+      "semanticPriority": 75,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:quality-diffused",
+      "baseText": "diffused light",
+      "semanticPriority": 75,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:quality-direct",
+      "baseText": "direct light",
+      "semanticPriority": 75,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:quality-natural",
+      "baseText": "natural light",
+      "semanticPriority": 75,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:quality-artificial",
+      "baseText": "artificial light",
+      "semanticPriority": 75,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:quality-warm",
+      "baseText": "warm light",
+      "semanticPriority": 75,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:quality-cool",
+      "baseText": "cool light",
+      "semanticPriority": 75,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:quality-neutral",
+      "baseText": "neutral light",
+      "semanticPriority": 75,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:quality-dramatic",
+      "baseText": "dramatic light",
+      "semanticPriority": 75,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:quality-cinematic",
+      "baseText": "cinematic light",
+      "semanticPriority": 75,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:quality-moody",
+      "baseText": "moody light",
+      "semanticPriority": 75,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:quality-flat",
+      "baseText": "flat light",
+      "semanticPriority": 75,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:quality-contrast-rich",
+      "baseText": "contrast-rich light",
+      "semanticPriority": 75,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:quality-volumetric",
+      "baseText": "volumetric light",
+      "semanticPriority": 75,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:quality-directional",
+      "baseText": "directional light",
+      "semanticPriority": 75,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:quality-rim",
+      "baseText": "rim light",
+      "semanticPriority": 75,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:quality-backlight",
+      "baseText": "backlight",
+      "semanticPriority": 75,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:quality-fill",
+      "baseText": "fill light",
+      "semanticPriority": 75,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:quality-key",
+      "baseText": "key light",
+      "semanticPriority": 75,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:direction-front",
+      "baseText": "front lighting",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:direction-back",
+      "baseText": "backlighting",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:direction-side",
+      "baseText": "side lighting",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:direction-top",
+      "baseText": "top lighting",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:direction-bottom",
+      "baseText": "bottom lighting",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:direction-left",
+      "baseText": "left-side lighting",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:direction-right",
+      "baseText": "right-side lighting",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:direction-three-quarter",
+      "baseText": "three-quarter lighting",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:direction-rim",
+      "baseText": "rim lighting",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:direction-overhead",
+      "baseText": "overhead lighting",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:direction-under",
+      "baseText": "underlighting",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:direction-cross",
+      "baseText": "cross lighting",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:direction-split",
+      "baseText": "split lighting",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:direction-butterfly",
+      "baseText": "butterfly lighting",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:direction-loop",
+      "baseText": "loop lighting",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:direction-broad",
+      "baseText": "broad lighting",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:direction-short",
+      "baseText": "short lighting",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:direction-edge",
+      "baseText": "edge lighting",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:direction-diagonal",
+      "baseText": "diagonal lighting",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:direction-halo",
+      "baseText": "halo lighting",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:style-cinematic",
+      "baseText": "cinematic lighting",
+      "semanticPriority": 80,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:style-studio",
+      "baseText": "studio lighting",
+      "semanticPriority": 85,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:style-natural",
+      "baseText": "natural lighting",
+      "semanticPriority": 80,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:style-dramatic",
+      "baseText": "dramatic lighting",
+      "semanticPriority": 80,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:style-moody",
+      "baseText": "moody lighting",
+      "semanticPriority": 80,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:style-high-key",
+      "baseText": "high key lighting",
+      "semanticPriority": 80,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:style-low-key",
+      "baseText": "low key lighting",
+      "semanticPriority": 80,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:style-soft-box",
+      "baseText": "soft box lighting",
+      "semanticPriority": 80,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:style-rim",
+      "baseText": "rim lighting style",
+      "semanticPriority": 80,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:style-backlit",
+      "baseText": "backlit style",
+      "semanticPriority": 80,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:style-neon",
+      "baseText": "neon lighting",
+      "semanticPriority": 80,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:style-ambient",
+      "baseText": "ambient lighting",
+      "semanticPriority": 80,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:style-volumetric",
+      "baseText": "volumetric lighting",
+      "semanticPriority": 80,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:style-chiaroscuro",
+      "baseText": "chiaroscuro lighting",
+      "semanticPriority": 80,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:style-film-noir",
+      "baseText": "film noir lighting",
+      "semanticPriority": 80,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:style-golden-hour",
+      "baseText": "golden hour lighting",
+      "semanticPriority": 80,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:style-blue-hour",
+      "baseText": "blue hour lighting",
+      "semanticPriority": 80,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:style-stage",
+      "baseText": "stage lighting",
+      "semanticPriority": 80,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:style-editorial",
+      "baseText": "editorial lighting",
+      "semanticPriority": 80,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:style-experimental",
+      "baseText": "experimental lighting",
+      "semanticPriority": 80,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:time-sunrise",
+      "baseText": "sunrise lighting",
+      "semanticPriority": 85,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:time-early-morning",
+      "baseText": "early morning light",
+      "semanticPriority": 85,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:time-morning",
+      "baseText": "morning daylight",
+      "semanticPriority": 85,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:time-midday",
+      "baseText": "midday sunlight",
+      "semanticPriority": 85,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:time-afternoon",
+      "baseText": "afternoon light",
+      "semanticPriority": 85,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:time-golden-hour",
+      "baseText": "golden hour lighting",
+      "semanticPriority": 85,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:time-late-afternoon",
+      "baseText": "late afternoon glow",
+      "semanticPriority": 85,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:time-sunset",
+      "baseText": "sunset lighting",
+      "semanticPriority": 85,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:time-twilight",
+      "baseText": "twilight lighting",
+      "semanticPriority": 85,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:time-blue-hour",
+      "baseText": "blue hour lighting",
+      "semanticPriority": 85,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:time-early-evening",
+      "baseText": "early evening light",
+      "semanticPriority": 85,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:time-dusk",
+      "baseText": "dusk lighting",
+      "semanticPriority": 85,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:time-night",
+      "baseText": "night lighting",
+      "semanticPriority": 85,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:time-midnight",
+      "baseText": "midnight lighting",
+      "semanticPriority": 85,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:time-moonlight",
+      "baseText": "moonlight",
+      "semanticPriority": 85,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:time-starlight",
+      "baseText": "starlight",
+      "semanticPriority": 85,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:time-overcast",
+      "baseText": "overcast daylight",
+      "semanticPriority": 85,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:time-storm",
+      "baseText": "storm light",
+      "semanticPriority": 85,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:time-winter",
+      "baseText": "winter daylight",
+      "semanticPriority": 85,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:time-summer",
+      "baseText": "summer daylight",
+      "semanticPriority": 85,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:cinematic-dramatic",
+      "baseText": "cinematic dramatic lighting",
+      "semanticPriority": 90,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:cinematic-low-key",
+      "baseText": "low-key lighting",
+      "semanticPriority": 90,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:cinematic-high-contrast",
+      "baseText": "high-contrast lighting",
+      "semanticPriority": 90,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:cinematic-film-noir",
+      "baseText": "film noir lighting",
+      "semanticPriority": 90,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:cinematic-chiaroscuro",
+      "baseText": "chiaroscuro lighting",
+      "semanticPriority": 90,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:cinematic-moody",
+      "baseText": "moody lighting",
+      "semanticPriority": 90,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:cinematic-dark-atmospheric",
+      "baseText": "dark atmospheric lighting",
+      "semanticPriority": 90,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:cinematic-spotlight",
+      "baseText": "spotlight lighting",
+      "semanticPriority": 90,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:cinematic-rim-lit",
+      "baseText": "rim-lit dramatic lighting",
+      "semanticPriority": 90,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:cinematic-backlit-silhouette",
+      "baseText": "backlit silhouette lighting",
+      "semanticPriority": 90,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:cinematic-volumetric",
+      "baseText": "volumetric cinematic lighting",
+      "semanticPriority": 90,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:cinematic-hard-edge",
+      "baseText": "hard edge lighting",
+      "semanticPriority": 90,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:cinematic-directional-dramatic",
+      "baseText": "directional dramatic lighting",
+      "semanticPriority": 90,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:cinematic-shadow-heavy",
+      "baseText": "shadow-heavy lighting",
+      "semanticPriority": 90,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:cinematic-edge-lit",
+      "baseText": "edge-lit cinematic style",
+      "semanticPriority": 90,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:cinematic-high-drama",
+      "baseText": "high drama lighting",
+      "semanticPriority": 90,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:cinematic-stage",
+      "baseText": "stage lighting",
+      "semanticPriority": 90,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:cinematic-gothic",
+      "baseText": "gothic lighting",
+      "semanticPriority": 90,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:cinematic-suspenseful",
+      "baseText": "suspenseful lighting",
+      "semanticPriority": 90,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:cinematic-epic",
+      "baseText": "epic cinematic lighting",
+      "semanticPriority": 90,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:artifact-overexposed",
+      "baseText": "overexposed",
+      "semanticPriority": 120,
+      "isNegative": true,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:artifact-underexposed",
+      "baseText": "underexposed",
+      "semanticPriority": 120,
+      "isNegative": true,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:intensity-overexposed",
+      "baseText": "intensity overexposed",
+      "semanticPriority": 70,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:intensity-underexposed",
+      "baseText": "intensity underexposed",
+      "semanticPriority": 70,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:intensity-low-key",
+      "baseText": "intensity low key",
+      "semanticPriority": 70,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:intensity-high-key",
+      "baseText": "intensity high key",
+      "semanticPriority": 70,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:quality-crisp",
+      "baseText": "quality crisp",
+      "semanticPriority": 75,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:quality-smooth",
+      "baseText": "quality smooth",
+      "semanticPriority": 75,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:quality-contrasty",
+      "baseText": "quality contrasty",
+      "semanticPriority": 75,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:quality-hazy",
+      "baseText": "quality hazy",
+      "semanticPriority": 75,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:quality-dusty",
+      "baseText": "quality dusty",
+      "semanticPriority": 75,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:quality-clean",
+      "baseText": "quality clean",
+      "semanticPriority": 75,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:quality-soft-shadow",
+      "baseText": "quality soft shadow",
+      "semanticPriority": 75,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:quality-hard-shadow",
+      "baseText": "quality hard shadow",
+      "semanticPriority": 75,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:quality-bloomy",
+      "baseText": "quality bloomy",
+      "semanticPriority": 75,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:direction-backlit",
+      "baseText": "direction backlit",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:direction-silhouette",
+      "baseText": "direction silhouette",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:style-candle",
+      "baseText": "style candle",
+      "semanticPriority": 80,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:style-firelight",
+      "baseText": "style firelight",
+      "semanticPriority": 80,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:style-lantern",
+      "baseText": "style lantern",
+      "semanticPriority": 80,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:style-floodlight",
+      "baseText": "style floodlight",
+      "semanticPriority": 80,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:style-spotlight",
+      "baseText": "style spotlight",
+      "semanticPriority": 80,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:style-strobe",
+      "baseText": "style strobe",
+      "semanticPriority": 80,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:style-led",
+      "baseText": "style led",
+      "semanticPriority": 80,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:time-dawn",
+      "baseText": "time dawn",
+      "semanticPriority": 85,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:time-moonlit",
+      "baseText": "time moonlit",
+      "semanticPriority": 85,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:time-stormy",
+      "baseText": "time stormy",
+      "semanticPriority": 85,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:time-foggy",
+      "baseText": "time foggy",
+      "semanticPriority": 85,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:cinematic-practical",
+      "baseText": "cinematic practical",
+      "semanticPriority": 90,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:cinematic-bounce",
+      "baseText": "cinematic bounce",
+      "semanticPriority": 90,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:cinematic-fill",
+      "baseText": "cinematic fill",
+      "semanticPriority": 90,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:cinematic-key",
+      "baseText": "cinematic key",
+      "semanticPriority": 90,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:cinematic-back",
+      "baseText": "cinematic back",
+      "semanticPriority": 90,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:cinematic-motivated",
+      "baseText": "cinematic motivated",
+      "semanticPriority": 90,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:cinematic-sodium",
+      "baseText": "cinematic sodium",
+      "semanticPriority": 90,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:cinematic-tungsten",
+      "baseText": "cinematic tungsten",
+      "semanticPriority": 90,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:cinematic-cool",
+      "baseText": "cinematic cool",
+      "semanticPriority": 90,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:cinematic-warm",
+      "baseText": "cinematic warm",
+      "semanticPriority": 90,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:artifact-lens-flare",
+      "baseText": "artifact lens flare",
+      "semanticPriority": 120,
+      "isNegative": true,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:artifact-light-leak",
+      "baseText": "artifact light leak",
+      "semanticPriority": 120,
+      "isNegative": true,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:artifact-glow",
+      "baseText": "artifact glow",
+      "semanticPriority": 120,
+      "isNegative": true,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:artifact-halo",
+      "baseText": "artifact halo",
+      "semanticPriority": 120,
+      "isNegative": true,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:artifact-bloom",
+      "baseText": "artifact bloom",
+      "semanticPriority": 120,
+      "isNegative": true,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:artifact-ghosting",
+      "baseText": "artifact ghosting",
+      "semanticPriority": 120,
+      "isNegative": true,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:artifact-band",
+      "baseText": "artifact band",
+      "semanticPriority": 120,
+      "isNegative": true,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:artifact-flicker",
+      "baseText": "artifact flicker",
+      "semanticPriority": 120,
+      "isNegative": true,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:artifact-chromatic-fringe",
+      "baseText": "artifact chromatic fringe",
+      "semanticPriority": 120,
+      "isNegative": true,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:artifact-scatter",
+      "baseText": "artifact scatter",
+      "semanticPriority": 120,
+      "isNegative": true,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:artifact-banding",
+      "baseText": "artifact banding",
+      "semanticPriority": 120,
+      "isNegative": true,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:artifact-flare-orb",
+      "baseText": "artifact flare orb",
+      "semanticPriority": 120,
+      "isNegative": true,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:artifact-flare-streak",
+      "baseText": "artifact flare streak",
+      "semanticPriority": 120,
+      "isNegative": true,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:artifact-color-bleed",
+      "baseText": "artifact color bleed",
+      "semanticPriority": 120,
+      "isNegative": true,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:artifact-hot-spot",
+      "baseText": "artifact hot spot",
+      "semanticPriority": 120,
+      "isNegative": true,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:artifact-iris-glare",
+      "baseText": "artifact iris glare",
+      "semanticPriority": 120,
+      "isNegative": true,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:artifact-flare-ghost",
+      "baseText": "artifact flare ghost",
+      "semanticPriority": 120,
+      "isNegative": true,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:artifact-sensor-bloom",
+      "baseText": "artifact sensor bloom",
+      "semanticPriority": 120,
+      "isNegative": true,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:artifact-edge-glow",
+      "baseText": "artifact edge glow",
+      "semanticPriority": 120,
+      "isNegative": true,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:artifact-light-smear",
+      "baseText": "artifact light smear",
+      "semanticPriority": 120,
+      "isNegative": true,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:cinematic-negative-fill",
+      "baseText": "cinematic negative fill",
+      "semanticPriority": 90,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:cinematic-book-light",
+      "baseText": "cinematic book light",
+      "semanticPriority": 90,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:cinematic-screen-glow",
+      "baseText": "cinematic screen glow",
+      "semanticPriority": 90,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:cinematic-projector-light",
+      "baseText": "cinematic projector light",
+      "semanticPriority": 90,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:cinematic-moonlight-key",
+      "baseText": "cinematic moonlight key",
+      "semanticPriority": 90,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:cinematic-streetlight-key",
+      "baseText": "cinematic streetlight key",
+      "semanticPriority": 90,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:cinematic-practical-bokeh",
+      "baseText": "cinematic practical bokeh",
+      "semanticPriority": 90,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:cinematic-soft-kicker",
+      "baseText": "cinematic soft kicker",
+      "semanticPriority": 90,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:cinematic-top-silhouette",
+      "baseText": "cinematic top silhouette",
+      "semanticPriority": 90,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:cinematic-edge-kicker",
+      "baseText": "cinematic edge kicker",
+      "semanticPriority": 90,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:direction-top-down",
+      "baseText": "direction top down",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:direction-bottom-up",
+      "baseText": "direction bottom up",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:direction-side-left",
+      "baseText": "direction side left",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:direction-side-right",
+      "baseText": "direction side right",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:direction-short-light",
+      "baseText": "direction short light",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:direction-broad-light",
+      "baseText": "direction broad light",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:direction-kicker",
+      "baseText": "direction kicker",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:direction-uplight",
+      "baseText": "direction uplight",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:direction-underlight",
+      "baseText": "direction underlight",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:direction-edge-light",
+      "baseText": "direction edge light",
+      "semanticPriority": 65,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:intensity-whisper-soft",
+      "baseText": "intensity whisper soft",
+      "semanticPriority": 70,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:intensity-glowingly-dim",
+      "baseText": "intensity glowingly dim",
+      "semanticPriority": 70,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:intensity-muted-low",
+      "baseText": "intensity muted low",
+      "semanticPriority": 70,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:intensity-bright-burst",
+      "baseText": "intensity bright burst",
+      "semanticPriority": 70,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:intensity-piercing",
+      "baseText": "intensity piercing",
+      "semanticPriority": 70,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:intensity-dim-ambient",
+      "baseText": "intensity dim ambient",
+      "semanticPriority": 70,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:intensity-soft-diffuse",
+      "baseText": "intensity soft diffuse",
+      "semanticPriority": 70,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:intensity-punchy",
+      "baseText": "intensity punchy",
+      "semanticPriority": 70,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:intensity-feathered",
+      "baseText": "intensity feathered",
+      "semanticPriority": 70,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:intensity-soft-spill",
+      "baseText": "intensity soft spill",
+      "semanticPriority": 70,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:quality-velvety",
+      "baseText": "quality velvety",
+      "semanticPriority": 75,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:quality-silky",
+      "baseText": "quality silky",
+      "semanticPriority": 75,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:quality-granular",
+      "baseText": "quality granular",
+      "semanticPriority": 75,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:quality-misty",
+      "baseText": "quality misty",
+      "semanticPriority": 75,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:quality-glossy",
+      "baseText": "quality glossy",
+      "semanticPriority": 75,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:quality-diffuse",
+      "baseText": "quality diffuse",
+      "semanticPriority": 75,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:quality-specular",
+      "baseText": "quality specular",
+      "semanticPriority": 75,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:quality-painterly",
+      "baseText": "quality painterly",
+      "semanticPriority": 75,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:quality-velour",
+      "baseText": "quality velour",
+      "semanticPriority": 75,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:quality-sparkling",
+      "baseText": "quality sparkling",
+      "semanticPriority": 75,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:style-practical",
+      "baseText": "style practical",
+      "semanticPriority": 80,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:style-sodium-vapor",
+      "baseText": "style sodium vapor",
+      "semanticPriority": 80,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:style-mercury-vapor",
+      "baseText": "style mercury vapor",
+      "semanticPriority": 80,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:style-laser",
+      "baseText": "style laser",
+      "semanticPriority": 80,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:style-bioluminescent",
+      "baseText": "style bioluminescent",
+      "semanticPriority": 80,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:style-glowstick",
+      "baseText": "style glowstick",
+      "semanticPriority": 80,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:style-paper-lantern",
+      "baseText": "style paper lantern",
+      "semanticPriority": 80,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:style-torchlight",
+      "baseText": "style torchlight",
+      "semanticPriority": 80,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:style-studio-flash",
+      "baseText": "style studio flash",
+      "semanticPriority": 80,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:style-window-light",
+      "baseText": "style window light",
+      "semanticPriority": 80,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:time-pre-dawn",
+      "baseText": "time pre dawn",
+      "semanticPriority": 85,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:time-afterglow",
+      "baseText": "time afterglow",
+      "semanticPriority": 85,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:time-civil-dawn",
+      "baseText": "time civil dawn",
+      "semanticPriority": 85,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:time-nautical-dawn",
+      "baseText": "time nautical dawn",
+      "semanticPriority": 85,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:time-astronomical-dawn",
+      "baseText": "time astronomical dawn",
+      "semanticPriority": 85,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:time-civil-dusk",
+      "baseText": "time civil dusk",
+      "semanticPriority": 85,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:time-nautical-dusk",
+      "baseText": "time nautical dusk",
+      "semanticPriority": 85,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:time-astronomical-dusk",
+      "baseText": "time astronomical dusk",
+      "semanticPriority": 85,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:time-equinox",
+      "baseText": "time equinox",
+      "semanticPriority": 85,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "lighting:time-solstice",
+      "baseText": "time solstice",
+      "semanticPriority": 85,
+      "isNegative": false,
+      "conflictsWith": []
+    }
+  ]
+}

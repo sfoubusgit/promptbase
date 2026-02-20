@@ -1,0 +1,115 @@
+/**
+ * ModifierControls Component Styles
+ * 
+ * Uses global design token CSS variables.
+ * Precise, professional slider controls with equipment-like feel.
+ */
+
+.modifier-controls {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-3);
+}
+
+.modifier-row {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: var(--spacing-2);
+  align-items: center;
+}
+
+.modifier-label {
+  font-size: var(--font-size-sm);
+  color: var(--text-primary);
+  grid-column: 1;
+}
+
+.modifier-value {
+  font-size: var(--font-size-xs);
+  color: var(--text-secondary);
+  font-family: var(--font-mono);
+  grid-column: 2;
+}
+
+/* Range input styling */
+.modifier-row input[type="range"] {
+  width: 100%;
+  background: transparent;
+  appearance: none;
+  -webkit-appearance: none;
+  grid-column: 1 / -1;
+}
+
+/* Track styling */
+.modifier-row input[type="range"]::-webkit-slider-runnable-track {
+  height: 2px;
+  background: var(--border-strong);
+  border-radius: var(--radius-sm);
+}
+
+.modifier-row input[type="range"]::-moz-range-track {
+  height: 2px;
+  background: var(--border-strong);
+  border-radius: var(--radius-sm);
+}
+
+/* Thumb styling */
+.modifier-row input[type="range"]::-webkit-slider-thumb {
+  width: 12px;
+  height: 12px;
+  background: var(--accent-primary);
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  margin-top: -5px;
+}
+
+.modifier-row input[type="range"]::-moz-range-thumb {
+  width: 12px;
+  height: 12px;
+  background: var(--accent-primary);
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+
+/* Hover state */
+.modifier-row input[type="range"]:hover::-webkit-slider-thumb {
+  background: var(--accent-primary-hover);
+}
+
+.modifier-row input[type="range"]:hover::-moz-range-thumb {
+  background: var(--accent-primary-hover);
+}
+
+/* Focus state - no outline, no glow */
+.modifier-row input[type="range"]:focus {
+  outline: none;
+}
+
+.modifier-row input[type="range"]:focus::-webkit-slider-thumb {
+  background: var(--accent-primary-hover);
+}
+
+.modifier-row input[type="range"]:focus::-moz-range-thumb {
+  background: var(--accent-primary-hover);
+}
+
+/* Disabled state */
+.modifier-row input[type="range"]:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.modifier-row input[type="range"]:disabled::-webkit-slider-thumb {
+  cursor: not-allowed;
+  background: var(--text-muted);
+}
+
+.modifier-row input[type="range"]:disabled::-moz-range-thumb {
+  cursor: not-allowed;
+  background: var(--text-muted);
+}
+

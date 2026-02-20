@@ -1,0 +1,262 @@
+/**
+ * PromptPreview Component Styles
+ * 
+ * Matches the old PreviewPanel design
+ */
+
+.prompt-preview {
+  background: #1A1A1F;
+  border-radius: 20px;
+  padding: 32px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  position: relative;
+  height: fit-content;
+}
+
+.prompt-preview-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--spacing-4);
+}
+
+.prompt-preview-header-controls {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.prompt-preview-action-buttons {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.prompt-preview-action-button {
+  padding: 6px 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(20, 20, 26, 0.95);
+  color: #e5e7eb;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.prompt-preview-action-button:hover:not(:disabled) {
+  border-color: rgba(110, 86, 249, 0.6);
+  color: #fff;
+}
+
+.prompt-preview-action-button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.prompt-preview-action-button-danger {
+  border-color: rgba(248, 113, 113, 0.4);
+  color: #fecaca;
+}
+
+.prompt-preview-action-button-danger:hover:not(:disabled) {
+  background: rgba(248, 113, 113, 0.15);
+  border-color: rgba(248, 113, 113, 0.6);
+  color: #fff;
+}
+
+.prompt-preview-edit-button,
+.prompt-preview-finish-button {
+  padding: 8px 16px;
+  background: #6E56F9;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 13px;
+  font-weight: 600;
+  font-family: 'Inter', sans-serif;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+}
+
+.prompt-preview-edit-button:hover,
+.prompt-preview-finish-button:hover {
+  background: #7B65FF;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(110, 86, 249, 0.3);
+}
+
+.prompt-preview-edit-button:active,
+.prompt-preview-finish-button:active {
+  transform: translateY(0);
+}
+
+.prompt-preview-finish-button {
+  background: #10B981;
+}
+
+.prompt-preview-finish-button:hover {
+  background: #059669;
+  box-shadow: 0 2px 8px rgba(16, 185, 129, 0.3);
+}
+
+.prompt-preview-locked-indicator {
+  font-size: 13px;
+  font-weight: 500;
+  color: #B0B0C3;
+  font-family: 'Inter', sans-serif;
+  padding: 8px 16px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.prompt-preview-title {
+  font-size: 22px;
+  color: white;
+  font-weight: 700;
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+}
+
+.prompt-preview-metadata {
+  font-size: 12px;
+  color: #B0B0C3;
+  font-weight: 600;
+  font-family: 'Inter', sans-serif;
+}
+
+.prompt-preview-token-count-value {
+  color: #6E56F9;
+  font-weight: 600;
+}
+
+.prompt-preview-token-limit {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.prompt-preview-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-4);
+}
+
+.prompt-preview-section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-2);
+}
+
+.prompt-preview-label {
+  font-size: 14px;
+  color: #B0B0C3;
+  font-weight: 600;
+  font-family: 'Inter', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.prompt-preview-text {
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  border-radius: 12px;
+  padding: 16px;
+  font-size: 14px;
+  line-height: 1.6;
+  font-family: 'Inter', sans-serif;
+  min-height: 60px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  color: white;
+}
+
+.prompt-preview-text-negative {
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  border-radius: 12px;
+  padding: 16px;
+  font-size: 14px;
+  line-height: 1.6;
+  font-family: 'Inter', sans-serif;
+  min-height: 60px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  color: #B0B0C3;
+}
+
+.prompt-preview-textarea {
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 16px;
+  font-size: 14px;
+  line-height: 1.6;
+  font-family: 'Inter', sans-serif;
+  color: white;
+  resize: vertical;
+  width: 100%;
+  box-sizing: border-box;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.prompt-preview-textarea:focus {
+  border-color: #6E56F9;
+  box-shadow: 0 0 0 2px rgba(110, 86, 249, 0.1);
+}
+
+.prompt-preview-textarea-negative {
+  color: #B0B0C3;
+}
+
+.prompt-preview-copy-button {
+  width: 100%;
+  margin-top: 24px;
+  padding: 14px 24px;
+  background: #6E56F9;
+  border: none;
+  border-radius: 12px;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: 'Inter', sans-serif;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.prompt-preview-copy-button:hover {
+  background: #7B65FF;
+  box-shadow: 0 4px 16px rgba(110, 86, 249, 0.4);
+  transform: translateY(-2px);
+}
+
+.prompt-preview-copy-button:active {
+  transform: translateY(0);
+}
+
+/* Sectioned display styles */
+.prompt-preview-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.prompt-preview-section-label {
+  font-weight: 600;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 4px;
+  display: block;
+}
+
+.prompt-preview-section-text {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #FFFFFF;
+  padding: 8px 12px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}

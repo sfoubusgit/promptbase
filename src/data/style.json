@@ -1,0 +1,2007 @@
+{
+  "category": "style",
+  "attributes": [
+    {
+      "id": "style:anime",
+      "baseText": "anime style",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:anime-inspired-illustration",
+      "baseText": "anime-inspired illustration",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:cartoon",
+      "baseText": "cartoon style",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:line-art",
+      "baseText": "line art",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:ink-illustration",
+      "baseText": "ink illustration",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:watercolor-illustration",
+      "baseText": "watercolor illustration",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:watercolor",
+      "baseText": "watercolor illustration",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:gouache-illustration",
+      "baseText": "gouache illustration",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:oil-painting",
+      "baseText": "oil painting",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:oil-painting-style",
+      "baseText": "oil painting style",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:acrylic-painting-style",
+      "baseText": "acrylic painting style",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:pencil-sketch",
+      "baseText": "pencil sketch",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:sketch",
+      "baseText": "sketch",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:charcoal-drawing",
+      "baseText": "charcoal drawing",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:digital-illustration",
+      "baseText": "digital illustration",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:digital-art",
+      "baseText": "digital art",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:flat-illustration",
+      "baseText": "flat illustration",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:vector-illustration",
+      "baseText": "vector illustration",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:minimalist-illustration",
+      "baseText": "minimalist illustration",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:detailed-illustration",
+      "baseText": "detailed illustration",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:concept-art",
+      "baseText": "concept art",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:concept-art-style",
+      "baseText": "concept art style",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:storybook-illustration",
+      "baseText": "storybook illustration",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:comic-book-style",
+      "baseText": "comic book style",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:manga-style",
+      "baseText": "manga style",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:childrens-book-illustration",
+      "baseText": "children's book illustration",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:poster-illustration-style",
+      "baseText": "poster illustration style",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:photorealistic",
+      "baseText": "photorealistic",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:hyperrealistic",
+      "baseText": "hyperrealistic",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:ultra-realistic",
+      "baseText": "ultra-realistic",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:cinematic-realism",
+      "baseText": "cinematic realism",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:documentary-style",
+      "baseText": "documentary style",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:editorial-photography-style",
+      "baseText": "editorial photography style",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:studio-photography-style",
+      "baseText": "studio photography style",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:naturalistic-realism",
+      "baseText": "naturalistic realism",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:environmental-realism",
+      "baseText": "environmental realism",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:lifestyle-photography-style",
+      "baseText": "lifestyle photography style",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:portrait-photography-style",
+      "baseText": "portrait photography style",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:fashion-photography-style",
+      "baseText": "fashion photography style",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:product-photography-style",
+      "baseText": "product photography style",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:architectural-photography-style",
+      "baseText": "architectural photography style",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:fine-art-realism",
+      "baseText": "fine art realism",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:high-end-commercial-style",
+      "baseText": "high-end commercial style",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:professional-photography-style",
+      "baseText": "professional photography style",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:real-world-lighting-realism",
+      "baseText": "real-world lighting realism",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:true-to-life-color-realism",
+      "baseText": "true-to-life color realism",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:high-dynamic-range-realism",
+      "baseText": "high dynamic range realism",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:acrylic-painting",
+      "baseText": "acrylic painting",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:watercolor-painting",
+      "baseText": "watercolor painting",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:gouache-painting",
+      "baseText": "gouache painting",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:tempera-painting",
+      "baseText": "tempera painting",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:ink-wash-painting",
+      "baseText": "ink wash painting",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:fresco-painting",
+      "baseText": "fresco painting",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:encaustic-painting",
+      "baseText": "encaustic painting",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:impasto-style",
+      "baseText": "impasto style",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:realism-painting-style",
+      "baseText": "realism painting style",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:impressionism-style",
+      "baseText": "impressionism style",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:expressionism-style",
+      "baseText": "expressionism style",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:abstract-painting",
+      "baseText": "abstract painting",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:surrealism-style",
+      "baseText": "surrealism style",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:cubism-style",
+      "baseText": "cubism style",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:baroque-painting-style",
+      "baseText": "baroque painting style",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:renaissance-painting-style",
+      "baseText": "renaissance painting style",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:romanticism-style",
+      "baseText": "romanticism style",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:minimalist-painting",
+      "baseText": "minimalist painting",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:contemporary-fine-art-painting",
+      "baseText": "contemporary fine art painting",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:digital-painting",
+      "baseText": "digital painting",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:matte-painting",
+      "baseText": "matte painting",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:3d-render",
+      "baseText": "3D render",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:cgi-style",
+      "baseText": "CGI style",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:photobashing",
+      "baseText": "photobashing",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:pixel-art",
+      "baseText": "pixel art",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:low-poly-art",
+      "baseText": "low-poly art",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:isometric-art",
+      "baseText": "isometric art",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:flat-design",
+      "baseText": "flat design",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:vector-art",
+      "baseText": "vector art",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:neon-cyberpunk-style",
+      "baseText": "neon cyberpunk style",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:synthwave-style",
+      "baseText": "synthwave style",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:vaporwave-style",
+      "baseText": "vaporwave style",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:futuristic-digital-art",
+      "baseText": "futuristic digital art",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:ui-ux-illustration-style",
+      "baseText": "UI/UX illustration style",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:game-art-style",
+      "baseText": "game art style",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:procedural-art",
+      "baseText": "procedural art",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:generative-digital-art",
+      "baseText": "generative digital art",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:cinematic",
+      "baseText": "cinematic style",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:epic-cinematic-style",
+      "baseText": "epic cinematic style",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:dramatic-cinematic-lighting",
+      "baseText": "dramatic cinematic lighting",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:moody-cinematic-style",
+      "baseText": "moody cinematic style",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:dark-cinematic-tone",
+      "baseText": "dark cinematic tone",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:high-contrast-cinematic-look",
+      "baseText": "high-contrast cinematic look",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:cinemascope-style",
+      "baseText": "cinemascope style",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:widescreen-cinematic-framing",
+      "baseText": "widescreen cinematic framing",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:film-noir-style",
+      "baseText": "film noir style",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:neo-noir-cinematic-style",
+      "baseText": "neo-noir cinematic style",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:gritty-cinematic-realism",
+      "baseText": "gritty cinematic realism",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:atmospheric-cinematic-style",
+      "baseText": "atmospheric cinematic style",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:stylized-cinematic-color-grading",
+      "baseText": "stylized cinematic color grading",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:blockbuster-movie-style",
+      "baseText": "blockbuster movie style",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:indie-film-style",
+      "baseText": "indie film style",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:art-house-cinema-style",
+      "baseText": "art-house cinema style",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:documentary-cinema-style",
+      "baseText": "documentary cinema style",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:historical-cinematic-style",
+      "baseText": "historical cinematic style",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:futuristic-cinematic-style",
+      "baseText": "futuristic cinematic style",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:fantasy-cinematic-style",
+      "baseText": "fantasy cinematic style",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:fantasy-art",
+      "baseText": "fantasy art style",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:fantasy",
+      "baseText": "fantasy",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:science-fiction",
+      "baseText": "science fiction style",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:sci-fi",
+      "baseText": "science fiction",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:horror",
+      "baseText": "horror",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:thriller",
+      "baseText": "thriller",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:mystery",
+      "baseText": "mystery",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:adventure",
+      "baseText": "adventure",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:action",
+      "baseText": "action",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:drama",
+      "baseText": "drama",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:romance",
+      "baseText": "romance",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:comedy",
+      "baseText": "comedy",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:dark-fantasy",
+      "baseText": "dark fantasy",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:cyberpunk",
+      "baseText": "cyberpunk",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:steampunk",
+      "baseText": "steampunk",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:post-apocalyptic",
+      "baseText": "post-apocalyptic",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:dystopian",
+      "baseText": "dystopian",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:historical",
+      "baseText": "historical",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:western",
+      "baseText": "western",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:noir",
+      "baseText": "noir",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:mythology",
+      "baseText": "mythology",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:supernatural",
+      "baseText": "supernatural",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:minimalist",
+      "baseText": "minimalist style",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:flat-minimalist-design",
+      "baseText": "flat minimalist design",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:simple-line-art",
+      "baseText": "simple line art",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:monoline-illustration",
+      "baseText": "monoline illustration",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:geometric-minimalism",
+      "baseText": "geometric minimalism",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:abstract-minimalism",
+      "baseText": "abstract minimalism",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:minimalist-color-blocks",
+      "baseText": "minimalist color blocks",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:limited-color-palette",
+      "baseText": "limited color palette",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:black-and-white-minimalism",
+      "baseText": "black and white minimalism",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:negative-space-composition",
+      "baseText": "negative space composition",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:clean-vector-style",
+      "baseText": "clean vector style",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:minimalist-icon-style",
+      "baseText": "minimalist icon style",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:sparse-composition",
+      "baseText": "sparse composition",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:minimalist-typography-style",
+      "baseText": "minimalist typography style",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:modern-minimalism",
+      "baseText": "modern minimalism",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:scandinavian-minimalism",
+      "baseText": "scandinavian minimalism",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:zen-minimalism",
+      "baseText": "zen minimalism",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:brutalist-minimalism",
+      "baseText": "brutalist minimalism",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:soft-minimalism",
+      "baseText": "soft minimalism",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:editorial-minimalism",
+      "baseText": "editorial minimalism",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:illustration-storybook",
+      "baseText": "illustration storybook",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:illustration-ink-wash",
+      "baseText": "illustration ink wash",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:illustration-line-art",
+      "baseText": "illustration line art",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:illustration-pencil-sketch",
+      "baseText": "illustration pencil sketch",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:illustration-watercolor",
+      "baseText": "illustration watercolor",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:illustration-gouache",
+      "baseText": "illustration gouache",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:illustration-flat-color",
+      "baseText": "illustration flat color",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:illustration-inked-outline",
+      "baseText": "illustration inked outline",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:illustration-cel-shaded",
+      "baseText": "illustration cel shaded",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:illustration-children-book",
+      "baseText": "illustration children book",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:realistic-photo",
+      "baseText": "realistic photo",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:realistic-natural-light",
+      "baseText": "realistic natural light",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:realistic-high-detail",
+      "baseText": "realistic high detail",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:realistic-grain",
+      "baseText": "realistic grain",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:realistic-portrait",
+      "baseText": "realistic portrait",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:realistic-street",
+      "baseText": "realistic street",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:realistic-editorial",
+      "baseText": "realistic editorial",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:realistic-documentary",
+      "baseText": "realistic documentary",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:realistic-cinematic",
+      "baseText": "realistic cinematic",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:realistic-hdr",
+      "baseText": "realistic HDR",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:painting-oil",
+      "baseText": "painting oil",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:painting-acrylic",
+      "baseText": "painting acrylic",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:painting-tempera",
+      "baseText": "painting tempera",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:painting-impasto",
+      "baseText": "painting impasto",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:painting-baroque",
+      "baseText": "painting baroque",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:painting-renaissance",
+      "baseText": "painting renaissance",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:painting-impressionist",
+      "baseText": "painting impressionist",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:painting-expressionist",
+      "baseText": "painting expressionist",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:painting-plein-air",
+      "baseText": "painting plein air",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:painting-fresco",
+      "baseText": "painting fresco",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:digital-3d",
+      "baseText": "digital 3d",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:digital-render",
+      "baseText": "digital render",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:digital-matte-painting",
+      "baseText": "digital matte painting",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:digital-concept-art",
+      "baseText": "digital concept art",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:digital-low-poly",
+      "baseText": "digital low poly",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:digital-high-poly",
+      "baseText": "digital high poly",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:digital-vector",
+      "baseText": "digital vector",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:digital-vfx",
+      "baseText": "digital VFX",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:digital-paintover",
+      "baseText": "digital paintover",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:digital-shader",
+      "baseText": "digital shader",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:cinematic-film-still",
+      "baseText": "cinematic film still",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:cinematic-noir",
+      "baseText": "cinematic noir",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:cinematic-epic",
+      "baseText": "cinematic epic",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:cinematic-gritty",
+      "baseText": "cinematic gritty",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:cinematic-dreamlike",
+      "baseText": "cinematic dreamlike",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:cinematic-anamorphic",
+      "baseText": "cinematic anamorphic",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:cinematic-scope",
+      "baseText": "cinematic scope",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:cinematic-suspense",
+      "baseText": "cinematic suspense",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:cinematic-teal-orange",
+      "baseText": "cinematic teal orange",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:cinematic-period",
+      "baseText": "cinematic period",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:genre-cyberpunk",
+      "baseText": "genre cyberpunk",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:genre-steampunk",
+      "baseText": "genre steampunk",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:genre-dieselpunk",
+      "baseText": "genre dieselpunk",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:genre-post-apocalyptic",
+      "baseText": "genre post apocalyptic",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:genre-fantasy",
+      "baseText": "genre fantasy",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:genre-horror",
+      "baseText": "genre horror",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:genre-sci-fi",
+      "baseText": "genre sci fi",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:genre-western",
+      "baseText": "genre western",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:genre-gothic",
+      "baseText": "genre gothic",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:genre-utopian",
+      "baseText": "genre utopian",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:minimalist-mono",
+      "baseText": "minimalist mono",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:minimalist-negative-space",
+      "baseText": "minimalist negative space",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:minimalist-geometry",
+      "baseText": "minimalist geometry",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:minimalist-flat",
+      "baseText": "minimalist flat",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:minimalist-clean-lines",
+      "baseText": "minimalist clean lines",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:minimalist-abstract",
+      "baseText": "minimalist abstract",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:minimalist-silhouette",
+      "baseText": "minimalist silhouette",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:minimalist-pastel",
+      "baseText": "minimalist pastel",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:minimalist-bauhaus",
+      "baseText": "minimalist bauhaus",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:minimalist-brutalist",
+      "baseText": "minimalist brutalist",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:cinematic-long-take",
+      "baseText": "cinematic long take",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:cinematic-handheld",
+      "baseText": "cinematic handheld",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:cinematic-film-grain",
+      "baseText": "cinematic film grain",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:cinematic-anamorphic-flares",
+      "baseText": "cinematic anamorphic flares",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:cinematic-shallow-focus",
+      "baseText": "cinematic shallow focus",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:cinematic-moody-shadows",
+      "baseText": "cinematic moody shadows",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:cinematic-rain-soaked",
+      "baseText": "cinematic rain soaked",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:cinematic-dusty-desert",
+      "baseText": "cinematic dusty desert",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:cinematic-neon-noir",
+      "baseText": "cinematic neon noir",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:cinematic-period-drama",
+      "baseText": "cinematic period drama",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:digital-voxel",
+      "baseText": "digital voxel",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:digital-kitbash",
+      "baseText": "digital kitbash",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:digital-shader-toy",
+      "baseText": "digital shader toy",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:digital-procedural-texture",
+      "baseText": "digital procedural texture",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:digital-holographic",
+      "baseText": "digital holographic",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:digital-wireframe",
+      "baseText": "digital wireframe",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:digital-neon-wire",
+      "baseText": "digital neon wire",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:digital-pixel-3d",
+      "baseText": "digital pixel 3d",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:digital-gradient-mesh",
+      "baseText": "digital gradient mesh",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:digital-vector-matte",
+      "baseText": "digital vector matte",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:genre-solarpunk",
+      "baseText": "genre solarpunk",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:genre-biopunk",
+      "baseText": "genre biopunk",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:genre-hopepunk",
+      "baseText": "genre hopepunk",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:genre-sword-and-sorcery",
+      "baseText": "genre sword and sorcery",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:genre-space-opera",
+      "baseText": "genre space opera",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:genre-gaslamp-fantasy",
+      "baseText": "genre gaslamp fantasy",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:genre-weird-west",
+      "baseText": "genre weird west",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:genre-mythpunk",
+      "baseText": "genre mythpunk",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:genre-cozy-fantasy",
+      "baseText": "genre cozy fantasy",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:genre-afrofuturism",
+      "baseText": "genre afrofuturism",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:illustration-risograph",
+      "baseText": "illustration risograph",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:illustration-linocut",
+      "baseText": "illustration linocut",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:illustration-woodcut",
+      "baseText": "illustration woodcut",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:illustration-scratchboard",
+      "baseText": "illustration scratchboard",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:illustration-stippling",
+      "baseText": "illustration stippling",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:illustration-silkscreen",
+      "baseText": "illustration silkscreen",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:illustration-cut-paper",
+      "baseText": "illustration cut paper",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:illustration-chalkboard",
+      "baseText": "illustration chalkboard",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:illustration-marker-sketch",
+      "baseText": "illustration marker sketch",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:illustration-collage",
+      "baseText": "illustration collage",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:minimalist-monochrome",
+      "baseText": "minimalist monochrome",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:minimalist-ink-outline",
+      "baseText": "minimalist ink outline",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:minimalist-single-line",
+      "baseText": "minimalist single line",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:minimalist-simple-geometry",
+      "baseText": "minimalist simple geometry",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:minimalist-soft-pastel",
+      "baseText": "minimalist soft pastel",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:minimalist-clean-grid",
+      "baseText": "minimalist clean grid",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:minimalist-minimal-text",
+      "baseText": "minimalist minimal text",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:minimalist-minimal-icons",
+      "baseText": "minimalist minimal icons",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:minimalist-balanced-whitespace",
+      "baseText": "minimalist balanced whitespace",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:minimalist-muted-tone",
+      "baseText": "minimalist muted tone",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:painting-alla-prima",
+      "baseText": "painting alla prima",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:painting-glazing",
+      "baseText": "painting glazing",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:painting-sumi-e",
+      "baseText": "painting sumi e",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:painting-impasto-thick",
+      "baseText": "painting impasto thick",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:painting-palette-knife",
+      "baseText": "painting palette knife",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:painting-egg-tempera",
+      "baseText": "painting egg tempera",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:painting-fresco-wash",
+      "baseText": "painting fresco wash",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:painting-casein",
+      "baseText": "painting casein",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:painting-pointillism",
+      "baseText": "painting pointillism",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:painting-ink-on-silk",
+      "baseText": "painting ink on silk",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:realistic-available-light",
+      "baseText": "realistic available light",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:realistic-candid",
+      "baseText": "realistic candid",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:realistic-35mm-film",
+      "baseText": "realistic 35mm film",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:realistic-medium-format",
+      "baseText": "realistic medium format",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:realistic-street-portrait",
+      "baseText": "realistic street portrait",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:realistic-editorial-portrait",
+      "baseText": "realistic editorial portrait",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:realistic-documentary-grain",
+      "baseText": "realistic documentary grain",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:realistic-natural-color",
+      "baseText": "realistic natural color",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:realistic-window-light",
+      "baseText": "realistic window light",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    },
+    {
+      "id": "style:realistic-studio-softbox",
+      "baseText": "realistic studio softbox",
+      "semanticPriority": 3,
+      "isNegative": false,
+      "conflictsWith": []
+    }
+  ]
+}

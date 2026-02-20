@@ -1,0 +1,267 @@
+[
+  {
+    "id": "style-anime",
+    "baseText": "anime style",
+    "category": "style",
+    "semanticPriority": 3,
+    "isNegative": false,
+    "conflictsWith": ["style-realistic", "style-semi-realistic"]
+  },
+  {
+    "id": "style-semi-realistic",
+    "baseText": "semi-realistic",
+    "category": "style",
+    "semanticPriority": 3,
+    "isNegative": false,
+    "conflictsWith": ["style-anime", "style-realistic"]
+  },
+  {
+    "id": "style-realistic",
+    "baseText": "realistic",
+    "category": "style",
+    "semanticPriority": 3,
+    "isNegative": false,
+    "conflictsWith": ["style-anime", "style-semi-realistic"]
+  },
+  {
+    "id": "style-painterly",
+    "baseText": "painterly illustration",
+    "category": "style",
+    "semanticPriority": 3,
+    "isNegative": false,
+    "conflictsWith": []
+  },
+  {
+    "id": "style-3d-render",
+    "baseText": "3D render",
+    "category": "style",
+    "semanticPriority": 3,
+    "isNegative": false,
+    "conflictsWith": []
+  },
+  {
+    "id": "style-cartoon",
+    "baseText": "cartoon",
+    "category": "style",
+    "semanticPriority": 3,
+    "isNegative": false,
+    "conflictsWith": []
+  },
+  {
+    "id": "style-comic",
+    "baseText": "comic book",
+    "category": "style",
+    "semanticPriority": 3,
+    "isNegative": false,
+    "conflictsWith": []
+  },
+  {
+    "id": "style-pixel",
+    "baseText": "pixel art",
+    "category": "style",
+    "semanticPriority": 3,
+    "isNegative": false,
+    "conflictsWith": []
+  },
+  {
+    "id": "anime-soft-romantic",
+    "baseText": "soft romantic anime",
+    "category": "style",
+    "semanticPriority": 3,
+    "isNegative": false,
+    "conflictsWith": []
+  },
+  {
+    "id": "anime-shounen",
+    "baseText": "dynamic shounen action",
+    "category": "style",
+    "semanticPriority": 3,
+    "isNegative": false,
+    "conflictsWith": []
+  },
+  {
+    "id": "anime-gothic",
+    "baseText": "gothic or dark anime",
+    "category": "style",
+    "semanticPriority": 3,
+    "isNegative": false,
+    "conflictsWith": []
+  },
+  {
+    "id": "anime-cinematic",
+    "baseText": "cinematic anime realism",
+    "category": "style",
+    "semanticPriority": 3,
+    "isNegative": false,
+    "conflictsWith": []
+  },
+  {
+    "id": "anime-cel-style",
+    "baseText": "old-school cel-style",
+    "category": "style",
+    "semanticPriority": 3,
+    "isNegative": false,
+    "conflictsWith": []
+  },
+  {
+    "id": "anime-chibi",
+    "baseText": "chibi-inspired",
+    "category": "style",
+    "semanticPriority": 3,
+    "isNegative": false,
+    "conflictsWith": []
+  },
+  {
+    "id": "anime-moe",
+    "baseText": "moe style",
+    "category": "style",
+    "semanticPriority": 3,
+    "isNegative": false,
+    "conflictsWith": []
+  },
+  {
+    "id": "anime-retro",
+    "baseText": "retro anime",
+    "category": "style",
+    "semanticPriority": 3,
+    "isNegative": false,
+    "conflictsWith": []
+  },
+  {
+    "id": "realism-cinematic",
+    "baseText": "cinematic realism",
+    "category": "style",
+    "semanticPriority": 3,
+    "isNegative": false,
+    "conflictsWith": []
+  },
+  {
+    "id": "realism-portrait",
+    "baseText": "portrait photography look",
+    "category": "style",
+    "semanticPriority": 3,
+    "isNegative": false,
+    "conflictsWith": []
+  },
+  {
+    "id": "realism-natural-light",
+    "baseText": "natural light realism",
+    "category": "style",
+    "semanticPriority": 3,
+    "isNegative": false,
+    "conflictsWith": []
+  },
+  {
+    "id": "realism-hyperrealistic",
+    "baseText": "hyperrealistic",
+    "category": "style",
+    "semanticPriority": 3,
+    "isNegative": false,
+    "conflictsWith": []
+  },
+  {
+    "id": "realism-documentary",
+    "baseText": "documentary style",
+    "category": "style",
+    "semanticPriority": 3,
+    "isNegative": false,
+    "conflictsWith": []
+  },
+  {
+    "id": "painting-oil",
+    "baseText": "oil painting",
+    "category": "style",
+    "semanticPriority": 3,
+    "isNegative": false,
+    "conflictsWith": []
+  },
+  {
+    "id": "painting-watercolor",
+    "baseText": "watercolor",
+    "category": "style",
+    "semanticPriority": 3,
+    "isNegative": false,
+    "conflictsWith": []
+  },
+  {
+    "id": "painting-ink-wash",
+    "baseText": "ink and wash",
+    "category": "style",
+    "semanticPriority": 3,
+    "isNegative": false,
+    "conflictsWith": []
+  },
+  {
+    "id": "painting-gouache",
+    "baseText": "gouache",
+    "category": "style",
+    "semanticPriority": 3,
+    "isNegative": false,
+    "conflictsWith": []
+  },
+  {
+    "id": "painting-digital-painterly",
+    "baseText": "digital painting with painterly brushwork",
+    "category": "style",
+    "semanticPriority": 3,
+    "isNegative": false,
+    "conflictsWith": []
+  },
+  {
+    "id": "painting-acrylic",
+    "baseText": "acrylic",
+    "category": "style",
+    "semanticPriority": 3,
+    "isNegative": false,
+    "conflictsWith": []
+  },
+  {
+    "id": "painting-pastel",
+    "baseText": "pastel",
+    "category": "style",
+    "semanticPriority": 3,
+    "isNegative": false,
+    "conflictsWith": []
+  },
+  {
+    "id": "3d-cg-render",
+    "baseText": "CG render",
+    "category": "style",
+    "semanticPriority": 3,
+    "isNegative": false,
+    "conflictsWith": []
+  },
+  {
+    "id": "3d-stylized",
+    "baseText": "stylized 3D",
+    "category": "style",
+    "semanticPriority": 3,
+    "isNegative": false,
+    "conflictsWith": []
+  },
+  {
+    "id": "3d-clay",
+    "baseText": "clay render",
+    "category": "style",
+    "semanticPriority": 3,
+    "isNegative": false,
+    "conflictsWith": []
+  },
+  {
+    "id": "3d-toy",
+    "baseText": "toy-like figurine-like",
+    "category": "style",
+    "semanticPriority": 3,
+    "isNegative": false,
+    "conflictsWith": []
+  },
+  {
+    "id": "3d-low-poly",
+    "baseText": "low poly",
+    "category": "style",
+    "semanticPriority": 3,
+    "isNegative": false,
+    "conflictsWith": []
+  }
+]
+

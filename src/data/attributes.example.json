@@ -1,0 +1,51 @@
+[
+  {
+    "id": "subject-female",
+    "baseText": "female character",
+    "category": "subject",
+    "semanticPriority": 1,
+    "isNegative": false,
+    "conflictsWith": ["subject-male"]
+  },
+  {
+    "id": "subject-male",
+    "baseText": "male character",
+    "category": "subject",
+    "semanticPriority": 1,
+    "isNegative": false,
+    "conflictsWith": ["subject-female"]
+  },
+  {
+    "id": "anime-style",
+    "baseText": "anime style",
+    "category": "style",
+    "semanticPriority": 3,
+    "isNegative": false,
+    "conflictsWith": ["realistic-style", "photorealistic-style"]
+  },
+  {
+    "id": "realistic-style",
+    "baseText": "realistic style",
+    "category": "style",
+    "semanticPriority": 3,
+    "isNegative": false,
+    "conflictsWith": ["anime-style", "cartoon-style"]
+  },
+  {
+    "id": "long-hair",
+    "baseText": "long hair",
+    "category": "attribute",
+    "semanticPriority": 2,
+    "isNegative": false,
+    "conflictsWith": ["short-hair"]
+  },
+  {
+    "id": "short-hair",
+    "baseText": "short hair",
+    "category": "attribute",
+    "semanticPriority": 2,
+    "isNegative": false,
+    "conflictsWith": ["long-hair"]
+  }
+]
+

@@ -1,0 +1,90 @@
+.completion-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 64px;
+  text-align: center;
+  background: #1A1A1F;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.completion-state-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: #6E56F9;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  font-weight: 700;
+  font-family: 'Inter', sans-serif;
+  margin-bottom: 24px;
+}
+
+.completion-state-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: white;
+  font-family: 'Inter', sans-serif;
+  margin: 0 0 12px 0;
+}
+
+.completion-state-message {
+  font-size: 15px;
+  color: #B0B0C3;
+  font-family: 'Inter', sans-serif;
+  margin: 0 0 32px 0;
+  line-height: 1.6;
+}
+
+.completion-state-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.completion-state-button {
+  padding: 14px 24px;
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: 'Inter', sans-serif;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.completion-state-button-primary {
+  background: #6E56F9;
+  color: white;
+  border-color: #6E56F9;
+}
+
+.completion-state-button-primary:hover {
+  background: #7B65FF;
+  box-shadow: 0 4px 16px rgba(110, 86, 249, 0.4);
+  transform: translateY(-2px);
+}
+
+.completion-state-button-secondary {
+  background: rgba(255, 255, 255, 0.03);
+  color: #B0B0C3;
+  border-color: rgba(255, 255, 255, 0.04);
+}
+
+.completion-state-button-secondary:hover {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+.completion-state-button:active {
+  transform: translateY(0);
+}
+

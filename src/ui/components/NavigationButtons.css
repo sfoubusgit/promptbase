@@ -1,0 +1,77 @@
+/**
+ * NavigationButtons Component Styles
+ * 
+ * Matches the old NavigationButtons design
+ */
+
+.navigation-buttons {
+  display: flex;
+  gap: 12px;
+  margin-top: 32px;
+  padding-top: 32px;
+  border-top: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.nav-button {
+  flex: 1;
+  padding: 14px 24px;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: 'Inter', sans-serif;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.nav-button-back {
+  background: rgba(255, 255, 255, 0.03);
+  color: #B0B0C3;
+}
+
+.nav-button-back:hover:not(:disabled) {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+.nav-button-back:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.nav-button-next {
+  background: #6E56F9;
+  color: white;
+  border-color: #6E56F9;
+}
+
+.nav-button-next:hover:not(:disabled) {
+  background: #7B65FF;
+  border-color: #7B65FF;
+  box-shadow: 0 4px 16px rgba(110, 86, 249, 0.4);
+  transform: translateY(-2px);
+}
+
+.nav-button-next:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.nav-button-skip {
+  background: rgba(255, 255, 255, 0.05);
+  color: #B0B0C3;
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.nav-button-skip:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.15);
+  color: white;
+  transform: translateY(-2px);
+}
+
+.nav-button:active {
+  transform: translateY(0);
+}
+

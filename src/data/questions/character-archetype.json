@@ -1,0 +1,46 @@
+[
+  {
+    "id": "character-archetype-root",
+    "question": "What is the character's archetype or role?",
+    "description": "Choose the primary role or archetype that defines this character",
+    "attributeIds": [
+      "archetype-mage",
+      "archetype-knight",
+      "archetype-rogue",
+      "archetype-healer",
+      "archetype-scholar",
+      "archetype-hacker",
+      "archetype-pilot",
+      "archetype-merchant",
+      "archetype-warrior",
+      "archetype-ranger"
+    ],
+    "nextNodeId": "character-archetype-flavor",
+    "allowCustomExtension": [
+      "archetype-mage",
+      "archetype-knight",
+      "archetype-rogue",
+      "archetype-healer",
+      "archetype-scholar",
+      "archetype-hacker",
+      "archetype-pilot",
+      "archetype-merchant",
+      "archetype-warrior",
+      "archetype-ranger"
+    ]
+  },
+  {
+    "id": "character-archetype-flavor",
+    "question": "What special flavor does this archetype have?",
+    "description": "Add a unique twist or flavor to the character archetype",
+    "attributeIds": [
+      "archetype-flavor-wandering",
+      "archetype-flavor-royal",
+      "archetype-flavor-cursed",
+      "archetype-flavor-chosen",
+      "archetype-flavor-fallen",
+      "archetype-flavor-ascended"
+    ],
+    "nextNodeId": "style-artstyle-root"
+  }
+]

@@ -1,0 +1,131 @@
+[
+  {
+    "id": "archetype-mage",
+    "baseText": "mage",
+    "category": "subject",
+    "semanticPriority": 1,
+    "isNegative": false,
+    "conflictsWith": []
+  },
+  {
+    "id": "archetype-knight",
+    "baseText": "knight",
+    "category": "subject",
+    "semanticPriority": 1,
+    "isNegative": false,
+    "conflictsWith": []
+  },
+  {
+    "id": "archetype-rogue",
+    "baseText": "rogue",
+    "category": "subject",
+    "semanticPriority": 1,
+    "isNegative": false,
+    "conflictsWith": []
+  },
+  {
+    "id": "archetype-healer",
+    "baseText": "healer",
+    "category": "subject",
+    "semanticPriority": 1,
+    "isNegative": false,
+    "conflictsWith": []
+  },
+  {
+    "id": "archetype-scholar",
+    "baseText": "scholar",
+    "category": "subject",
+    "semanticPriority": 1,
+    "isNegative": false,
+    "conflictsWith": []
+  },
+  {
+    "id": "archetype-hacker",
+    "baseText": "hacker",
+    "category": "subject",
+    "semanticPriority": 1,
+    "isNegative": false,
+    "conflictsWith": []
+  },
+  {
+    "id": "archetype-pilot",
+    "baseText": "pilot",
+    "category": "subject",
+    "semanticPriority": 1,
+    "isNegative": false,
+    "conflictsWith": []
+  },
+  {
+    "id": "archetype-merchant",
+    "baseText": "merchant",
+    "category": "subject",
+    "semanticPriority": 1,
+    "isNegative": false,
+    "conflictsWith": []
+  },
+  {
+    "id": "archetype-warrior",
+    "baseText": "warrior",
+    "category": "subject",
+    "semanticPriority": 1,
+    "isNegative": false,
+    "conflictsWith": []
+  },
+  {
+    "id": "archetype-ranger",
+    "baseText": "ranger",
+    "category": "subject",
+    "semanticPriority": 1,
+    "isNegative": false,
+    "conflictsWith": []
+  },
+  {
+    "id": "archetype-flavor-wandering",
+    "baseText": "wandering",
+    "category": "attribute",
+    "semanticPriority": 2,
+    "isNegative": false,
+    "conflictsWith": []
+  },
+  {
+    "id": "archetype-flavor-royal",
+    "baseText": "royal",
+    "category": "attribute",
+    "semanticPriority": 2,
+    "isNegative": false,
+    "conflictsWith": []
+  },
+  {
+    "id": "archetype-flavor-cursed",
+    "baseText": "cursed",
+    "category": "attribute",
+    "semanticPriority": 2,
+    "isNegative": false,
+    "conflictsWith": []
+  },
+  {
+    "id": "archetype-flavor-chosen",
+    "baseText": "chosen",
+    "category": "attribute",
+    "semanticPriority": 2,
+    "isNegative": false,
+    "conflictsWith": []
+  },
+  {
+    "id": "archetype-flavor-fallen",
+    "baseText": "fallen",
+    "category": "attribute",
+    "semanticPriority": 2,
+    "isNegative": false,
+    "conflictsWith": []
+  },
+  {
+    "id": "archetype-flavor-ascended",
+    "baseText": "ascended",
+    "category": "attribute",
+    "semanticPriority": 2,
+    "isNegative": false,
+    "conflictsWith": []
+  }
+]
+

@@ -432,7 +432,7 @@
 
 .user-pools-randomizer-pool {
   display: grid;
-  grid-template-columns: auto 1fr auto auto;
+  grid-template-columns: auto 1fr auto auto auto;
   gap: 8px;
   align-items: center;
   background: rgba(255, 255, 255, 0.04);
@@ -445,6 +445,14 @@
 .user-pools-randomizer-pool-count {
   font-size: 11px;
   color: #9fa0b8;
+}
+
+.user-pools-randomizer-override {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  color: #cbd5f5;
 }
 
 .user-pools-randomizer-count-input {

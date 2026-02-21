@@ -65,6 +65,7 @@ export function UserPoolsPage({
   const [randomizerPoolSelection, setRandomizerPoolSelection] = useState<Map<string, boolean>>(new Map());
   const [randomizerCountPerPool, setRandomizerCountPerPool] = useState(2);
   const [randomizerPoolCounts, setRandomizerPoolCounts] = useState<Map<string, number>>(new Map());
+  const [randomizerPoolOverrides, setRandomizerPoolOverrides] = useState<Map<string, boolean>>(new Map());
   const [randomizerAllowDuplicates, setRandomizerAllowDuplicates] = useState(false);
   const [randomizerTagMode, setRandomizerTagMode] = useState<'any' | 'only' | 'prefer'>('any');
   const [randomizerTagInput, setRandomizerTagInput] = useState('');
@@ -304,6 +305,14 @@ export function UserPoolsPage({
     });
   };
 
+  const toggleRandomizerPoolOverride = (poolId: string, enabled: boolean) => {
+    setRandomizerPoolOverrides(prev => {
+      const next = new Map(prev);
+      next.set(poolId, enabled);
+      return next;
+    });
+  };
+
   const parseRandomizerTags = () =>
     randomizerTagInput
       .split(',')
@@ -335,7 +344,12 @@ export function UserPoolsPage({
     const shuffle = <T,>(arr: T[]) => [...arr].sort(() => Math.random() - 0.5);
 
     selectedPools.forEach(pool => {
-      const requestedCount = Math.max(1, Math.min(50, randomizerPoolCounts.get(pool.id) ?? defaultCount));
+      const overrideEnabled = randomizerPoolOverrides.get(pool.id) ?? false;
+      const overrideValue = randomizerPoolCounts.get(pool.id);
+      const requestedCount = Math.max(
+        1,
+        Math.min(50, overrideEnabled && overrideValue ? overrideValue : defaultCount)
+      );
       let candidates = pool.items;
       if (hasTagFilter && randomizerTagMode === 'only') {
         candidates = candidates.filter(matchesTags);
@@ -688,6 +702,14 @@ export function UserPoolsPage({
                     />
                     <span>{pool.name}</span>
                     <span className="user-pools-randomizer-pool-count">{pool.items.length}</span>
+                    <label className="user-pools-randomizer-override">
+                      <input
+                        type="checkbox"
+                        checked={randomizerPoolOverrides.get(pool.id) ?? false}
+                        onChange={event => toggleRandomizerPoolOverride(pool.id, event.target.checked)}
+                      />
+                      Override
+                    </label>
                     <input
                       type="number"
                       min="0"
@@ -697,6 +719,7 @@ export function UserPoolsPage({
                       placeholder={randomizerCountPerPool.toString()}
                       className="user-pools-randomizer-count-input"
                       title="Override items per pool (0 = default)"
+                      disabled={!(randomizerPoolOverrides.get(pool.id) ?? false)}
                     />
                   </label>
                 ))}

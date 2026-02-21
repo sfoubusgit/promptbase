@@ -12,6 +12,7 @@ const makeId = (prefix: string) =>
 
 const SEED_POOL_NAME = 'Nature elements and phrases';
 const CREATIVE_POOL_NAME = 'Surreal scenes and motifs';
+const FOGBOUND_POOL_NAME = 'Fogbound Forestcore';
 
 const createSeedPool = (): Pool => {
   const now = Date.now();
@@ -65,7 +66,38 @@ const createCreativePool = (): Pool => {
   };
 };
 
-const createSeedStore = (): PoolStore => ({ version: 1, pools: [createSeedPool()] });
+const createFogboundPool = (): Pool => {
+  const now = Date.now();
+  return {
+    id: makeId('pool'),
+    name: FOGBOUND_POOL_NAME,
+    createdAt: now,
+    updatedAt: now,
+    items: [
+      { id: makeId('item'), text: 'fog-laced conifer grove', tags: ['fog', 'forest', 'atmosphere'] },
+      { id: makeId('item'), text: 'moss-draped roots', tags: ['forest', 'moss', 'texture'] },
+      { id: makeId('item'), text: 'silver mist threading through ferns', tags: ['fog', 'forest'] },
+      { id: makeId('item'), text: 'dew-heavy spiderwebs', tags: ['fog', 'detail'] },
+      { id: makeId('item'), text: 'weathered stone path', tags: ['forest', 'path'] },
+      { id: makeId('item'), text: 'ancient cedar silhouettes', tags: ['forest', 'trees'] },
+      { id: makeId('item'), text: 'lichen-speckled boulders', tags: ['forest', 'stone'] },
+      { id: makeId('item'), text: 'soft lantern glow in the mist', tags: ['fog', 'light'] },
+      { id: makeId('item'), text: 'dripping canopy hush', tags: ['forest', 'rain'] },
+      { id: makeId('item'), text: 'half-hidden shrine', tags: ['forest', 'mystic'] },
+      { id: makeId('item'), text: 'trail of scattered pinecones', tags: ['forest', 'detail'] },
+      { id: makeId('item'), text: 'old wooden footbridge', tags: ['forest', 'structure'] },
+      { id: makeId('item'), text: 'mist curling around trunks', tags: ['fog', 'forest'] },
+      { id: makeId('item'), text: 'quiet creek shimmer', tags: ['forest', 'water'] },
+      { id: makeId('item'), text: 'fern-shadowed ground cover', tags: ['forest', 'foliage'] },
+      { id: makeId('item'), text: 'soft footsteps on damp earth', tags: ['forest', 'mood'] },
+    ],
+  };
+};
+
+const createSeedStore = (): PoolStore => ({
+  version: 1,
+  pools: [createSeedPool(), createFogboundPool()],
+});
 
 const loadStore = (): PoolStore => {
   if (typeof window === 'undefined') return blankStore();
@@ -86,6 +118,9 @@ const loadStore = (): PoolStore => {
     }
     if (!parsed.pools.some(pool => pool.name === CREATIVE_POOL_NAME)) {
       seededPools.push(createCreativePool());
+    }
+    if (!parsed.pools.some(pool => pool.name === FOGBOUND_POOL_NAME)) {
+      seededPools.push(createFogboundPool());
     }
     if (seededPools.length > 0) {
       parsed.pools = [...seededPools, ...parsed.pools];

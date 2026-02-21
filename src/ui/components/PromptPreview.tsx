@@ -16,7 +16,6 @@
  * - Validate prompt content
  */
 
-import { useState } from 'react';
 import './PromptPreview.css';
 
 // TODO: Import types when ready
@@ -74,17 +73,6 @@ interface PromptPreviewProps {
   /** Whether undo is available */
   canUndoClear?: boolean;
 
-  /** Selected attribute elements for output editing */
-  selectionElements?: Array<{ id: string; text: string; originalText: string; isNegative: boolean }>;
-
-  /** Pool additions for output editing */
-  poolElements?: Array<{ id: string; text: string; originalText: string }>;
-
-  /** Set output override for selections */
-  onSetSelectionOutputOverride?: (attributeId: string, value: string | null) => void;
-
-  /** Set output override for pool additions */
-  onSetPoolOutputOverride?: (itemId: string, value: string | null) => void;
 }
 
 /**
@@ -100,10 +88,6 @@ export function PromptPreview({
   onClear,
   onUndoClear,
   canUndoClear = false,
-  selectionElements = [],
-  poolElements = [],
-  onSetSelectionOutputOverride,
-  onSetPoolOutputOverride,
 }: PromptPreviewProps) {
   // TODO: Render positiveTokens (formatted for display)
   // TODO: Render negativeTokens (formatted for display)
@@ -193,33 +177,6 @@ export function PromptPreview({
     onCopy?.();
   };
 
-  const [editingType, setEditingType] = useState<'selection' | 'pool' | null>(null);
-  const [editingId, setEditingId] = useState<string | null>(null);
-  const [editingValue, setEditingValue] = useState('');
-
-  const startEdit = (type: 'selection' | 'pool', id: string, value: string) => {
-    setEditingType(type);
-    setEditingId(id);
-    setEditingValue(value);
-  };
-
-  const cancelEdit = () => {
-    setEditingType(null);
-    setEditingId(null);
-    setEditingValue('');
-  };
-
-  const saveEdit = () => {
-    if (!editingType || !editingId) return;
-    const trimmed = editingValue.trim();
-    if (editingType === 'selection') {
-      onSetSelectionOutputOverride?.(editingId, trimmed ? trimmed : null);
-    } else {
-      onSetPoolOutputOverride?.(editingId, trimmed ? trimmed : null);
-    }
-    cancelEdit();
-  };
-
   return (
     <div className="prompt-preview">
       <div className="prompt-preview-header">
@@ -264,109 +221,6 @@ export function PromptPreview({
       </div>
       
       <div className="prompt-preview-content">
-        {(selectionElements.length > 0 || poolElements.length > 0) && (
-          <div className="prompt-preview-section">
-            <label className="prompt-preview-label">Prompt Elements</label>
-            <div className="prompt-preview-elements">
-              {selectionElements.map(item => {
-                const isEditing = editingType === 'selection' && editingId === item.id;
-                return (
-                  <div key={`sel-${item.id}`} className="prompt-preview-element">
-                    <div className="prompt-preview-element-text">
-                      {isEditing ? (
-                        <input
-                          type="text"
-                          value={editingValue}
-                          onChange={event => setEditingValue(event.target.value)}
-                          className="prompt-preview-element-input"
-                        />
-                      ) : (
-                        <span>{item.text}</span>
-                      )}
-                      {item.isNegative && <span className="prompt-preview-element-tag">Negative</span>}
-                    </div>
-                    <div className="prompt-preview-element-actions">
-                      {isEditing ? (
-                        <>
-                          <button type="button" onClick={saveEdit}>
-                            Save
-                          </button>
-                          <button type="button" onClick={cancelEdit}>
-                            Cancel
-                          </button>
-                          <button
-                            type="button"
-                            onClick={() => {
-                              onSetSelectionOutputOverride?.(item.id, null);
-                              cancelEdit();
-                            }}
-                          >
-                            Reset
-                          </button>
-                        </>
-                      ) : (
-                        <button
-                          type="button"
-                          onClick={() => startEdit('selection', item.id, item.text)}
-                        >
-                          Add + Edit
-                        </button>
-                      )}
-                    </div>
-                  </div>
-                );
-              })}
-              {poolElements.map(item => {
-                const isEditing = editingType === 'pool' && editingId === item.id;
-                return (
-                  <div key={`pool-${item.id}`} className="prompt-preview-element">
-                    <div className="prompt-preview-element-text">
-                      {isEditing ? (
-                        <input
-                          type="text"
-                          value={editingValue}
-                          onChange={event => setEditingValue(event.target.value)}
-                          className="prompt-preview-element-input"
-                        />
-                      ) : (
-                        <span>{item.text}</span>
-                      )}
-                      <span className="prompt-preview-element-tag">Pool</span>
-                    </div>
-                    <div className="prompt-preview-element-actions">
-                      {isEditing ? (
-                        <>
-                          <button type="button" onClick={saveEdit}>
-                            Save
-                          </button>
-                          <button type="button" onClick={cancelEdit}>
-                            Cancel
-                          </button>
-                          <button
-                            type="button"
-                            onClick={() => {
-                              onSetPoolOutputOverride?.(item.id, null);
-                              cancelEdit();
-                            }}
-                          >
-                            Reset
-                          </button>
-                        </>
-                      ) : (
-                        <button
-                          type="button"
-                          onClick={() => startEdit('pool', item.id, item.text)}
-                        >
-                          Add + Edit
-                        </button>
-                      )}
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-        )}
         {prompt && 'sections' in prompt && prompt.sections && Object.keys(prompt.sections).length > 0 ? (
           // Display sections
           <div className="prompt-preview-sections">

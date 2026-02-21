@@ -53,6 +53,8 @@ export function UserPoolsPage({
   const [editingItemText, setEditingItemText] = useState('');
   const [editingItemTags, setEditingItemTags] = useState('');
   const [editingItemNote, setEditingItemNote] = useState('');
+  const [editingAddItemId, setEditingAddItemId] = useState<string | null>(null);
+  const [editingAddItemText, setEditingAddItemText] = useState('');
   const [searchTerm, setSearchTerm] = useState('');
   const [tagFilter, setTagFilter] = useState('');
   const [bulkText, setBulkText] = useState('');
@@ -258,10 +260,25 @@ export function UserPoolsPage({
   };
 
   const handleStartEditItem = (item: PoolItem) => {
+    setEditingAddItemId(null);
+    setEditingAddItemText('');
     setEditingItemId(item.id);
     setEditingItemText(item.text);
     setEditingItemTags((item.tags || []).join(', '));
     setEditingItemNote(item.note ?? '');
+  };
+
+  const handleStartAddEditItem = (item: PoolItem) => {
+    setEditingAddItemId(item.id);
+    setEditingAddItemText(item.text);
+  };
+
+  const handleSaveAddEditItem = () => {
+    const trimmed = editingAddItemText.trim();
+    if (!trimmed) return;
+    onAddToPrompt?.(trimmed);
+    setEditingAddItemId(null);
+    setEditingAddItemText('');
   };
 
   const handleSaveItem = (poolId: string, item: PoolItem) => {
@@ -607,6 +624,12 @@ export function UserPoolsPage({
                               onChange={event => setEditingItemNote(event.target.value)}
                             />
                           </>
+                        ) : editingAddItemId === item.id ? (
+                          <input
+                            type="text"
+                            value={editingAddItemText}
+                            onChange={event => setEditingAddItemText(event.target.value)}
+                          />
                         ) : (
                           <>
                             <div className="user-pools-item-text">{item.text}</div>
@@ -627,10 +650,28 @@ export function UserPoolsPage({
                               Cancel
                             </button>
                           </>
+                        ) : editingAddItemId === item.id ? (
+                          <>
+                            <button type="button" onClick={handleSaveAddEditItem}>
+                              Add
+                            </button>
+                            <button
+                              type="button"
+                              onClick={() => {
+                                setEditingAddItemId(null);
+                                setEditingAddItemText('');
+                              }}
+                            >
+                              Cancel
+                            </button>
+                          </>
                         ) : (
                           <>
                             <button type="button" onClick={() => onAddToPrompt?.(item.text)}>
                               Add to Prompt
+                            </button>
+                            <button type="button" onClick={() => handleStartAddEditItem(item)}>
+                              Add + Edit
                             </button>
                             <button type="button" onClick={() => handleStartEditItem(item)}>
                               Edit

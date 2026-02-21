@@ -60,6 +60,12 @@ interface QuestionCardProps {
 
   /** Handler for global weight toggle */
   onToggleGlobalWeights: (enabled: boolean) => void;
+
+  /** Output override values for prompt generation */
+  selectionOutputOverrides?: Map<string, string>;
+
+  /** Handler for output override changes */
+  onSetSelectionOutputOverride?: (attributeId: string, value: string | null) => void;
   
   /** Handler for back navigation */
   onNavigateBack: () => void;
@@ -95,6 +101,8 @@ export function QuestionCard({
   onWeightChange,
   weightsEnabledGlobal,
   onToggleGlobalWeights,
+  selectionOutputOverrides,
+  onSetSelectionOutputOverride,
   onNavigateBack,
   onNavigateNext,
   onNavigateSkip,
@@ -134,6 +142,8 @@ export function QuestionCard({
             onCustomExtensionChange={onCustomExtensionChange}
             onWeightChange={onWeightChange}
             weightsEnabledGlobal={weightsEnabledGlobal}
+            selectionOutputOverrides={selectionOutputOverrides}
+            onSetSelectionOutputOverride={onSetSelectionOutputOverride}
           />
           
           {/* Custom extension inputs for selected options */}

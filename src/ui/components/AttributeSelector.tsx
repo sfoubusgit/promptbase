@@ -26,6 +26,7 @@
  * - Conditionally disable weight sliders
  */
 
+import { useState } from 'react';
 import './AttributeSelector.css';
 
 // TODO: Import types when ready
@@ -55,6 +56,12 @@ interface AttributeSelectorProps {
 
   /** Global weight enabled toggle */
   weightsEnabledGlobal: boolean;
+
+  /** Output override values for prompt generation */
+  selectionOutputOverrides?: Map<string, string>;
+
+  /** Handler for output override changes */
+  onSetSelectionOutputOverride?: (attributeId: string, value: string | null) => void;
 }
 
 /**
@@ -71,7 +78,13 @@ export function AttributeSelector({
   onCustomExtensionChange,
   onWeightChange,
   weightsEnabledGlobal,
+  selectionOutputOverrides,
+  onSetSelectionOutputOverride,
 }: AttributeSelectorProps) {
+  const [editingAttributeId, setEditingAttributeId] = useState<string | null>(null);
+  const [editingValue, setEditingValue] = useState('');
+  const [weightEditingIds, setWeightEditingIds] = useState<Set<string>>(() => new Set());
+
   const handleItemClick = (attributeId: string, e: React.MouseEvent) => {
     // Prevent any form submission or navigation
     e.preventDefault();
@@ -80,6 +93,9 @@ export function AttributeSelector({
     // Don't toggle if clicking on the slider or its container
     const target = e.target as HTMLElement;
     if (target.closest('.attribute-weight-slider-container')) {
+      return;
+    }
+    if (target.closest('.attribute-output-editor')) {
       return;
     }
     
@@ -94,6 +110,10 @@ export function AttributeSelector({
   const handleSliderClick = (e: React.MouseEvent) => {
     e.stopPropagation();
   };
+
+  const handleEditorClick = (e: React.MouseEvent) => {
+    e.stopPropagation();
+  };
   
   const clampWeight = (value: number) => Math.max(0, Math.min(2, value));
 
@@ -101,6 +121,18 @@ export function AttributeSelector({
     const current = weightValues.get(attributeId) ?? 1.0;
     const next = clampWeight(parseFloat((current + delta).toFixed(1)));
     onWeightChange(attributeId, next);
+  };
+
+  const toggleWeightEditor = (attributeId: string) => {
+    setWeightEditingIds(prev => {
+      const next = new Set(prev);
+      if (next.has(attributeId)) {
+        next.delete(attributeId);
+      } else {
+        next.add(attributeId);
+      }
+      return next;
+    });
   };
 
   return (
@@ -111,6 +143,12 @@ export function AttributeSelector({
         const isDisabled = false; // TODO: Handle disabled state if needed
 
         const currentWeight = weightValues.get(attr.id) ?? 1.0;
+        const customExtension = selection?.customExtension?.trim() || '';
+        const baseText = `${attr.baseText || attr.id}${customExtension ? ` ${customExtension}` : ''}`;
+        const outputOverride = selectionOutputOverrides?.get(attr.id);
+        const outputValue = outputOverride || baseText;
+        const isEditing = editingAttributeId === attr.id;
+        const isWeightEditing = weightEditingIds.has(attr.id);
         return (
           <div
             key={attr.id}
@@ -129,6 +167,89 @@ export function AttributeSelector({
                 </div>
               )}
             </div>
+
+            {isSelected && (
+              <div className="attribute-inline-controls" onClick={handleEditorClick}>
+                <div className="attribute-inline-actions">
+                  <button
+                    type="button"
+                    onClick={(event) => {
+                      event.stopPropagation();
+                      setEditingAttributeId(attr.id);
+                      setEditingValue(outputValue);
+                    }}
+                  >
+                    Add + Edit
+                  </button>
+                  <button
+                    type="button"
+                    onClick={(event) => {
+                      event.stopPropagation();
+                      toggleWeightEditor(attr.id);
+                    }}
+                  >
+                    Add Weight
+                  </button>
+                </div>
+              </div>
+            )}
+
+            {isSelected && isEditing && (
+              <div className="attribute-output-editor" onClick={handleEditorClick}>
+                <div className="attribute-output-header">
+                  <span className="attribute-output-label">Output</span>
+                  {outputOverride && (
+                    <span className="attribute-output-badge">Edited</span>
+                  )}
+                </div>
+                <input
+                  type="text"
+                  className="attribute-output-input"
+                  value={editingValue}
+                  onChange={event => setEditingValue(event.target.value)}
+                  onClick={event => event.stopPropagation()}
+                />
+                <div className="attribute-output-actions">
+                  <button
+                    type="button"
+                    onClick={(event) => {
+                      event.stopPropagation();
+                      const trimmed = editingValue.trim();
+                      if (onSetSelectionOutputOverride) {
+                        onSetSelectionOutputOverride(attr.id, trimmed ? trimmed : null);
+                      }
+                      setEditingAttributeId(null);
+                      setEditingValue('');
+                    }}
+                  >
+                    Save
+                  </button>
+                  <button
+                    type="button"
+                    onClick={(event) => {
+                      event.stopPropagation();
+                      setEditingAttributeId(null);
+                      setEditingValue('');
+                    }}
+                  >
+                    Cancel
+                  </button>
+                  <button
+                    type="button"
+                    onClick={(event) => {
+                      event.stopPropagation();
+                      if (onSetSelectionOutputOverride) {
+                        onSetSelectionOutputOverride(attr.id, null);
+                      }
+                      setEditingAttributeId(null);
+                      setEditingValue('');
+                    }}
+                  >
+                    Reset
+                  </button>
+                </div>
+              </div>
+            )}
             
             {/* 
               GLOBAL INLINE WEIGHT SLIDER - NO EXCEPTIONS
@@ -142,7 +263,7 @@ export function AttributeSelector({
               The only condition is: isSelected === true
               There are NO other conditions, NO special cases, NO exclusions.
             */}
-            {isSelected && (
+            {isSelected && isWeightEditing && (
               <div 
                 className="attribute-weight-slider-container"
                 onClick={handleSliderClick}

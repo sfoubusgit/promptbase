@@ -810,24 +810,6 @@ export function App() {
     return override ? override : item.text;
   });
 
-  const selectionElements = Array.from(selections.values())
-    .filter(selection => selection.isEnabled)
-    .map(selection => {
-      const def = attributeDefinitions.find(item => item.id === selection.attributeId);
-      if (!def) return null;
-      const baseText = selection.customExtension
-        ? `${def.baseText} ${selection.customExtension}`
-        : def.baseText;
-      const override = selectionOutputOverrides.get(selection.attributeId);
-      return {
-        id: selection.attributeId,
-        text: override || baseText,
-        originalText: baseText,
-        isNegative: def.isNegative,
-      };
-    })
-    .filter((item): item is { id: string; text: string; originalText: string; isNegative: boolean } => Boolean(item));
-
   // Add allowCustomExtension to attribute definitions for current question
   const currentQuestionAttributesWithExtensions = currentQuestionAttributes.map(attr => ({
     ...attr,
@@ -934,6 +916,8 @@ export function App() {
                   onWeightChange={handleWeightChange}
                   weightsEnabledGlobal={weightsEnabledGlobal}
                   onToggleGlobalWeights={setWeightsEnabledGlobal}
+                  selectionOutputOverrides={selectionOutputOverrides}
+                  onSetSelectionOutputOverride={handleSetSelectionOutputOverride}
                   onNavigateBack={handleNavigateBack}
                   onNavigateNext={handleNavigateNext}
                   onNavigateSkip={handleNavigateSkip}
@@ -974,14 +958,6 @@ export function App() {
                 onClear={handleClearPrompt}
                 onUndoClear={handleUndoClearPrompt}
                 canUndoClear={Boolean(clearUndoState)}
-                selectionElements={selectionElements}
-                poolElements={poolPromptItems.map(item => ({
-                  id: item.id,
-                  text: poolOutputOverrides.get(item.id) || item.text,
-                  originalText: item.text,
-                }))}
-                onSetSelectionOutputOverride={handleSetSelectionOutputOverride}
-                onSetPoolOutputOverride={handleSetPoolOutputOverride}
               />
               <PromptLibrary
                 prompt={prompt}

@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react';
+import { useMemo, useState, useEffect } from 'react';
 import type { Pool, PoolItem } from '../../types';
 import {
   addItemToPool,
@@ -13,10 +13,12 @@ import {
 } from '../../engine/poolStore';
 import { PromptPreview } from './PromptPreview';
 import { PromptLibrary } from './PromptLibrary';
+import { Modal } from './Modal';
 import './UserPoolsPage.css';
 
 type UserPoolsPageProps = {
   onAddToPrompt?: (text: string) => void;
+  onRandomizePoolItems?: (items: string[]) => void;
   prompt?: any | null;
   customAdditions?: string[];
   onClearPrompt?: () => void;
@@ -28,6 +30,7 @@ type UserPoolsPageProps = {
 
 export function UserPoolsPage({
   onAddToPrompt,
+  onRandomizePoolItems,
   prompt,
   customAdditions = [],
   onClearPrompt,
@@ -57,6 +60,13 @@ export function UserPoolsPage({
   const [poolJson, setPoolJson] = useState('');
   const [poolJsonMessage, setPoolJsonMessage] = useState<string | null>(null);
   const [poolJsonError, setPoolJsonError] = useState<string | null>(null);
+  const [isRandomizerOpen, setIsRandomizerOpen] = useState(false);
+  const [randomizerError, setRandomizerError] = useState<string | null>(null);
+  const [randomizerPoolSelection, setRandomizerPoolSelection] = useState<Map<string, boolean>>(new Map());
+  const [randomizerCountPerPool, setRandomizerCountPerPool] = useState(2);
+  const [randomizerAllowDuplicates, setRandomizerAllowDuplicates] = useState(false);
+  const [randomizerTagMode, setRandomizerTagMode] = useState<'any' | 'only' | 'prefer'>('any');
+  const [randomizerTagInput, setRandomizerTagInput] = useState('');
 
   const activePool = useMemo(
     () => pools.find(pool => pool.id === activePoolId) ?? null,
@@ -84,6 +94,18 @@ export function UserPoolsPage({
       setActivePoolId(next[0].id);
     }
   };
+
+  useEffect(() => {
+    setRandomizerPoolSelection(prev => {
+      const next = new Map(prev);
+      pools.forEach(pool => {
+        if (!next.has(pool.id)) {
+          next.set(pool.id, true);
+        }
+      });
+      return next;
+    });
+  }, [pools]);
 
   const handleCreatePool = () => {
     setPoolError(null);
@@ -259,6 +281,98 @@ export function UserPoolsPage({
     }
   };
 
+  const toggleRandomizerPool = (poolId: string) => {
+    setRandomizerPoolSelection(prev => {
+      const next = new Map(prev);
+      next.set(poolId, !(prev.get(poolId) ?? true));
+      return next;
+    });
+  };
+
+  const parseRandomizerTags = () =>
+    randomizerTagInput
+      .split(',')
+      .map(tag => tag.trim())
+      .filter(Boolean);
+
+  const pickRandomItems = () => {
+    if (!onRandomizePoolItems) return;
+    setRandomizerError(null);
+
+    const selectedPools = pools.filter(pool => randomizerPoolSelection.get(pool.id));
+    if (selectedPools.length === 0) {
+      setRandomizerError('Select at least one pool.');
+      return;
+    }
+
+    const requestedCount = Math.max(1, Math.min(50, randomizerCountPerPool));
+    const filterTags = parseRandomizerTags().map(tag => tag.toLowerCase());
+    const hasTagFilter = filterTags.length > 0 && randomizerTagMode !== 'any';
+    const usedItemIds = new Set<string>();
+    const output: string[] = [];
+
+    const matchesTags = (item: PoolItem) => {
+      const tags = item.tags || [];
+      if (filterTags.length === 0) return true;
+      return tags.some(tag => filterTags.includes(tag.toLowerCase()));
+    };
+
+    const shuffle = <T,>(arr: T[]) => [...arr].sort(() => Math.random() - 0.5);
+
+    selectedPools.forEach(pool => {
+      let candidates = pool.items;
+      if (hasTagFilter && randomizerTagMode === 'only') {
+        candidates = candidates.filter(matchesTags);
+      }
+
+      if (candidates.length === 0) {
+        return;
+      }
+
+      let tagged: PoolItem[] = [];
+      let fallback: PoolItem[] = [];
+      if (hasTagFilter && randomizerTagMode === 'prefer') {
+        tagged = candidates.filter(matchesTags);
+        fallback = candidates.filter(item => !matchesTags(item));
+      } else {
+        tagged = candidates;
+      }
+
+      const selection: PoolItem[] = [];
+      const takeFrom = (source: PoolItem[]) => {
+        const shuffled = shuffle(source);
+        for (const item of shuffled) {
+          if (selection.length >= requestedCount) break;
+          if (!randomizerAllowDuplicates && usedItemIds.has(item.id)) {
+            continue;
+          }
+          selection.push(item);
+          usedItemIds.add(item.id);
+        }
+      };
+
+      takeFrom(tagged);
+      if (selection.length < requestedCount && hasTagFilter && randomizerTagMode === 'prefer') {
+        takeFrom(fallback);
+      }
+
+      selection.forEach(item => output.push(item.text));
+    });
+
+    if (output.length === 0) {
+      setRandomizerError('No items matched the current settings.');
+      return;
+    }
+
+    onRandomizePoolItems(output);
+    setIsRandomizerOpen(false);
+  };
+
+  const handleClearRandomizerOutput = () => {
+    if (!onRandomizePoolItems) return;
+    onRandomizePoolItems([]);
+  };
+
   return (
     <div className="user-pools-page">
       <header className="user-pools-header">
@@ -278,6 +392,9 @@ export function UserPoolsPage({
         <section className="user-pools-panel user-pools-panel-main">
           <div className="user-pools-panel-header">
             <h3>Pools</h3>
+            <button type="button" onClick={() => setIsRandomizerOpen(true)}>
+              Randomize
+            </button>
           </div>
           <div className="user-pools-create">
             <input
@@ -530,6 +647,97 @@ export function UserPoolsPage({
           />
         </aside>
       </div>
+
+      <Modal
+        isOpen={isRandomizerOpen}
+        onClose={() => setIsRandomizerOpen(false)}
+        title="Randomize From User Pools"
+        className="user-pools-randomizer-modal"
+      >
+        <div className="user-pools-randomizer">
+          <div className="user-pools-randomizer-section">
+            <div className="user-pools-randomizer-label">Pools to include</div>
+            {pools.length === 0 ? (
+              <div className="user-pools-empty">No pools available.</div>
+            ) : (
+              <div className="user-pools-randomizer-pools">
+                {pools.map(pool => (
+                  <label key={pool.id} className="user-pools-randomizer-pool">
+                    <input
+                      type="checkbox"
+                      checked={randomizerPoolSelection.get(pool.id) ?? false}
+                      onChange={() => toggleRandomizerPool(pool.id)}
+                    />
+                    <span>{pool.name}</span>
+                    <span className="user-pools-randomizer-pool-count">{pool.items.length}</span>
+                  </label>
+                ))}
+              </div>
+            )}
+          </div>
+
+          <div className="user-pools-randomizer-row">
+            <label className="user-pools-randomizer-field">
+              Items per pool
+              <input
+                type="number"
+                min="1"
+                max="50"
+                value={randomizerCountPerPool}
+                onChange={event => setRandomizerCountPerPool(parseInt(event.target.value) || 1)}
+              />
+            </label>
+            <label className="user-pools-randomizer-toggle">
+              <input
+                type="checkbox"
+                checked={randomizerAllowDuplicates}
+                onChange={event => setRandomizerAllowDuplicates(event.target.checked)}
+              />
+              Allow duplicates across pools
+            </label>
+          </div>
+
+          <div className="user-pools-randomizer-section">
+            <div className="user-pools-randomizer-label">Tag filter</div>
+            <div className="user-pools-randomizer-row">
+              <label className="user-pools-randomizer-field">
+                Mode
+                <select
+                  value={randomizerTagMode}
+                  onChange={event => setRandomizerTagMode(event.target.value as 'any' | 'only' | 'prefer')}
+                >
+                  <option value="any">Any tags</option>
+                  <option value="only">Only tagged</option>
+                  <option value="prefer">Prefer tagged</option>
+                </select>
+              </label>
+              <label className="user-pools-randomizer-field">
+                Tags (comma)
+                <input
+                  type="text"
+                  placeholder="portrait, cinematic"
+                  value={randomizerTagInput}
+                  onChange={event => setRandomizerTagInput(event.target.value)}
+                />
+              </label>
+            </div>
+          </div>
+
+          {randomizerError && <div className="user-pools-error">{randomizerError}</div>}
+
+          <div className="user-pools-randomizer-actions">
+            <button type="button" onClick={pickRandomItems}>
+              Generate Random Prompt
+            </button>
+            <button type="button" onClick={pickRandomItems}>
+              Re-roll
+            </button>
+            <button type="button" onClick={handleClearRandomizerOutput}>
+              Clear Random Selections
+            </button>
+          </div>
+        </div>
+      </Modal>
     </div>
   );
 }

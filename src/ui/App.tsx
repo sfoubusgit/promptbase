@@ -708,6 +708,10 @@ export function App() {
     setPoolPromptItems(prev => [...prev, text.trim()]);
   }, []);
 
+  const handleRandomizePoolItems = useCallback((items: string[]) => {
+    setPoolPromptItems(items);
+  }, []);
+
   const handleClearPrompt = useCallback(() => {
     const hasSelections = selections.size > 0;
     const hasModifiers = modifiers.size > 0;
@@ -817,6 +821,7 @@ export function App() {
       {activePage === 'user-pools' ? (
         <UserPoolsPage
           onAddToPrompt={handleAddPoolItem}
+          onRandomizePoolItems={handleRandomizePoolItems}
           prompt={prompt}
           customAdditions={poolPromptItems}
           onClearPrompt={handleClearPrompt}

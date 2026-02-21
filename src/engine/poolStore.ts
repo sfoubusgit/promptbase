@@ -13,6 +13,10 @@ const makeId = (prefix: string) =>
 const SEED_POOL_NAME = 'Nature elements and phrases';
 const CREATIVE_POOL_NAME = 'Surreal scenes and motifs';
 const FOGBOUND_POOL_NAME = 'Fogbound Forestcore';
+const APOTHECARY_POOL_NAME = 'Wildcrafted Apothecary';
+const DESERT_NOMAD_POOL_NAME = 'Desert Sun Nomad';
+const ARCTIC_SILENCE_POOL_NAME = 'Arctic Silencecore';
+const FAERGHUS_KNIGHT_POOL_NAME = 'Faerghus Frostbound Knight';
 
 const createSeedPool = (): Pool => {
   const now = Date.now();
@@ -94,9 +98,128 @@ const createFogboundPool = (): Pool => {
   };
 };
 
+const createApothecaryPool = (): Pool => {
+  const now = Date.now();
+  return {
+    id: makeId('pool'),
+    name: APOTHECARY_POOL_NAME,
+    createdAt: now,
+    updatedAt: now,
+    items: [
+      { id: makeId('item'), text: 'shelf of amber tincture bottles', tags: ['apothecary', 'glass'] },
+      { id: makeId('item'), text: 'bundles of dried herbs', tags: ['apothecary', 'herbs'] },
+      { id: makeId('item'), text: 'mortar and pestle stained green', tags: ['apothecary', 'tools'] },
+      { id: makeId('item'), text: 'handwritten remedy labels', tags: ['apothecary', 'detail'] },
+      { id: makeId('item'), text: 'brass scale with tiny weights', tags: ['apothecary', 'tools'] },
+      { id: makeId('item'), text: 'beeswax candles with soft glow', tags: ['apothecary', 'light'] },
+      { id: makeId('item'), text: 'stacks of aged recipe books', tags: ['apothecary', 'books'] },
+      { id: makeId('item'), text: 'linen sachets tied with twine', tags: ['apothecary', 'herbs'] },
+      { id: makeId('item'), text: 'copper distillation coil', tags: ['apothecary', 'tools'] },
+      { id: makeId('item'), text: 'jars of dried mushrooms', tags: ['apothecary', 'fungi'] },
+      { id: makeId('item'), text: 'pressed wildflower pages', tags: ['apothecary', 'botanical'] },
+      { id: makeId('item'), text: 'smoky resin incense', tags: ['apothecary', 'atmosphere'] },
+      { id: makeId('item'), text: 'crystal vials with shimmering oils', tags: ['apothecary', 'glass'] },
+      { id: makeId('item'), text: 'wooden counter worn smooth', tags: ['apothecary', 'interior'] },
+      { id: makeId('item'), text: 'woven baskets of roots and bark', tags: ['apothecary', 'herbs'] },
+      { id: makeId('item'), text: 'herbal steam curling in the air', tags: ['apothecary', 'atmosphere'] },
+    ],
+  };
+};
+
+const createDesertNomadPool = (): Pool => {
+  const now = Date.now();
+  return {
+    id: makeId('pool'),
+    name: DESERT_NOMAD_POOL_NAME,
+    createdAt: now,
+    updatedAt: now,
+    items: [
+      { id: makeId('item'), text: 'sun-bleached sand dunes', tags: ['desert', 'landscape'] },
+      { id: makeId('item'), text: 'wind-carved canyon walls', tags: ['desert', 'terrain'] },
+      { id: makeId('item'), text: 'nomad cloak fluttering in the wind', tags: ['nomad', 'fabric'] },
+      { id: makeId('item'), text: 'brass compass with worn etching', tags: ['nomad', 'tool'] },
+      { id: makeId('item'), text: 'camel caravan on the horizon', tags: ['desert', 'travel'] },
+      { id: makeId('item'), text: 'sun-baked leather satchel', tags: ['nomad', 'gear'] },
+      { id: makeId('item'), text: 'oasis shimmer in the distance', tags: ['desert', 'water'] },
+      { id: makeId('item'), text: 'sandstorm haze', tags: ['desert', 'atmosphere'] },
+      { id: makeId('item'), text: 'woven tent with patterned rugs', tags: ['nomad', 'shelter'] },
+      { id: makeId('item'), text: 'carved wooden prayer beads', tags: ['nomad', 'ritual'] },
+      { id: makeId('item'), text: 'ceramic water flask', tags: ['nomad', 'gear'] },
+      { id: makeId('item'), text: 'dune grasses catching light', tags: ['desert', 'flora'] },
+      { id: makeId('item'), text: 'solar glare over the flats', tags: ['desert', 'light'] },
+      { id: makeId('item'), text: 'trail of footprints in sand', tags: ['desert', 'detail'] },
+      { id: makeId('item'), text: 'weathered map scroll', tags: ['nomad', 'map'] },
+      { id: makeId('item'), text: 'burning ember campfire', tags: ['nomad', 'light'] },
+    ],
+  };
+};
+
+const createArcticSilencePool = (): Pool => {
+  const now = Date.now();
+  return {
+    id: makeId('pool'),
+    name: ARCTIC_SILENCE_POOL_NAME,
+    createdAt: now,
+    updatedAt: now,
+    items: [
+      { id: makeId('item'), text: 'frozen fjord expanse', tags: ['arctic', 'landscape'] },
+      { id: makeId('item'), text: 'snow-dusted pine silhouettes', tags: ['arctic', 'forest'] },
+      { id: makeId('item'), text: 'ice-crusted shoreline', tags: ['arctic', 'ice'] },
+      { id: makeId('item'), text: 'soft aurora glow', tags: ['arctic', 'light'] },
+      { id: makeId('item'), text: 'frost-laced windowpane', tags: ['arctic', 'detail'] },
+      { id: makeId('item'), text: 'wind-carved snowdrifts', tags: ['arctic', 'snow'] },
+      { id: makeId('item'), text: 'silent white valley', tags: ['arctic', 'mood'] },
+      { id: makeId('item'), text: 'glacial ice cracks', tags: ['arctic', 'ice'] },
+      { id: makeId('item'), text: 'faint blue twilight', tags: ['arctic', 'light'] },
+      { id: makeId('item'), text: 'distant wolf tracks', tags: ['arctic', 'detail'] },
+      { id: makeId('item'), text: 'steam rising from breath', tags: ['arctic', 'atmosphere'] },
+      { id: makeId('item'), text: 'snow-laden spruce boughs', tags: ['arctic', 'forest'] },
+      { id: makeId('item'), text: 'frozen lake mirror', tags: ['arctic', 'ice'] },
+      { id: makeId('item'), text: 'ice lantern glimmer', tags: ['arctic', 'light'] },
+      { id: makeId('item'), text: 'distant mountain ridge', tags: ['arctic', 'mountain'] },
+      { id: makeId('item'), text: 'whispering snowfall', tags: ['arctic', 'snow'] },
+    ],
+  };
+};
+
+const createFaerghusKnightPool = (): Pool => {
+  const now = Date.now();
+  return {
+    id: makeId('pool'),
+    name: FAERGHUS_KNIGHT_POOL_NAME,
+    createdAt: now,
+    updatedAt: now,
+    items: [
+      { id: makeId('item'), text: 'frost-rimed plate armor', tags: ['knight', 'armor'] },
+      { id: makeId('item'), text: 'ice-blue tabard', tags: ['knight', 'fabric'] },
+      { id: makeId('item'), text: 'silver crest on the breastplate', tags: ['knight', 'detail'] },
+      { id: makeId('item'), text: 'fur-lined mantle', tags: ['knight', 'winter'] },
+      { id: makeId('item'), text: 'snow-dusted warhorse', tags: ['knight', 'mount'] },
+      { id: makeId('item'), text: 'frozen breath in the air', tags: ['winter', 'atmosphere'] },
+      { id: makeId('item'), text: 'crystalline longsword', tags: ['knight', 'weapon'] },
+      { id: makeId('item'), text: 'frosted kite shield', tags: ['knight', 'shield'] },
+      { id: makeId('item'), text: 'snow-laden banners', tags: ['knight', 'standard'] },
+      { id: makeId('item'), text: 'glacial cathedral backdrop', tags: ['winter', 'architecture'] },
+      { id: makeId('item'), text: 'ice-bound battlefield', tags: ['winter', 'scene'] },
+      { id: makeId('item'), text: 'cold steel gauntlets', tags: ['knight', 'armor'] },
+      { id: makeId('item'), text: 'snowfall drifting past the visor', tags: ['winter', 'atmosphere'] },
+      { id: makeId('item'), text: 'frost-bright heraldry', tags: ['knight', 'detail'] },
+      { id: makeId('item'), text: 'blue-white glow along the blade', tags: ['knight', 'weapon'] },
+      { id: makeId('item'), text: 'winterlight glinting on armor', tags: ['winter', 'light'] },
+    ],
+  };
+};
+
 const createSeedStore = (): PoolStore => ({
   version: 1,
-  pools: [createSeedPool(), createFogboundPool()],
+  pools: [
+    createSeedPool(),
+    createFogboundPool(),
+    createApothecaryPool(),
+    createDesertNomadPool(),
+    createArcticSilencePool(),
+    createFaerghusKnightPool(),
+  ],
 });
 
 const loadStore = (): PoolStore => {
@@ -121,6 +244,18 @@ const loadStore = (): PoolStore => {
     }
     if (!parsed.pools.some(pool => pool.name === FOGBOUND_POOL_NAME)) {
       seededPools.push(createFogboundPool());
+    }
+    if (!parsed.pools.some(pool => pool.name === APOTHECARY_POOL_NAME)) {
+      seededPools.push(createApothecaryPool());
+    }
+    if (!parsed.pools.some(pool => pool.name === DESERT_NOMAD_POOL_NAME)) {
+      seededPools.push(createDesertNomadPool());
+    }
+    if (!parsed.pools.some(pool => pool.name === ARCTIC_SILENCE_POOL_NAME)) {
+      seededPools.push(createArcticSilencePool());
+    }
+    if (!parsed.pools.some(pool => pool.name === FAERGHUS_KNIGHT_POOL_NAME)) {
+      seededPools.push(createFaerghusKnightPool());
     }
     if (seededPools.length > 0) {
       parsed.pools = [...seededPools, ...parsed.pools];

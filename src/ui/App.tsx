@@ -692,7 +692,8 @@ export function App() {
     // Clear existing selections
     setSelections(new Map());
     setModifiers(new Map());
-    setWeightEnabled(new Map());
+    // Ensure weights remain enabled after randomize
+    setWeightsEnabledGlobal(true);
 
     // Apply random selections
     const newSelections = new Map<string, AttributeSelection>();

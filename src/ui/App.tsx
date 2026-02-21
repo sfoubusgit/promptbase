@@ -70,16 +70,20 @@ export function App() {
   const [weightsEnabledGlobal, setWeightsEnabledGlobal] = useState<boolean>(true);
   
   // UI State: User pool prompt additions
-  const [poolPromptItems, setPoolPromptItems] = useState<string[]>([]);
+  const [poolPromptItems, setPoolPromptItems] = useState<Array<{ id: string; text: string }>>([]);
+  const [poolOutputOverrides, setPoolOutputOverrides] = useState<Map<string, string>>(new Map());
 
   // UI State: Freeform prompt text
   const [freeformPrompt, setFreeformPrompt] = useState<string>('');
+  const [selectionOutputOverrides, setSelectionOutputOverrides] = useState<Map<string, string>>(new Map());
 
   // UI State: Clear prompt undo (single step)
   const [clearUndoState, setClearUndoState] = useState<{
     selections: Map<string, AttributeSelection>;
     modifiers: Map<string, Modifier>;
-    poolPromptItems: string[];
+    poolPromptItems: Array<{ id: string; text: string }>;
+    poolOutputOverrides: Map<string, string>;
+    selectionOutputOverrides: Map<string, string>;
     freeformPrompt: string;
   } | null>(null);
   
@@ -423,13 +427,20 @@ export function App() {
   const callEngine = useCallback(() => {
     // Convert Map state to arrays for engine
     const selectionsArray: AttributeSelection[] = Array.from(selections.values());
+    const outputDefinitions = selectionOutputOverrides.size === 0
+      ? attributeDefinitions
+      : attributeDefinitions.map(def => {
+          const override = selectionOutputOverrides.get(def.id);
+          if (!override || !override.trim()) return def;
+          return { ...def, baseText: override.trim() };
+        });
     
     // Only include modifiers that are enabled (checkbox checked)
     const modifiersArray: Modifier[] = weightsEnabledGlobal ? Array.from(modifiers.values()) : [];
 
     // Build engine input
     const input: EngineInput = {
-      attributeDefinitions,
+      attributeDefinitions: outputDefinitions,
       selections: selectionsArray,
       modifiers: modifiersArray,
       modelProfile,
@@ -438,7 +449,7 @@ export function App() {
     // Call engine
     const result = generatePrompt(input);
     setEngineResult(result);
-  }, [selections, modifiers, weightsEnabledGlobal, modelProfile, attributeDefinitions]);
+  }, [selections, modifiers, weightsEnabledGlobal, modelProfile, attributeDefinitions, selectionOutputOverrides]);
 
   // Call engine whenever selections, modifiers, or modelProfile changes
   useEffect(() => {
@@ -694,6 +705,7 @@ export function App() {
     setModifiers(new Map());
     // Ensure weights remain enabled after randomize
     setWeightsEnabledGlobal(true);
+    setSelectionOutputOverrides(new Map());
 
     // Apply random selections
     const newSelections = new Map<string, AttributeSelection>();
@@ -705,11 +717,44 @@ export function App() {
 
   const handleAddPoolItem = useCallback((text: string) => {
     if (!text.trim()) return;
-    setPoolPromptItems(prev => [...prev, text.trim()]);
+    const id = `pool_add_${Date.now()}_${Math.random().toString(36).slice(2, 6)}`;
+    setPoolPromptItems(prev => [...prev, { id, text: text.trim() }]);
   }, []);
 
   const handleRandomizePoolItems = useCallback((items: string[]) => {
-    setPoolPromptItems(items);
+    const next = items
+      .filter(Boolean)
+      .map(text => ({
+        id: `pool_add_${Date.now()}_${Math.random().toString(36).slice(2, 6)}`,
+        text: text.trim(),
+      }))
+      .filter(item => item.text);
+    setPoolPromptItems(next);
+    setPoolOutputOverrides(new Map());
+  }, []);
+
+  const handleSetPoolOutputOverride = useCallback((itemId: string, value: string | null) => {
+    setPoolOutputOverrides(prev => {
+      const next = new Map(prev);
+      if (!value || !value.trim()) {
+        next.delete(itemId);
+      } else {
+        next.set(itemId, value.trim());
+      }
+      return next;
+    });
+  }, []);
+
+  const handleSetSelectionOutputOverride = useCallback((attributeId: string, value: string | null) => {
+    setSelectionOutputOverrides(prev => {
+      const next = new Map(prev);
+      if (!value || !value.trim()) {
+        next.delete(attributeId);
+      } else {
+        next.set(attributeId, value.trim());
+      }
+      return next;
+    });
   }, []);
 
   const handleClearPrompt = useCallback(() => {
@@ -723,19 +768,25 @@ export function App() {
       selections: new Map(selections),
       modifiers: new Map(modifiers),
       poolPromptItems: [...poolPromptItems],
+      poolOutputOverrides: new Map(poolOutputOverrides),
+      selectionOutputOverrides: new Map(selectionOutputOverrides),
       freeformPrompt,
     });
     setSelections(new Map());
     setModifiers(new Map());
     setPoolPromptItems([]);
+    setPoolOutputOverrides(new Map());
+    setSelectionOutputOverrides(new Map());
     setFreeformPrompt('');
-  }, [selections, modifiers, poolPromptItems]);
+  }, [selections, modifiers, poolPromptItems, poolOutputOverrides, selectionOutputOverrides, freeformPrompt]);
 
   const handleUndoClearPrompt = useCallback(() => {
     if (!clearUndoState) return;
     setSelections(new Map(clearUndoState.selections));
     setModifiers(new Map(clearUndoState.modifiers));
     setPoolPromptItems([...clearUndoState.poolPromptItems]);
+    setPoolOutputOverrides(new Map(clearUndoState.poolOutputOverrides));
+    setSelectionOutputOverrides(new Map(clearUndoState.selectionOutputOverrides));
     setFreeformPrompt(clearUndoState.freeformPrompt);
     setClearUndoState(null);
   }, [clearUndoState]);
@@ -753,6 +804,29 @@ export function App() {
   modifiers.forEach((modifier, id) => {
     modifierValues.set(id, modifier.value);
   });
+
+  const poolAdditionTexts = poolPromptItems.map(item => {
+    const override = poolOutputOverrides.get(item.id);
+    return override ? override : item.text;
+  });
+
+  const selectionElements = Array.from(selections.values())
+    .filter(selection => selection.isEnabled)
+    .map(selection => {
+      const def = attributeDefinitions.find(item => item.id === selection.attributeId);
+      if (!def) return null;
+      const baseText = selection.customExtension
+        ? `${def.baseText} ${selection.customExtension}`
+        : def.baseText;
+      const override = selectionOutputOverrides.get(selection.attributeId);
+      return {
+        id: selection.attributeId,
+        text: override || baseText,
+        originalText: baseText,
+        isNegative: def.isNegative,
+      };
+    })
+    .filter((item): item is { id: string; text: string; originalText: string; isNegative: boolean } => Boolean(item));
 
   // Add allowCustomExtension to attribute definitions for current question
   const currentQuestionAttributesWithExtensions = currentQuestionAttributes.map(attr => ({
@@ -823,7 +897,7 @@ export function App() {
           onAddToPrompt={handleAddPoolItem}
           onRandomizePoolItems={handleRandomizePoolItems}
           prompt={prompt}
-          customAdditions={poolPromptItems}
+          customAdditions={poolAdditionTexts}
           onClearPrompt={handleClearPrompt}
           onUndoClearPrompt={handleUndoClearPrompt}
           canUndoClearPrompt={Boolean(clearUndoState)}
@@ -895,15 +969,23 @@ export function App() {
               </div>
               <PromptPreview 
                 prompt={prompt}
-                customAdditions={poolPromptItems}
+                customAdditions={poolAdditionTexts}
                 freeformPrompt={freeformPrompt}
                 onClear={handleClearPrompt}
                 onUndoClear={handleUndoClearPrompt}
                 canUndoClear={Boolean(clearUndoState)}
+                selectionElements={selectionElements}
+                poolElements={poolPromptItems.map(item => ({
+                  id: item.id,
+                  text: poolOutputOverrides.get(item.id) || item.text,
+                  originalText: item.text,
+                }))}
+                onSetSelectionOutputOverride={handleSetSelectionOutputOverride}
+                onSetPoolOutputOverride={handleSetPoolOutputOverride}
               />
               <PromptLibrary
                 prompt={prompt}
-                customAdditions={poolPromptItems}
+                customAdditions={poolAdditionTexts}
                 onAddToPrompt={handleAddPoolItem}
               />
             </div>

@@ -260,3 +260,76 @@
   border-radius: 8px;
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
+
+.prompt-preview-elements {
+  display: grid;
+  gap: 10px;
+}
+
+.prompt-preview-element {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  background: rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 10px 12px;
+  align-items: center;
+}
+
+.prompt-preview-element-text {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  color: #e5e7eb;
+  font-size: 13px;
+  flex: 1;
+  min-width: 0;
+}
+
+.prompt-preview-element-text span {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.prompt-preview-element-tag {
+  font-size: 11px;
+  color: #cbd5f5;
+  background: rgba(110, 86, 249, 0.18);
+  border: 1px solid rgba(110, 86, 249, 0.4);
+  border-radius: 999px;
+  padding: 2px 8px;
+  flex-shrink: 0;
+}
+
+.prompt-preview-element-actions {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.prompt-preview-element-actions button {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 8px;
+  color: #fff;
+  padding: 4px 8px;
+  font-size: 11px;
+  cursor: pointer;
+}
+
+.prompt-preview-element-actions button:hover {
+  border-color: rgba(110, 86, 249, 0.6);
+}
+
+.prompt-preview-element-input {
+  width: 100%;
+  min-width: 0;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 8px;
+  color: #fff;
+  padding: 6px 8px;
+  font-size: 12px;
+}

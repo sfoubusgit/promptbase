@@ -17,6 +17,7 @@ const APOTHECARY_POOL_NAME = 'Wildcrafted Apothecary';
 const DESERT_NOMAD_POOL_NAME = 'Desert Sun Nomad';
 const ARCTIC_SILENCE_POOL_NAME = 'Arctic Silencecore';
 const FAERGHUS_KNIGHT_POOL_NAME = 'Faerghus Frostbound Knight';
+const BASE_WOMEN_TYPES_POOL_NAME = 'Base Women Types';
 
 const createSeedPool = (): Pool => {
   const now = Date.now();
@@ -210,6 +211,34 @@ const createFaerghusKnightPool = (): Pool => {
   };
 };
 
+const createBaseWomenTypesPool = (): Pool => {
+  const now = Date.now();
+  return {
+    id: makeId('pool'),
+    name: BASE_WOMEN_TYPES_POOL_NAME,
+    createdAt: now,
+    updatedAt: now,
+    items: [
+      { id: makeId('item'), text: 'young adult woman', tags: ['base', 'age'] },
+      { id: makeId('item'), text: 'adult woman', tags: ['base', 'age'] },
+      { id: makeId('item'), text: 'middle-aged woman', tags: ['base', 'age'] },
+      { id: makeId('item'), text: 'elderly woman', tags: ['base', 'age'] },
+      { id: makeId('item'), text: 'athletic woman', tags: ['base', 'body'] },
+      { id: makeId('item'), text: 'slim woman', tags: ['base', 'body'] },
+      { id: makeId('item'), text: 'curvy woman', tags: ['base', 'body'] },
+      { id: makeId('item'), text: 'plus-size woman', tags: ['base', 'body'] },
+      { id: makeId('item'), text: 'petite woman', tags: ['base', 'body'] },
+      { id: makeId('item'), text: 'tall woman', tags: ['base', 'body'] },
+      { id: makeId('item'), text: 'freckled woman', tags: ['base', 'feature'] },
+      { id: makeId('item'), text: 'scarred woman', tags: ['base', 'feature'] },
+      { id: makeId('item'), text: 'short-haired woman', tags: ['base', 'hair'] },
+      { id: makeId('item'), text: 'long-haired woman', tags: ['base', 'hair'] },
+      { id: makeId('item'), text: 'braided hair', tags: ['base', 'hair'] },
+      { id: makeId('item'), text: 'shaved head', tags: ['base', 'hair'] },
+    ],
+  };
+};
+
 const createSeedStore = (): PoolStore => ({
   version: 1,
   pools: [
@@ -219,6 +248,7 @@ const createSeedStore = (): PoolStore => ({
     createDesertNomadPool(),
     createArcticSilencePool(),
     createFaerghusKnightPool(),
+    createBaseWomenTypesPool(),
   ],
 });
 
@@ -256,6 +286,9 @@ const loadStore = (): PoolStore => {
     }
     if (!parsed.pools.some(pool => pool.name === FAERGHUS_KNIGHT_POOL_NAME)) {
       seededPools.push(createFaerghusKnightPool());
+    }
+    if (!parsed.pools.some(pool => pool.name === BASE_WOMEN_TYPES_POOL_NAME)) {
+      seededPools.push(createBaseWomenTypesPool());
     }
     if (seededPools.length > 0) {
       parsed.pools = [...seededPools, ...parsed.pools];

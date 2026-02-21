@@ -64,9 +64,11 @@ export function UserPoolsPage({
   const [randomizerError, setRandomizerError] = useState<string | null>(null);
   const [randomizerPoolSelection, setRandomizerPoolSelection] = useState<Map<string, boolean>>(new Map());
   const [randomizerCountPerPool, setRandomizerCountPerPool] = useState(2);
+  const [randomizerPoolCounts, setRandomizerPoolCounts] = useState<Map<string, number>>(new Map());
   const [randomizerAllowDuplicates, setRandomizerAllowDuplicates] = useState(false);
   const [randomizerTagMode, setRandomizerTagMode] = useState<'any' | 'only' | 'prefer'>('any');
   const [randomizerTagInput, setRandomizerTagInput] = useState('');
+  const [randomizerAppendMode, setRandomizerAppendMode] = useState<'replace' | 'append'>('replace');
 
   const activePool = useMemo(
     () => pools.find(pool => pool.id === activePoolId) ?? null,
@@ -289,6 +291,19 @@ export function UserPoolsPage({
     });
   };
 
+  const updateRandomizerPoolCount = (poolId: string, value: number) => {
+    setRandomizerPoolCounts(prev => {
+      const next = new Map(prev);
+      const normalized = Math.max(0, Math.min(50, value));
+      if (normalized === 0) {
+        next.delete(poolId);
+      } else {
+        next.set(poolId, normalized);
+      }
+      return next;
+    });
+  };
+
   const parseRandomizerTags = () =>
     randomizerTagInput
       .split(',')
@@ -305,7 +320,7 @@ export function UserPoolsPage({
       return;
     }
 
-    const requestedCount = Math.max(1, Math.min(50, randomizerCountPerPool));
+    const defaultCount = Math.max(1, Math.min(50, randomizerCountPerPool));
     const filterTags = parseRandomizerTags().map(tag => tag.toLowerCase());
     const hasTagFilter = filterTags.length > 0 && randomizerTagMode !== 'any';
     const usedItemIds = new Set<string>();
@@ -320,6 +335,7 @@ export function UserPoolsPage({
     const shuffle = <T,>(arr: T[]) => [...arr].sort(() => Math.random() - 0.5);
 
     selectedPools.forEach(pool => {
+      const requestedCount = Math.max(1, Math.min(50, randomizerPoolCounts.get(pool.id) ?? defaultCount));
       let candidates = pool.items;
       if (hasTagFilter && randomizerTagMode === 'only') {
         candidates = candidates.filter(matchesTags);
@@ -364,7 +380,9 @@ export function UserPoolsPage({
       return;
     }
 
-    onRandomizePoolItems(output);
+    const nextItems =
+      randomizerAppendMode === 'append' ? [...customAdditions, ...output] : output;
+    onRandomizePoolItems(nextItems);
     setIsRandomizerOpen(false);
   };
 
@@ -670,6 +688,16 @@ export function UserPoolsPage({
                     />
                     <span>{pool.name}</span>
                     <span className="user-pools-randomizer-pool-count">{pool.items.length}</span>
+                    <input
+                      type="number"
+                      min="0"
+                      max="50"
+                      value={randomizerPoolCounts.get(pool.id) ?? ''}
+                      onChange={event => updateRandomizerPoolCount(pool.id, parseInt(event.target.value) || 0)}
+                      placeholder={randomizerCountPerPool.toString()}
+                      className="user-pools-randomizer-count-input"
+                      title="Override items per pool (0 = default)"
+                    />
                   </label>
                 ))}
               </div>
@@ -695,6 +723,20 @@ export function UserPoolsPage({
               />
               Allow duplicates across pools
             </label>
+          </div>
+
+          <div className="user-pools-randomizer-row">
+            <label className="user-pools-randomizer-field">
+              Apply mode
+              <select
+                value={randomizerAppendMode}
+                onChange={event => setRandomizerAppendMode(event.target.value as 'replace' | 'append')}
+              >
+                <option value="replace">Replace current items</option>
+                <option value="append">Append to current items</option>
+              </select>
+            </label>
+            <div />
           </div>
 
           <div className="user-pools-randomizer-section">

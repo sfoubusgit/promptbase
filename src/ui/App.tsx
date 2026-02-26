@@ -1117,13 +1117,16 @@ export function App() {
               </button>
             </>
           ) : (
-            <button
-              type="button"
-              className="app-page-toggle-action-button"
-              onClick={handleOpenAuth}
-            >
-              Log in
-            </button>
+            <div className="app-page-toggle-auth-hint">
+              <button
+                type="button"
+                className="app-page-toggle-action-button"
+                onClick={handleOpenAuth}
+              >
+                Log in
+              </button>
+              <span>(demo only)</span>
+            </div>
           )}
         </div>
         <div className="app-page-toggle-group" role="tablist" aria-label="App mode">

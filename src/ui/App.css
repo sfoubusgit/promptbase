@@ -110,6 +110,16 @@ input[type="range"][disabled]:focus-visible::-moz-range-thumb {
   gap: 8px;
 }
 
+.app-page-toggle-auth-hint {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: rgba(229, 231, 235, 0.6);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
 .app-page-toggle-group {
   display: inline-flex;
   align-items: center;

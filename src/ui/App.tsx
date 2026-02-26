@@ -14,8 +14,8 @@
  * - Store domain rules
  */
 
-import { useState, useCallback, useEffect } from 'react';
-import { AttributeDefinition, AttributeSelection, Modifier, ModelProfile, Prompt, ValidationError } from '../types';
+import { useState, useCallback, useEffect, useMemo } from 'react';
+import { AttributeDefinition, AttributeSelection, Modifier, ModelProfile, PoolItem, Prompt, ValidationError, WorkingSet } from '../types';
 import { generatePrompt, EngineInput } from '../engine';
 import { loadAttributeDefinitions } from '../data/loadAttributeDefinitions';
 import { loadQuestionNodes, QuestionNode } from '../data/loadQuestionNodes';
@@ -29,8 +29,32 @@ import { CategorySidebar } from './components/CategorySidebar';
 import { RandomPromptGenerator } from './components/RandomPromptGenerator';
 import { Modal } from './components/Modal';
 import { UserPoolsPage } from './components/UserPoolsPage';
+import { PoolHubPage } from './components/PoolHubPage';
 import { PromptLibrary } from './components/PromptLibrary';
+import { AuthModal } from './components/AuthModal';
+import { AccountModal } from './components/AccountModal';
+import { WorkingSetsPage } from './components/WorkingSetsPage';
 import { CATEGORY_MAP } from '../data/categoryMap';
+import {
+  changeUserPassword,
+  deleteCurrentUser,
+  getCurrentUser,
+  loginUser,
+  logoutUser,
+  registerUser,
+  updateUserName,
+} from '../engine/authStore';
+import {
+  addWorkingSetItem,
+  clearWorkingSetCategory,
+  createWorkingSet,
+  deleteWorkingSet,
+  getActiveWorkingSetId,
+  listWorkingSets,
+  removeWorkingSetItem,
+  setActiveWorkingSetId as persistActiveWorkingSetId,
+  updateWorkingSet,
+} from '../engine/workingSetStore';
 
 /**
  * Default model profile for Stable Diffusion
@@ -52,10 +76,13 @@ const DEFAULT_MODEL_PROFILE: ModelProfile = {
  */
 
 export function App() {
-  const [activePage, setActivePage] = useState<'generator' | 'user-pools'>(() => {
+  const [activePage, setActivePage] = useState<'generator' | 'user-pools' | 'pool-hub' | 'working-sets'>(() => {
     try {
       const saved = window.localStorage.getItem('promptgen:active_page');
-      return saved === 'user-pools' ? 'user-pools' : 'generator';
+      if (saved === 'user-pools') return 'user-pools';
+      if (saved === 'pool-hub') return 'pool-hub';
+      if (saved === 'working-sets') return 'working-sets';
+      return 'generator';
     } catch {
       return 'generator';
     }
@@ -89,6 +116,14 @@ export function App() {
   
   // UI State: Model Profile
   const [modelProfile, setModelProfile] = useState<ModelProfile>(DEFAULT_MODEL_PROFILE);
+  const [authUser, setAuthUser] = useState(() => getCurrentUser());
+  const [authError, setAuthError] = useState<string | null>(null);
+  const [isAuthModalOpen, setIsAuthModalOpen] = useState(false);
+  const [isAccountModalOpen, setIsAccountModalOpen] = useState(false);
+  const [accountError, setAccountError] = useState<string | null>(null);
+  const [accountMessage, setAccountMessage] = useState<string | null>(null);
+  const [workingSets, setWorkingSets] = useState<WorkingSet[]>(() => listWorkingSets());
+  const [activeWorkingSetId, setActiveWorkingSet] = useState<string | null>(() => getActiveWorkingSetId());
 
   // UI State: Engine Result
   const [engineResult, setEngineResult] = useState<Prompt | ValidationError | null>(null);
@@ -131,6 +166,50 @@ export function App() {
   // 
   // Categories must also exist in CATEGORY_MAP with their root nodeId
   const CATEGORY_ORDER: string[] = ['subject', 'style', 'lighting', 'camera', 'environment', 'quality', 'effects', 'post-processing', 'actions', 'anatomy-details'];
+  const collectNodeIds = (items: Array<{ nodeId?: string; subcategories?: any[] }>): string[] => {
+    const nodeIds: string[] = [];
+    items.forEach(item => {
+      if (item.nodeId) nodeIds.push(item.nodeId);
+      if (item.subcategories) {
+        nodeIds.push(...collectNodeIds(item.subcategories));
+      }
+    });
+    return nodeIds;
+  };
+
+  const getCategoryForNode = useCallback((nodeId: string | null) => {
+    if (!nodeId) return null;
+    for (const [categoryId, items] of Object.entries(CATEGORY_MAP)) {
+      const nodeIds = collectNodeIds(items);
+      if (nodeIds.includes(nodeId)) {
+        return categoryId;
+      }
+    }
+    return null;
+  }, []);
+
+  
+  const activeWorkingSet = workingSets.find(set => set.id === activeWorkingSetId) ?? null;
+  
+  const workingSetAttributeDefinitions = useMemo<AttributeDefinition[]>(() => {
+    if (!activeWorkingSet) return [];
+    const defs: AttributeDefinition[] = [];
+    Object.entries(activeWorkingSet.categoryBuckets).forEach(([categoryId, items]) => {
+      const semanticPriority = CATEGORY_ORDER.indexOf(categoryId) + 1;
+      items.forEach(item => {
+        defs.push({
+          id: `ws_${activeWorkingSet.id}_${categoryId}_${item.id}`,
+          baseText: item.text,
+          category: categoryId as AttributeDefinition['category'],
+          semanticPriority: semanticPriority > 0 ? semanticPriority : 3,
+          isNegative: false,
+          conflictsWith: [],
+        });
+      });
+    });
+    return defs;
+  }, [activeWorkingSet]);
+
   
   // Helper: Get first subcategory node ID for a category, or the category root if no subcategories
   const getFirstSubcategoryNodeId = (categoryId: string, nodes: QuestionNode[]): string | null => {
@@ -276,6 +355,9 @@ export function App() {
   // UI State: Navigation
   const [currentNodeId, setCurrentNodeId] = useState<string>('');
   const [navigationHistory, setNavigationHistory] = useState<string[]>([]);
+
+  const activeCategoryId = activeWorkingSet ? getCategoryForNode(currentNodeId) : null;
+  const effectiveAttributeDefinitions = activeWorkingSet ? workingSetAttributeDefinitions : attributeDefinitions;
   
   // Track if user has explicitly clicked Next to reach the end
   // This ensures completion only happens after explicit Next click, not just from selections
@@ -343,7 +425,7 @@ export function App() {
     } catch (err) {
       console.error('[App] Failed to load question nodes:', err);
     }
-  }, []);
+  }, [attributeDefinitions]);
 
   // Get current question node
   const currentNode: QuestionNode | undefined = questionNodes.find(n => n.id === currentNodeId);
@@ -376,12 +458,13 @@ export function App() {
                      selections.size > 0;
   
   // Get attribute definitions for current question
-  const currentQuestionAttributes = attributeDefinitions.filter(attr => 
-    currentNode?.attributeIds.includes(attr.id)
-  );
+  const currentQuestionAttributes = activeWorkingSet
+    ? workingSetAttributeDefinitions.filter(def => def.category === activeCategoryId)
+    : attributeDefinitions.filter(attr => currentNode?.attributeIds.includes(attr.id));
   
   // CRITICAL VALIDATION: Detect missing attributes for current question
   useEffect(() => {
+    if (activeWorkingSet) return;
     if (currentNode && currentNode.attributeIds) {
       const missingAttributes = currentNode.attributeIds.filter(
         attrId => !attributeDefinitions.find(def => def.id === attrId)
@@ -406,7 +489,7 @@ export function App() {
         console.log(`[App] ✓ Question "${currentNode.id}" has ${currentQuestionAttributes.length}/${currentNode.attributeIds.length} attributes available`);
       }
     }
-  }, [currentNode?.id, currentNode?.attributeIds, attributeDefinitions.length, currentQuestionAttributes.length]);
+  }, [activeWorkingSet, currentNode?.id, currentNode?.attributeIds, attributeDefinitions.length, currentQuestionAttributes.length]);
   
   // Get modifiers for current question (empty for now, can be enhanced later)
   const currentQuestionModifiers: Modifier[] = [];
@@ -428,8 +511,8 @@ export function App() {
     // Convert Map state to arrays for engine
     const selectionsArray: AttributeSelection[] = Array.from(selections.values());
     const outputDefinitions = selectionOutputOverrides.size === 0
-      ? attributeDefinitions
-      : attributeDefinitions.map(def => {
+      ? effectiveAttributeDefinitions
+      : effectiveAttributeDefinitions.map(def => {
           const override = selectionOutputOverrides.get(def.id);
           if (!override || !override.trim()) return def;
           return { ...def, baseText: override.trim() };
@@ -449,7 +532,7 @@ export function App() {
     // Call engine
     const result = generatePrompt(input);
     setEngineResult(result);
-  }, [selections, modifiers, weightsEnabledGlobal, modelProfile, attributeDefinitions, selectionOutputOverrides]);
+  }, [selections, modifiers, weightsEnabledGlobal, modelProfile, effectiveAttributeDefinitions, selectionOutputOverrides]);
 
   // Call engine whenever selections, modifiers, or modelProfile changes
   useEffect(() => {
@@ -528,6 +611,7 @@ export function App() {
     });
     
   }, []);
+
 
   /**
    * Event Handler: Change custom extension text
@@ -695,6 +779,146 @@ export function App() {
     setModelProfile(profile);
   }, []);
 
+  const handleOpenAuth = () => {
+    setAuthError(null);
+    setIsAuthModalOpen(true);
+  };
+
+  const handleOpenAccount = () => {
+    setAccountError(null);
+    setAccountMessage(null);
+    setIsAccountModalOpen(true);
+  };
+
+  const handleLogin = (email: string, password: string) => {
+    try {
+      const user = loginUser(email, password);
+      setAuthUser(user);
+      setAuthError(null);
+      setIsAuthModalOpen(false);
+      return true;
+    } catch (err: any) {
+      setAuthError(err?.message ?? 'Login failed.');
+      return false;
+    }
+  };
+
+  const handleRegister = (name: string, email: string, password: string) => {
+    try {
+      const user = registerUser(name, email, password);
+      setAuthUser(user);
+      setAuthError(null);
+      setIsAuthModalOpen(false);
+      return true;
+    } catch (err: any) {
+      setAuthError(err?.message ?? 'Registration failed.');
+      return false;
+    }
+  };
+
+  const handleLogout = () => {
+    logoutUser();
+    setAuthUser(null);
+  };
+
+  const handleUpdateName = (name: string) => {
+    try {
+      const user = updateUserName(name);
+      setAuthUser(user);
+      setAccountError(null);
+      setAccountMessage('Profile updated.');
+    } catch (err: any) {
+      setAccountError(err?.message ?? 'Failed to update profile.');
+    }
+  };
+
+  const handleChangePassword = (currentPassword: string, nextPassword: string) => {
+    try {
+      changeUserPassword(currentPassword, nextPassword);
+      setAccountError(null);
+      setAccountMessage('Password updated.');
+    } catch (err: any) {
+      setAccountError(err?.message ?? 'Failed to update password.');
+    }
+  };
+
+  const handleDeleteAccount = (currentPassword: string) => {
+    try {
+      deleteCurrentUser(currentPassword);
+      setAuthUser(null);
+      setAccountError(null);
+      setAccountMessage(null);
+      setIsAccountModalOpen(false);
+    } catch (err: any) {
+      setAccountError(err?.message ?? 'Failed to delete account.');
+    }
+  };
+
+  const refreshWorkingSets = useCallback(() => {
+    setWorkingSets(listWorkingSets());
+  }, []);
+
+  const handleSetActiveWorkingSet = (id: string | null) => {
+    if (id !== activeWorkingSetId) {
+      setSelections(new Map());
+      setModifiers(new Map());
+      setSelectionOutputOverrides(new Map());
+    }
+    setActiveWorkingSet(id);
+    persistActiveWorkingSetId(id);
+  };
+
+  const handleCreateWorkingSet = (name: string) => {
+    try {
+      const created = createWorkingSet(name);
+      refreshWorkingSets();
+      setActiveWorkingSet(created.id);
+      return created;
+    } catch {
+      return null;
+    }
+  };
+
+  const handleRenameWorkingSet = (id: string, name: string) => {
+    updateWorkingSet(id, { name });
+    refreshWorkingSets();
+  };
+
+  const handleDeleteWorkingSet = (id: string) => {
+    deleteWorkingSet(id);
+    refreshWorkingSets();
+    setActiveWorkingSet(getActiveWorkingSetId());
+  };
+
+  const handleAddWorkingSetItem = (setId: string, categoryId: string, poolId: string, item: PoolItem) => {
+    addWorkingSetItem(setId, categoryId, {
+      poolId,
+      poolItemId: item.id,
+      text: item.text,
+    });
+    refreshWorkingSets();
+  };
+
+  const handleRemoveWorkingSetItem = (setId: string, categoryId: string, itemId: string) => {
+    removeWorkingSetItem(setId, categoryId, itemId);
+    refreshWorkingSets();
+  };
+
+  const handleClearWorkingSetCategory = (setId: string, categoryId: string) => {
+    clearWorkingSetCategory(setId, categoryId);
+    refreshWorkingSets();
+  };
+
+  useEffect(() => {
+    if (questionNodes.length === 0) return;
+    const initialId = getInitialNodeId(questionNodes);
+    if (initialId) {
+      setCurrentNodeId(initialId);
+      setNavigationHistory([initialId]);
+      setHasReachedEndViaNext(false);
+    }
+  }, [questionNodes.length, getInitialNodeId]);
+
   /**
    * Event Handler: Randomize prompt
    * Applies random selections from the Random Prompt Generator
@@ -720,6 +944,32 @@ export function App() {
     const id = `pool_add_${Date.now()}_${Math.random().toString(36).slice(2, 6)}`;
     setPoolPromptItems(prev => [...prev, { id, text: text.trim() }]);
   }, []);
+
+  const handleAppendPoolItem = useCallback((text: string, targetId?: string) => {
+    const trimmed = text.trim();
+    if (!trimmed) return;
+    setPoolPromptItems(prev => {
+      if (prev.length === 0) {
+        const id = `pool_add_${Date.now()}_${Math.random().toString(36).slice(2, 6)}`;
+        return [...prev, { id, text: trimmed }];
+      }
+      const next = [...prev];
+      let targetIndex = targetId ? next.findIndex(item => item.id === targetId) : next.length - 1;
+      if (targetIndex === -1) targetIndex = next.length - 1;
+      const target = next[targetIndex];
+      const override = poolOutputOverrides.get(target.id);
+      if (override) {
+        setPoolOutputOverrides(prevOverrides => {
+          const updated = new Map(prevOverrides);
+          updated.set(target.id, `${override} ${trimmed}`);
+          return updated;
+        });
+        return next;
+      }
+      next[targetIndex] = { ...target, text: `${target.text} ${trimmed}` };
+      return next;
+    });
+  }, [poolOutputOverrides]);
 
   const handleRandomizePoolItems = useCallback((items: string[]) => {
     const next = items
@@ -805,9 +1055,15 @@ export function App() {
     modifierValues.set(id, modifier.value);
   });
 
+  
+
   const poolAdditionTexts = poolPromptItems.map(item => {
     const override = poolOutputOverrides.get(item.id);
     return override ? override : item.text;
+  });
+  const poolAdditionItems = poolPromptItems.map((item, index) => {
+    const override = poolOutputOverrides.get(item.id);
+    return { id: item.id, text: override ? override : item.text };
   });
 
   // Add allowCustomExtension to attribute definitions for current question
@@ -830,28 +1086,45 @@ export function App() {
     }
   }, [activePage]);
 
+  useEffect(() => {
+    if (activePage === 'working-sets' || activePage === 'generator') {
+      setWorkingSets(listWorkingSets());
+      setActiveWorkingSet(getActiveWorkingSetId());
+    }
+  }, [activePage]);
+
   return (
-    <div className="app-root">
+    <>
+      <div className="app-root">
       <div className="app-page-toggle">
-        <div className="app-page-toggle-title">
-          <span className="app-page-toggle-label">Workspace</span>
-          <span className="app-page-toggle-sub">Choose a mode</span>
-        </div>
-        <div className="app-page-toggle-actions">
-          <button
-            type="button"
-            className="app-page-toggle-action-button"
-            onClick={() => setIsRandomPromptModalOpen(true)}
-          >
-            Random
-          </button>
-          <button
-            type="button"
-            className="app-page-toggle-action-button"
-            onClick={() => setIsAppTutorialOpen(true)}
-          >
-            Tutorial
-          </button>
+        <div className="app-page-toggle-left">
+          {authUser ? (
+            <>
+              <button
+                type="button"
+                className="app-page-toggle-action-button"
+                title={authUser.email}
+                onClick={handleOpenAccount}
+              >
+                {authUser.name}
+              </button>
+              <button
+                type="button"
+                className="app-page-toggle-action-button"
+                onClick={handleLogout}
+              >
+                Log out
+              </button>
+            </>
+          ) : (
+            <button
+              type="button"
+              className="app-page-toggle-action-button"
+              onClick={handleOpenAuth}
+            >
+              Log in
+            </button>
+          )}
         </div>
         <div className="app-page-toggle-group" role="tablist" aria-label="App mode">
           <button
@@ -861,7 +1134,16 @@ export function App() {
             role="tab"
             aria-selected={activePage === 'generator'}
           >
-            Generator
+            Builder
+          </button>
+          <button
+            type="button"
+            className={`app-page-toggle-btn ${activePage === 'working-sets' ? 'active' : ''}`}
+            onClick={() => setActivePage('working-sets')}
+            role="tab"
+            aria-selected={activePage === 'working-sets'}
+          >
+            Working Sets
           </button>
           <button
             type="button"
@@ -872,19 +1154,51 @@ export function App() {
           >
             User Pools
           </button>
+          <button
+            type="button"
+            className={`app-page-toggle-btn ${activePage === 'pool-hub' ? 'active' : ''}`}
+            onClick={() => setActivePage('pool-hub')}
+            role="tab"
+            aria-selected={activePage === 'pool-hub'}
+          >
+            Pool Hub
+          </button>
         </div>
       </div>
       {activePage === 'user-pools' ? (
         <UserPoolsPage
           onAddToPrompt={handleAddPoolItem}
+          onAppendToPrompt={handleAppendPoolItem}
           onRandomizePoolItems={handleRandomizePoolItems}
           prompt={prompt}
           customAdditions={poolAdditionTexts}
+          additionItems={poolAdditionItems}
           onClearPrompt={handleClearPrompt}
           onUndoClearPrompt={handleUndoClearPrompt}
           canUndoClearPrompt={Boolean(clearUndoState)}
           freeformPrompt={freeformPrompt}
           onFreeformPromptChange={setFreeformPrompt}
+        />
+      ) : activePage === 'pool-hub' ? (
+        <PoolHubPage
+          onGoToUserPools={() => setActivePage('user-pools')}
+          isLoggedIn={Boolean(authUser)}
+          onRequestLogin={handleOpenAuth}
+          userName={authUser?.name ?? null}
+          userId={authUser?.id ?? null}
+        />
+      ) : activePage === 'working-sets' ? (
+        <WorkingSetsPage
+          workingSets={workingSets}
+          activeWorkingSetId={activeWorkingSetId}
+          categoryOrder={CATEGORY_ORDER}
+          onCreateWorkingSet={handleCreateWorkingSet}
+          onRenameWorkingSet={handleRenameWorkingSet}
+          onDeleteWorkingSet={handleDeleteWorkingSet}
+          onSetActiveWorkingSet={handleSetActiveWorkingSet}
+          onAddWorkingSetItem={handleAddWorkingSetItem}
+          onRemoveWorkingSetItem={handleRemoveWorkingSetItem}
+          onClearWorkingSetCategory={handleClearWorkingSetCategory}
         />
       ) : (
         <div className="interview-layout">
@@ -893,9 +1207,41 @@ export function App() {
             currentNodeId={currentNodeId}
             selections={selectionsMap}
             onJumpToCategory={handleJumpToCategory}
+            onOpenRandom={() => setIsRandomPromptModalOpen(true)}
+            onOpenTutorial={() => setIsAppTutorialOpen(true)}
           />
           <div className="interview-container">
             <div className="app-main">
+              <div className="working-set-banner">
+                <div>
+                  <span className="working-set-banner-label">Working Set</span>
+                  <strong>{activeWorkingSet ? activeWorkingSet.name : 'Base Set'}</strong>
+                </div>
+                <div className="working-set-banner-actions">
+                  <label className="working-set-banner-switch">
+                    <span>Switch</span>
+                    <select
+                      value={activeWorkingSetId ?? ''}
+                      onChange={event => handleSetActiveWorkingSet(event.target.value || null)}
+                    >
+                      <option value="">Base Set</option>
+                      {workingSets.map(set => (
+                        <option key={set.id} value={set.id}>
+                          {set.name}
+                        </option>
+                      ))}
+                    </select>
+                  </label>
+                  <button type="button" onClick={() => setActivePage('working-sets')}>
+                    Manage Working Sets
+                  </button>
+                  {activeWorkingSet && (
+                    <button type="button" onClick={() => handleSetActiveWorkingSet(null)}>
+                      Deactivate (Base Set)
+                    </button>
+                  )}
+                </div>
+              </div>
               {isComplete ? (
                 <CompletionState
                   totalSteps={navigationHistory.length}
@@ -1008,7 +1354,7 @@ export function App() {
             <Modal
               isOpen={isAppTutorialOpen}
               onClose={() => setIsAppTutorialOpen(false)}
-              title="How to Use the Prompt Generator"
+              title="How to Use the Prompt Builder"
             >
               <div className="app-tutorial-body">
                 <section className="app-tutorial-section">
@@ -1083,7 +1429,27 @@ export function App() {
           </div>
         </div>
       )}
-    </div>
+      </div>
+      <AuthModal
+        isOpen={isAuthModalOpen}
+        onClose={() => setIsAuthModalOpen(false)}
+        onLogin={handleLogin}
+        onRegister={handleRegister}
+        error={authError}
+      />
+      {authUser && (
+        <AccountModal
+          isOpen={isAccountModalOpen}
+          user={authUser}
+          onClose={() => setIsAccountModalOpen(false)}
+          onUpdateName={handleUpdateName}
+          onChangePassword={handleChangePassword}
+          onDeleteAccount={handleDeleteAccount}
+          error={accountError}
+          message={accountMessage}
+        />
+      )}
+    </>
   );
 }
 

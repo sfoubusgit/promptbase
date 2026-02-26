@@ -1,0 +1,736 @@
+.pool-hub-page {
+  min-height: 100vh;
+  padding: 24px 32px 32px 32px;
+  color: #ffffff;
+}
+
+.pool-hub-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.pool-hub-header h2 {
+  margin: 0 0 6px 0;
+  font-size: 24px;
+}
+
+.pool-hub-header p {
+  margin: 0;
+  color: #b0b0c3;
+  font-size: 14px;
+}
+
+.pool-hub-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.pool-hub-mode-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px;
+  border-radius: 999px;
+  background: rgba(22, 22, 28, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.pool-hub-mode-toggle button {
+  background: transparent;
+  border: 1px solid transparent;
+  color: rgba(229, 231, 235, 0.8);
+  border-radius: 999px;
+  padding: 6px 14px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.pool-hub-mode-toggle button.active {
+  background: rgba(110, 86, 249, 0.25);
+  border-color: rgba(110, 86, 249, 0.5);
+  color: #fff;
+}
+
+.pool-hub-user-badge {
+  font-size: 11px;
+  color: #cbd5f5;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 999px;
+  padding: 6px 10px;
+}
+
+.pool-hub-primary {
+  background: rgba(110, 86, 249, 0.18);
+  border: 1px solid rgba(110, 86, 249, 0.35);
+  color: #e1dcff;
+  border-radius: 10px;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.pool-hub-primary:disabled,
+.pool-hub-secondary:disabled,
+.pool-hub-star:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.pool-hub-primary:hover {
+  background: rgba(110, 86, 249, 0.32);
+  border-color: rgba(110, 86, 249, 0.6);
+}
+
+.pool-hub-secondary {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #fff;
+  border-radius: 10px;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.pool-hub-secondary:hover {
+  border-color: rgba(110, 86, 249, 0.5);
+}
+
+.pool-hub-danger {
+  background: rgba(248, 113, 113, 0.15);
+  border: 1px solid rgba(248, 113, 113, 0.45);
+  color: #fecaca;
+  border-radius: 10px;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.pool-hub-danger:hover {
+  border-color: rgba(248, 113, 113, 0.7);
+}
+
+.pool-hub-toolbar {
+  display: grid;
+  grid-template-columns: 2fr 1.5fr 1fr 1fr 1fr auto auto;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.pool-hub-toolbar input,
+.pool-hub-toolbar select {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 10px;
+  color: #fff;
+  padding: 8px 10px;
+  font-size: 12px;
+}
+
+.pool-hub-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: #cbd5f5;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 999px;
+  padding: 6px 10px;
+  white-space: nowrap;
+}
+
+.pool-hub-range {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  color: #cbd5f5;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 999px;
+  padding: 6px 10px;
+  white-space: nowrap;
+}
+
+.pool-hub-range input[type='range'] {
+  width: 120px;
+}
+
+.pool-hub-layout {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  gap: 20px;
+}
+
+.pool-hub-panel {
+  background: #1a1a1f;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-height: 360px;
+}
+
+.pool-hub-grid {
+  display: grid;
+  gap: 12px;
+}
+
+.pool-hub-card {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 12px;
+  padding: 10px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  color: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.pool-hub-card.active {
+  border-color: rgba(110, 86, 249, 0.6);
+  box-shadow: 0 0 0 1px rgba(110, 86, 249, 0.2);
+}
+
+.pool-hub-card-hero {
+  border-radius: 12px;
+  background: linear-gradient(135deg, rgba(110, 86, 249, 0.35), rgba(16, 185, 129, 0.2));
+  min-height: 90px;
+}
+
+.pool-hub-card-body {
+  display: grid;
+  gap: 6px;
+}
+
+.pool-hub-card-title {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.pool-hub-card-summary {
+  font-size: 12px;
+  color: #b0b0c3;
+}
+
+.pool-hub-card-creator {
+  font-size: 11px;
+  color: #cbd5f5;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.pool-hub-owner-badge {
+  font-size: 10px;
+  color: #fde68a;
+  background: rgba(250, 204, 21, 0.12);
+  border: 1px solid rgba(250, 204, 21, 0.35);
+  border-radius: 999px;
+  padding: 2px 8px;
+}
+
+.pool-hub-card-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 11px;
+  color: #9fa0b8;
+}
+
+.pool-hub-card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.pool-hub-card-tags span {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 999px;
+  padding: 2px 8px;
+  font-size: 10px;
+  color: #cbd5f5;
+}
+
+.pool-hub-detail-hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 12px;
+  padding: 12px;
+}
+
+.pool-hub-detail-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.pool-hub-detail-title {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.pool-hub-detail-summary {
+  font-size: 12px;
+  color: #cbd5f5;
+}
+
+.pool-hub-detail-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 11px;
+  color: #9fa0b8;
+}
+
+.pool-hub-detail-description {
+  margin: 0;
+  font-size: 12px;
+  color: #cbd5f5;
+  line-height: 1.5;
+}
+
+.pool-hub-creator-card {
+  display: grid;
+  gap: 6px;
+  padding: 10px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.pool-hub-creator-title {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.pool-hub-creator-meta {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  font-size: 11px;
+  color: #9fa0b8;
+}
+
+.pool-hub-detail-split {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.pool-hub-version-card,
+.pool-hub-report-card {
+  display: grid;
+  gap: 6px;
+  padding: 10px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.pool-hub-report-card input {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 10px;
+  color: #fff;
+  padding: 6px 8px;
+  font-size: 12px;
+}
+
+.pool-hub-section-title {
+  font-size: 12px;
+  color: #cbd5f5;
+  font-weight: 600;
+}
+
+.pool-hub-muted {
+  font-size: 11px;
+  color: #9fa0b8;
+}
+
+@media (max-width: 960px) {
+  .pool-hub-detail-split {
+    grid-template-columns: 1fr;
+  }
+}
+
+.pool-hub-rating {
+  display: grid;
+  gap: 6px;
+  padding: 10px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.pool-hub-rating-label {
+  font-size: 12px;
+  color: #cbd5f5;
+}
+
+.pool-hub-rating-stars {
+  display: flex;
+  gap: 6px;
+}
+
+.pool-hub-star {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #9fa0b8;
+  border-radius: 8px;
+  padding: 4px 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.pool-hub-star.active {
+  color: #facc15;
+  border-color: rgba(250, 204, 21, 0.6);
+  background: rgba(250, 204, 21, 0.12);
+}
+
+.pool-hub-rating-meta {
+  font-size: 11px;
+  color: #9fa0b8;
+}
+
+.pool-hub-comments {
+  display: grid;
+  gap: 10px;
+}
+
+.pool-hub-comments-header {
+  font-size: 12px;
+  color: #cbd5f5;
+}
+
+.pool-hub-comments-form {
+  display: grid;
+  gap: 8px;
+}
+
+.pool-hub-comments-form input,
+.pool-hub-comments-form textarea {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 10px;
+  color: #fff;
+  padding: 8px 10px;
+  font-size: 12px;
+}
+
+.pool-hub-comments-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.pool-hub-comments-list {
+  display: grid;
+  gap: 8px;
+}
+
+.pool-hub-comment {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 10px;
+  padding: 8px;
+  display: grid;
+  gap: 6px;
+}
+
+.pool-hub-comment-head {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  color: #9fa0b8;
+}
+
+.pool-hub-comment-author {
+  font-weight: 600;
+  color: #e5e7eb;
+}
+
+.pool-hub-comment-body {
+  font-size: 12px;
+  color: #cbd5f5;
+}
+
+.pool-hub-detail-items {
+  display: grid;
+  gap: 8px;
+}
+
+.pool-hub-detail-items-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  color: #cbd5f5;
+}
+
+.pool-hub-detail-items-list {
+  display: grid;
+  gap: 8px;
+  max-height: 320px;
+  overflow-y: auto;
+}
+
+.pool-hub-detail-items-grouped {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.pool-hub-item-group {
+  background: rgba(20, 20, 28, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 12px;
+  padding: 12px;
+}
+
+.pool-hub-item-group-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-transform: capitalize;
+  font-size: 13px;
+  color: #cbd5f5;
+  margin-bottom: 10px;
+}
+
+.pool-hub-item-group-title span {
+  font-size: 11px;
+  color: #9ca3af;
+}
+
+.pool-hub-item {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 10px;
+  padding: 8px;
+}
+
+.pool-hub-item-text {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.pool-hub-item-tags {
+  font-size: 10px;
+  color: #9fa0b8;
+  margin-top: 4px;
+}
+
+.pool-hub-link {
+  background: transparent;
+  border: none;
+  color: #9fa0b8;
+  cursor: pointer;
+  font-size: 11px;
+  text-decoration: underline;
+}
+
+.pool-hub-message {
+  font-size: 12px;
+  color: #86efac;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  background: rgba(16, 185, 129, 0.08);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  border-radius: 10px;
+  padding: 8px 10px;
+}
+
+.pool-hub-auth-notice {
+  font-size: 12px;
+  color: #fde68a;
+  background: rgba(250, 204, 21, 0.1);
+  border: 1px solid rgba(250, 204, 21, 0.3);
+  border-radius: 10px;
+  padding: 8px 10px;
+  margin-bottom: 10px;
+}
+
+.pool-hub-auth-hint {
+  font-size: 11px;
+  color: #9fa0b8;
+}
+
+.pool-hub-message-link {
+  background: transparent;
+  border: none;
+  color: #a7f3d0;
+  cursor: pointer;
+  font-size: 11px;
+  text-decoration: underline;
+  padding: 0;
+}
+
+.pool-hub-error {
+  font-size: 12px;
+  color: #fca5a5;
+}
+
+.pool-hub-empty {
+  font-size: 12px;
+  color: #9fa0b8;
+}
+
+.pool-hub-panel-header h3 {
+  margin: 0;
+  font-size: 15px;
+}
+
+.pool-hub-upload-modal {
+  max-width: 720px;
+}
+
+.pool-hub-upload-form {
+  display: grid;
+  gap: 12px;
+}
+
+.pool-hub-upload-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.pool-hub-upload-form label {
+  display: grid;
+  gap: 6px;
+  font-size: 12px;
+  color: #cbd5f5;
+}
+
+.pool-hub-upload-form input,
+.pool-hub-upload-form textarea {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 10px;
+  color: #fff;
+  padding: 8px 10px;
+  font-size: 12px;
+}
+
+.pool-hub-upload-file {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 11px;
+  color: #9fa0b8;
+}
+
+.pool-hub-upload-import {
+  display: grid;
+  gap: 8px;
+}
+
+.pool-hub-upload-import-row {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 8px;
+  align-items: center;
+}
+
+.pool-hub-upload-import select {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 10px;
+  color: #fff;
+  padding: 8px 10px;
+  font-size: 12px;
+}
+
+.pool-hub-upload-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.pool-hub-upload-preview {
+  display: grid;
+  gap: 4px;
+  padding: 10px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.pool-hub-admin {
+  margin-top: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 10px 12px;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.pool-hub-admin summary {
+  cursor: pointer;
+  font-size: 12px;
+  color: #cbd5f5;
+}
+
+.pool-hub-admin-body {
+  display: grid;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.pool-hub-admin-body textarea {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 10px;
+  color: #fff;
+  padding: 8px 10px;
+  font-size: 12px;
+}
+
+.pool-hub-admin-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+@media (max-width: 1200px) {
+  .pool-hub-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 960px) {
+  .pool-hub-toolbar {
+    grid-template-columns: 1fr;
+  }
+
+  .pool-hub-card {
+    grid-template-columns: 1fr;
+  }
+
+  .pool-hub-card-hero {
+    min-height: 120px;
+  }
+
+  .pool-hub-upload-grid {
+    grid-template-columns: 1fr;
+  }
+}

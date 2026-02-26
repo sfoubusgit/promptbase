@@ -1,0 +1,92 @@
+.auth-modal {
+  display: grid;
+  gap: 12px;
+  color: #e5e7eb;
+}
+
+.auth-toggle {
+  display: inline-flex;
+  gap: 6px;
+  background: rgba(22, 22, 28, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 999px;
+  padding: 4px;
+}
+
+.auth-toggle button {
+  background: transparent;
+  border: 1px solid transparent;
+  color: rgba(229, 231, 235, 0.8);
+  border-radius: 999px;
+  padding: 6px 14px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.auth-toggle button.active {
+  background: linear-gradient(135deg, rgba(110, 86, 249, 0.9), rgba(123, 101, 255, 0.9));
+  border-color: rgba(110, 86, 249, 0.6);
+  color: #fff;
+}
+
+.auth-field {
+  display: grid;
+  gap: 6px;
+  font-size: 12px;
+  color: #cbd5f5;
+}
+
+.auth-field input {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 10px;
+  color: #fff;
+  padding: 8px 10px;
+  font-size: 12px;
+}
+
+.auth-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.auth-primary {
+  background: rgba(110, 86, 249, 0.18);
+  border: 1px solid rgba(110, 86, 249, 0.35);
+  color: #e1dcff;
+  border-radius: 10px;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.auth-primary:hover {
+  background: rgba(110, 86, 249, 0.32);
+  border-color: rgba(110, 86, 249, 0.6);
+}
+
+.auth-secondary {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #fff;
+  border-radius: 10px;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.auth-secondary:hover {
+  border-color: rgba(110, 86, 249, 0.5);
+}
+
+.auth-hint {
+  font-size: 11px;
+  color: #9fa0b8;
+}
+
+.auth-error {
+  font-size: 12px;
+  color: #fca5a5;
+}

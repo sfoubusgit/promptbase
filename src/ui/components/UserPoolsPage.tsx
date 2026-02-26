@@ -18,9 +18,11 @@ import './UserPoolsPage.css';
 
 type UserPoolsPageProps = {
   onAddToPrompt?: (text: string) => void;
+  onAppendToPrompt?: (text: string, targetId?: string) => void;
   onRandomizePoolItems?: (items: string[]) => void;
   prompt?: any | null;
   customAdditions?: string[];
+  additionItems?: Array<{ id: string; text: string }>;
   onClearPrompt?: () => void;
   onUndoClearPrompt?: () => void;
   canUndoClearPrompt?: boolean;
@@ -30,9 +32,11 @@ type UserPoolsPageProps = {
 
 export function UserPoolsPage({
   onAddToPrompt,
+  onAppendToPrompt,
   onRandomizePoolItems,
   prompt,
   customAdditions = [],
+  additionItems = [],
   onClearPrompt,
   onUndoClearPrompt,
   canUndoClearPrompt = false,
@@ -72,6 +76,7 @@ export function UserPoolsPage({
   const [randomizerTagMode, setRandomizerTagMode] = useState<'any' | 'only' | 'prefer'>('any');
   const [randomizerTagInput, setRandomizerTagInput] = useState('');
   const [randomizerAppendMode, setRandomizerAppendMode] = useState<'replace' | 'append'>('replace');
+  const [appendTargetId, setAppendTargetId] = useState<string>('last');
 
   const activePool = useMemo(
     () => pools.find(pool => pool.id === activePoolId) ?? null,
@@ -281,6 +286,15 @@ export function UserPoolsPage({
     setEditingAddItemText('');
   };
 
+  const handleAppendAddEditItem = () => {
+    const trimmed = editingAddItemText.trim();
+    if (!trimmed) return;
+    const targetId = appendTargetId === 'last' ? undefined : appendTargetId;
+    onAppendToPrompt?.(trimmed, targetId);
+    setEditingAddItemId(null);
+    setEditingAddItemText('');
+  };
+
   const handleSaveItem = (poolId: string, item: PoolItem) => {
     setItemError(null);
     try {
@@ -440,7 +454,10 @@ export function UserPoolsPage({
       <div className="user-pools-layout">
         <section className="user-pools-panel user-pools-panel-main">
           <div className="user-pools-panel-header">
-            <h3>Pools</h3>
+            <h3>
+              Pools
+              <span className="user-pools-title-icon" aria-hidden="true" />
+            </h3>
             <button type="button" onClick={() => setIsRandomizerOpen(true)}>
               Randomize
             </button>
@@ -510,7 +527,10 @@ export function UserPoolsPage({
 
         <section className="user-pools-panel user-pools-panel-main">
           <div className="user-pools-panel-header">
-            <h3>Pool Items</h3>
+            <h3>
+              Pool Items
+              <span className="user-pools-element-icon" aria-hidden="true" />
+            </h3>
             {activePool && <span className="user-pools-active-name">{activePool.name}</span>}
           </div>
           {!activePool ? (
@@ -533,6 +553,22 @@ export function UserPoolsPage({
                   value={tagFilter}
                   onChange={event => setTagFilter(event.target.value)}
                 />
+              </div>
+              <div className="user-pools-append-target">
+                <label>
+                  Append target
+                  <select
+                    value={appendTargetId}
+                    onChange={event => setAppendTargetId(event.target.value)}
+                  >
+                    <option value="last">Last addition</option>
+                    {additionItems.map(item => (
+                      <option key={item.id} value={item.id}>
+                        {item.text.length > 48 ? `${item.text.slice(0, 48)}...` : item.text}
+                      </option>
+                    ))}
+                  </select>
+                </label>
               </div>
               <div className="user-pools-items-create">
                 <input
@@ -655,6 +691,9 @@ export function UserPoolsPage({
                             <button type="button" onClick={handleSaveAddEditItem}>
                               Add
                             </button>
+                            <button type="button" onClick={handleAppendAddEditItem}>
+                              Append
+                            </button>
                             <button
                               type="button"
                               onClick={() => {
@@ -669,6 +708,15 @@ export function UserPoolsPage({
                           <>
                             <button type="button" onClick={() => onAddToPrompt?.(item.text)}>
                               Add to Prompt
+                            </button>
+                            <button
+                              type="button"
+                              onClick={() => {
+                                const targetId = appendTargetId === 'last' ? undefined : appendTargetId;
+                                onAppendToPrompt?.(item.text, targetId);
+                              }}
+                            >
+                              Append
                             </button>
                             <button type="button" onClick={() => handleStartAddEditItem(item)}>
                               Add + Edit

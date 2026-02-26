@@ -47,6 +47,12 @@ interface CategorySidebarProps {
   
   /** Handler for category navigation */
   onJumpToCategory: (nodeId: string) => void;
+
+  /** Open Random Prompt Generator */
+  onOpenRandom?: () => void;
+
+  /** Open Tutorial */
+  onOpenTutorial?: () => void;
 }
 
 /**
@@ -98,6 +104,8 @@ export function CategorySidebar({
   currentNodeId,
   selections,
   onJumpToCategory,
+  onOpenRandom,
+  onOpenTutorial,
 }: CategorySidebarProps) {
   const [expandedCategories, setExpandedCategories] = useState<Set<string>>(new Set());
   const [expandedSubcategories, setExpandedSubcategories] = useState<Set<string>>(new Set());
@@ -188,7 +196,7 @@ export function CategorySidebar({
         </div>
         <div className="logo-text">
           <span className="logo-text-main">SD Prompt</span>
-          <span className="logo-text-sub">Generator</span>
+          <span className="logo-text-sub">Builder</span>
         </div>
       </div>
       <div className="category-sidebar-content">
@@ -329,6 +337,24 @@ export function CategorySidebar({
                         </div>
                       );
                     })}
+                  </div>
+                )}
+                {categoryId === 'anatomy-details' && (
+                  <div className="category-sidebar-actions">
+                    <button
+                      type="button"
+                      className="category-sidebar-action-btn"
+                      onClick={onOpenRandom}
+                    >
+                      Random
+                    </button>
+                    <button
+                      type="button"
+                      className="category-sidebar-action-btn"
+                      onClick={onOpenTutorial}
+                    >
+                      Tutorial
+                    </button>
                   </div>
                 )}
               </div>

@@ -18,6 +18,8 @@ const DESERT_NOMAD_POOL_NAME = 'Desert Sun Nomad';
 const ARCTIC_SILENCE_POOL_NAME = 'Arctic Silencecore';
 const FAERGHUS_KNIGHT_POOL_NAME = 'Faerghus Frostbound Knight';
 const BASE_WOMEN_TYPES_POOL_NAME = 'Base Women Types';
+const NARUTO_SUBJECTS_POOL_NAME = 'Naruto Subjects Pool';
+const NARUTO_ENVIRONMENT_POOL_NAME = 'Naruto Environment Pool';
 
 const createSeedPool = (): Pool => {
   const now = Date.now();
@@ -239,6 +241,60 @@ const createBaseWomenTypesPool = (): Pool => {
   };
 };
 
+const createNarutoSubjectsPool = (): Pool => {
+  const now = Date.now();
+  return {
+    id: makeId('pool'),
+    name: NARUTO_SUBJECTS_POOL_NAME,
+    createdAt: now,
+    updatedAt: now,
+    items: [
+      { id: makeId('item'), text: 'Naruto Uzumaki', tags: ['naruto', 'character', 'subject'] },
+      { id: makeId('item'), text: 'Sasuke Uchiha', tags: ['naruto', 'character', 'subject'] },
+      { id: makeId('item'), text: 'Sakura Haruno', tags: ['naruto', 'character', 'subject'] },
+      { id: makeId('item'), text: 'Kakashi Hatake', tags: ['naruto', 'character', 'subject'] },
+      { id: makeId('item'), text: 'Hinata Hyuga', tags: ['naruto', 'character', 'subject'] },
+      { id: makeId('item'), text: 'Itachi Uchiha', tags: ['naruto', 'character', 'subject'] },
+      { id: makeId('item'), text: 'Gaara', tags: ['naruto', 'character', 'subject'] },
+      { id: makeId('item'), text: 'Jiraiya', tags: ['naruto', 'character', 'subject'] },
+      { id: makeId('item'), text: 'Tsunade', tags: ['naruto', 'character', 'subject'] },
+      { id: makeId('item'), text: 'Orochimaru', tags: ['naruto', 'character', 'subject'] },
+      { id: makeId('item'), text: 'Shikamaru Nara', tags: ['naruto', 'character', 'subject'] },
+      { id: makeId('item'), text: 'Rock Lee', tags: ['naruto', 'character', 'subject'] },
+      { id: makeId('item'), text: 'Neji Hyuga', tags: ['naruto', 'character', 'subject'] },
+      { id: makeId('item'), text: 'Madara Uchiha', tags: ['naruto', 'character', 'subject'] },
+      { id: makeId('item'), text: 'Obito Uchiha', tags: ['naruto', 'character', 'subject'] },
+    ],
+  };
+};
+
+const createNarutoEnvironmentPool = (): Pool => {
+  const now = Date.now();
+  return {
+    id: makeId('pool'),
+    name: NARUTO_ENVIRONMENT_POOL_NAME,
+    createdAt: now,
+    updatedAt: now,
+    items: [
+      { id: makeId('item'), text: 'Hidden Leaf Village streets', tags: ['naruto', 'environment', 'village'] },
+      { id: makeId('item'), text: 'Hokage Rock overlook', tags: ['naruto', 'environment', 'landmark'] },
+      { id: makeId('item'), text: 'Academy classroom', tags: ['naruto', 'environment', 'interior'] },
+      { id: makeId('item'), text: 'Training Ground 7', tags: ['naruto', 'environment', 'forest'] },
+      { id: makeId('item'), text: 'Ichiraku Ramen shop', tags: ['naruto', 'environment', 'interior'] },
+      { id: makeId('item'), text: 'Uchiha district at dusk', tags: ['naruto', 'environment', 'street'] },
+      { id: makeId('item'), text: 'Forest of Death', tags: ['naruto', 'environment', 'forest'] },
+      { id: makeId('item'), text: 'Chunin Exams arena', tags: ['naruto', 'environment', 'arena'] },
+      { id: makeId('item'), text: 'Kage Summit hall', tags: ['naruto', 'environment', 'interior'] },
+      { id: makeId('item'), text: 'Hidden Sand Village rooftops', tags: ['naruto', 'environment', 'village'] },
+      { id: makeId('item'), text: 'Valley of the End', tags: ['naruto', 'environment', 'landmark'] },
+      { id: makeId('item'), text: 'rain-soaked Hidden Rain streets', tags: ['naruto', 'environment', 'rain'] },
+      { id: makeId('item'), text: 'misty Hidden Mist harbor', tags: ['naruto', 'environment', 'water'] },
+      { id: makeId('item'), text: 'Snowy Hidden Snow village', tags: ['naruto', 'environment', 'snow'] },
+      { id: makeId('item'), text: 'Akatsuki hideout cavern', tags: ['naruto', 'environment', 'cave'] },
+    ],
+  };
+};
+
 const createSeedStore = (): PoolStore => ({
   version: 1,
   pools: [
@@ -249,6 +305,8 @@ const createSeedStore = (): PoolStore => ({
     createArcticSilencePool(),
     createFaerghusKnightPool(),
     createBaseWomenTypesPool(),
+    createNarutoSubjectsPool(),
+    createNarutoEnvironmentPool(),
   ],
 });
 
@@ -289,6 +347,12 @@ const loadStore = (): PoolStore => {
     }
     if (!parsed.pools.some(pool => pool.name === BASE_WOMEN_TYPES_POOL_NAME)) {
       seededPools.push(createBaseWomenTypesPool());
+    }
+    if (!parsed.pools.some(pool => pool.name === NARUTO_SUBJECTS_POOL_NAME)) {
+      seededPools.push(createNarutoSubjectsPool());
+    }
+    if (!parsed.pools.some(pool => pool.name === NARUTO_ENVIRONMENT_POOL_NAME)) {
+      seededPools.push(createNarutoEnvironmentPool());
     }
     if (seededPools.length > 0) {
       parsed.pools = [...seededPools, ...parsed.pools];
